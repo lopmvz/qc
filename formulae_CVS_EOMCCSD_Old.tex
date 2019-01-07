@@ -1,0 +1,499 @@
+\section{Implementation formulas of the fc-CVS-EOM-CCSD method}
+\subsection*{Notation}
+\begin{itemize}
+\item[-]$I$, $J$, ... = occupied Core orbital  (very small number of orbitals - core orbitals of nuclei with different $Z$ can be handled separately, as coupling between them is negligible)
+\item[-] $i_v$, $j_v$, ... = occupied Valence orbital 
+\item[-] generic $i$, $j$ = any occupied orbital (both core and valence)
+\end{itemize}
+
+%Linearly transformed vector (right): $\sigma_I^a = ([\bar{H}_{SS}-E_{CC}]R_1)_I^a + (\bar{H}_{SD}R_2)_I^a$
+ \subsection{fc-CVS-EOMEE-CCSD}
+ \subsubsection{Right transformation}
+ \begin{flalign}
+ %\begin{equation}
+ \sigma_I^a = ([\bar{H}_{SS}-E_{CC}]R_1)_I^a + (\bar{H}_{SD}R_2)_I^a
+ %\end{equation}
+ \end{flalign}
+ %
+\begin{flalign}
+([\bar{H}_{SS}-E_{CC}]&R_1)_I^a 
+= \langle \Phi_I^a|\bar{H}-E_{CC}|R_1\Phi_0\rangle \notag \\
+=& \sum_{b}r_I^b F_{ab} - \sum_{J}r_J^aF_{IJ}-\sum_{Jb}r_J^bI^1_{IbJa} \\
+(\bar{H}_{SD}R_2)_I^a 
+=& \langle \Phi_I^a|\bar{H}|R_2\Phi_0\rangle \notag \\ 
+=& \sum_{Jb}r^{ab}_{IJ}F_{Jb} 
++ \sum_{j_vb}r^{ab}_{Ij_v}F_{j_vb} 
+- \sum_{Jk_vb}r^{ab}_{Jk_v}\langle Jk_v || Ib \rangle \notag \\
+&
+- \frac{1}{2} \sum_{JKb}r^{ab}_{JK} \langle JK || Ib \rangle 
+- \frac{1}{2} \sum_{Jbc}r^{bc}_{IJ}I^7_{Jabc} 
+- \frac{1}{2} \sum_{j_vbc}r^{bc}_{Ij_v}I^7_{j_vabc} 
+&
+\end{flalign}
+% %%%%%%
+\begin{flalign}
+\sigma_{ij}^{ab} = (\bar{H}_{DS}R_1)_{ij}^{ab} + ([\bar{H}_{DD}-E_{CC}]R_2)_{ij}^{ab}
+˜\quad \quad \text{(occupied index either $I$ or $J$ or both)}
+\end{flalign}
+\begin{flalign}
+\notag
+(\bar{H}_{DS}R_1)_{Ij_v}^{ab} =& \langle \Phi_{Ij_v}^{ab}|\bar{H}|R_1\Phi_0\rangle \\
+=
+& \sum_{K} (r_K^a I_{Ij_vKb}^2 - r_K^b I_{Ij_vKa}^2) 
++ \sum_{c} (r_I^c I_{j_vcab}^3) + \sum_{l_v} \tilde{T}_{Il_v}^1 t_{j_vl_v}^{ab} &
+\label{doppie_1}
+\end{flalign}
+
+\begin{flalign}
+\label{doppie_2}
+(\bar{H}_{DS}R_1)_{IJ}^{ab} =& \langle \Phi_{IJ}^{ab}|\bar{H}|R_1\Phi_0\rangle \notag \\
+=& \sum_{K} (r_K^a I_{IJKb}^2 - r_K^b I_{IJKa}^2) 
++ \sum_{c} (r_I^c I_{Jcab}^3 - r_J^c I_{Icab}^3) \\
+%
+([\bar{H}_{DD}-E_{CC}]&R_2)_{Ij_v}^{ab} 
+= \langle \Phi_{Ij_v}^{ab}|\bar{H}-E_{CC}|R_2\Phi_0\rangle \notag \\
+=& \sum_{K} (r_{j_vK}^{ab} F_{IK} - r_{IK}^{ab} F_{j_vK}) + \sum_{k_v} (- r_{Ik_v}^{ab} F_{j_vk_v}) \notag \\
+&+ \sum_{c} (r_{Ij_v}^{ac} F_{bc} - r_{Ij_v}^{bc} F_{ac}) \notag \\
+&+ \sum_{k_vc} ( - r_{Ik_v}^{ac} I_{j_vck_vb}^{1} + r_{Ik_v}^{bc} I_{j_vck_va}^{1}) \notag \\
+&+ \sum_{Kc} ( r_{j_vK}^{ac} I_{IcKb}^{1} - r_{IK}^{ac} I_{j_vcKb}^{1} + r_{IK}^{bc} I_{j_vcKa}^{1} - r_{j_vK}^{bc} I_{IcKa}^{1} )\notag \\
+&+ \sum_{KL} r_{KL}^{ab} I_{Ij_vKL}^{4} + 2 \sum_{Kl_v} r_{Kl_v}^{ab} I_{j_vIl_vK}^{4}  + \sum_{cd} r_{Ij_v}^{cd} I_{abcd}^{5} \notag \\
+&+ \sum_{l_v} \tilde{T}_{Il_v}^3 t_{j_vl_v}^{ab} \\
+([\bar{H}_{DD}-E_{CC}]&R_2)_{IJ}^{ab} 
+= \langle \Phi_{IJ}^{ab}|\bar{H}-E_{CC}|R_2\Phi_0\rangle \notag \\
+=& \sum_{K} (r_{JK}^{ab} F_{IK} - r_{IK}^{ab} F_{JK}) + \sum_{k_v} (r_{Jk_v}^{ab} F_{Ik_v} - r_{Ik_v}^{ab} F_{Jk_v})  \notag \\
+&+ \sum_{c} (r_{IJ}^{ac} F_{bc} - r_{IJ}^{bc} F_{ac}) \notag \\&+ \sum_{Kc} ( r_{JK}^{ac} I_{IcKb}^{1} - r_{IK}^{ac} I_{JcKb}^{1} + r_{IK}^{bc} I_{JcKa}^{1} - r_{JK}^{bc} I_{IcKa}^{1}) \notag \\
+&+ \sum_{k_vc} ( r_{Jk_v}^{ac} I_{Ick_vb}^{1} - r_{Ik_v}^{ac} I_{Jck_vb}^{1} + r_{Ik_v}^{bc} I_{Jck_va}^{1} - r_{Jk_v}^{bc} I_{Ick_va}^{1}) \notag \\
+&+ \frac{1}{2} \sum_{KL} r_{KL}^{ab} \langle IJ || KL \rangle  + \sum_{Kl_v} r_{Kl_v}^{ab} \langle IJ || Kl_v \rangle + \sum_{cd} r_{IJ}^{cd} I_{abcd}^{5} 
+\end{flalign}
+% %
+\clearpage
+\subsubsection{Left transformation}
+\begin{flalign}
+\tilde{\sigma}_I^a = (L_1[\bar{H}_{SS}-E_{CC}])_I^a + (L_2\bar{H}_{DS})_I^a
+\end{flalign}
+\begin{flalign}
+(L_1[\bar{H}_{SS}-&E_{CC}])_I^a 
+= \langle \Phi_0L_1|\bar{H}-E_{CC}|\Phi_I^a\rangle \notag \\
+=& \sum_{b}l_I^b F_{ba} - \sum_{J}l_J^aF_{JI}-\sum_{Jb}l_J^bI^1_{JaIb} \\
+(L_2\bar{H}_{DS})_I^a
+=& \langle \Phi_0L_2|\bar{H}|\Phi_I^a\rangle \notag \\
+= &˜
+- \sum_{Jk_vb}l^{ab}_{Jk_v}I^2_{k_vJIb} 
++ \frac{1}{2} \sum_{JKb}l^{ab}_{JK}I^2_{JKIb} 
++ \frac{1}{2} \sum_{Jbc}l^{bc}_{IJ}I^3_{Jabc} + + \frac{1}{2}\sum_{j_vbc}l^{bc}_{Ij_v}I^3_{j_vabc} 
+ \notag \\
+ &+ \sum_{Lk_v} \tilde{T}_{Lk_v}^5 \langle Ik_v || La \rangle
+\end{flalign}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flalign}
+\tilde{\sigma}_{ij}^{ab} = (L_1\bar{H}_{SD})_{ij}^{ab} + ([L_2\bar{H}_{DD}-E_{CC}])_{ij}^{ab}
+˜\quad \quad \text{occupied index either $I$ or $J$ or both}
+\end{flalign}
+\begin{flalign}
+(L_1\bar{H}_{SD})_{Ij_v}^{ab} = 
+& \langle \Phi_0L_1|\bar{H}|\Phi_{Ij_v}^{ab}\rangle \notag \\
+= & l_I^a F_{j_vb} - l_I^b F_{j_va} 
++ \sum_{K} (l_K^b \langle Ij_v || Ka \rangle - l_K^a \langle Ij_v || Kb \rangle)
++ \sum_{c} (- l_I^c I_{j_vcab}^7) \\
+(L_1\bar{H}_{SD})_{IJ}^{ab} =& \langle \Phi_0L_1|\bar{H}|\Phi_{IJ}^{ab}\rangle \notag \\
+= & l_I^a F_{Jb} - l_J^a F_{Ib} + l_J^b F_{Ia} - l_I^b F_{Ja} 
++ \sum_{K} (l_K^b \langle IJ || Ka \rangle - l_K^a \langle IJ || Kb \rangle) 
++ \sum_{c} (l_J^c I_{Icab}^7 - l_I^c I_{Jcab}^7) 
+\end{flalign}
+
+\begin{flalign}
+(L_2[\bar{H}_{DD}-E_{CC}])_{Ij_v}^{ab} 
+=& \langle \Phi_0L_2|\bar{H}-E_{CC}|\Phi_{Ij_v}^{ab}\rangle  \notag \\
+=& \sum_{K} (l_{j_vK}^{ab} F_{KI} - l_{IK}^{ab} F_{Kj_v}) + \sum_{k_v} ( - l_{Ik_v}^{ab} F_{k_vj_v})  \notag \\
+&+ \sum_{c} (l_{Ij_v}^{ac} F_{cb} - l_{Ij_v}^{bc} F_{ca})  \notag \\
+&+ \frac{1}{2} \sum_{KL} l_{KL}^{ab} \langle KL || Ij_v \rangle  + 2 \sum_{Kl_v} l_{Kl_v}^{ab} I_{l_vKj_vI}^{4} \notag \\
+&+ \sum_{cd} l_{Ij_v}^{cd} I_{cdab}^5  \notag \\
+&+ \sum_{Kc} ( -l_{IK}^{ac} I_{Kbj_vc}^{1} + l_{j_vK}^{ac} I_{k_vbIc}^{1} + l_{IK}^{bc} I_{Kaj_vc}^{1}- l_{j_vK}^{bc} I_{KaIc}^{1})  \notag \\
+&+ \sum_{k_vc} ( -l_{Ik_v}^{ac} I_{k_vbj_vc}^{1} + l_{Ik_v}^{bc} I_{k_vaj_vc}^{1})  \notag \\
+&+ \sum_{l_v} (\tilde{T}_{Il_v}^5 \langle j_vl_v|| ab \rangle )
+\\
+(L_2[\bar{H}_{DD}-E_{CC}])_{IJ}^{ab} 
+=& \langle \Phi_0L_2|\bar{H}-E_{CC}|\Phi_{IJ}^{ab}\rangle  \notag \\
+=& \sum_{K} (l_{JK}^{ab} F_{KI} - l_{IK}^{ab} F_{KJ}) + \sum_{k_v} (l_{Jk_v}^{ab} F_{k_vI} - l_{Ik_v}^{ab} F_{k_vJ})  \notag \\
+&+ \sum_{c} (l_{IJ}^{ac} F_{cb} - l_{IJ}^{bc} F_{ca})  \notag \\
+&+ \frac{1}{2} \sum_{KL} l_{KL}^{ab} \langle KL || IJ \rangle + 2 \sum_{Kl_v} l_{Kl_v}^{ab} I_{Kl_vIJ}^{4} \notag \\
+&+ \sum_{cd} l_{IJ}^{cd} I_{cdab}^5  \notag \\
+&+ \sum_{Kc} ( -l_{IK}^{ac} I_{KbJc}^{1} + l_{JK}^{ac} I_{KbIc}^{1} + l_{IK}^{bc} I_{KaJc}^{1} - l_{JK}^{bc} I_{KaIc}^{1})  \notag \\
+&+ \sum_{k_vc} ( -l_{Ik_v}^{ac} I_{k_vbJc}^{1} + l_{Jk_v}^{ac} I_{k_vbIc}^{1} + l_{Ik_v}^{bc} I_{k_vaJc}^{1} - l_{Jk_v}^{bc} I_{k_vaIc}^{1})  \notag \\
+&
++ \sum_{l_v} (\tilde{T}_{Il_v}^5 \langle Jl_v || ab \rangle - \tilde{T}_{Jl_v}^5 \langle Il_v || ab \rangle)  
+\end{flalign}
+
+\clearpage
+\begin{table}[h]
+\caption{Intermediates.
+\label{Tab:intermediates}
+}
+\begin{tabular}{l}
+\hline
+$
+F_{IJ} = f_{IJ} + \sum_{k_va} t_{k_v}^a \langle J{k_v} ||Ia \rangle 
+$ \\
+$
+F_{Ij_v} = f_{Ij_v} + \sum_{{k_v}a} t_{k_v}^a \langle j_v{k_v} ||Ia \rangle 
+$ \\
+$
+F_{i_vJ} = f_{i_vJ} + \sum_a t_{i_v}^a f_{Ja} + \sum_{{k_v}a} t_{k_v}^a \langle J{k_v} ||i_va \rangle + \sum_{{k_v}ab} t_{i_v}^a t_{k_v}^b \langle J{k_v}||ab \rangle + \frac{1}{2} \sum_{{k_v}bc} t_{{i_v}{k_v}}^{bc} \langle J{k_v}||bc\rangle
+$ \\
+$
+F_{Ia} = f_{Ia} + \sum_{j_vb} t_{j_v}^b \langle Ij_v ||ab \rangle
+$ \\
+$
+F_{i_va} = f_{i_va} + \sum_{j_vb} t_{j_v}^b \langle i_vj_v ||ab \rangle
+$ \\
+$
+F_{ab} = f_{ab} - \sum_{i_v} t_{i_v}^a f_{{i_v}b} - \sum_{{i_v}c} t_{i_v}^c \langle {i_v}a ||bc \rangle + \sum_{{i_v}{j_v}c} t_{i_v}^c t_{j_v}^a \langle {i_v}{j_v}||bc \rangle - \frac{1}{2} \sum_{{j_v}{k_v}c} t_{{j_v}{k_v}}^{ac} \langle {j_v}{k_v}||bc\rangle
+$ \\
+$
+I^1_{IaJb} = \langle Ia ||Jb \rangle - \sum_k t_{k_v}^b \langle J{k_v}||Ia \rangle 
+$ \\
+$
+I^1_{Iaj_vb} = \langle Ia ||j_vb \rangle - \sum_k t_{k_v}^b \langle j_v{k_v}||Ia \rangle 
+$ \\
+$
+I^1_{i_vaJb} = \langle i_va ||Jb \rangle 
+                - \sum_{k_v} t_{k_v}^b \langle J{k_v}||i_va \rangle 
+                - \sum_c t_{i_v}^c \langle Jb||ac \rangle 
+                + \sum_{{k_v}c} t_{i_v}^c t_{k_v}^b \langle J{k_v}||ac \rangle 
+                - \sum_{{k_v}c} t_{i_v{k_v}}^{bc} \langle J{k_v}||ac \rangle 
+$ \\
+$
+I^1_{i_vaj_vb} = \langle i_va ||j_vb \rangle 
+                - \sum_{k_v} t_{k_v}^b \langle j_v{k_v}||i_va \rangle 
+                - \sum_c t_{i_v}^c \langle j_vb||ac \rangle 
+                + \sum_{{k_v}c} t_{i_v}^c t_{k_v}^b \langle j_v{k_v}||ac \rangle 
+                - \sum_{{k_v}c} t_{i_v{k_v}}^{bc} \langle j_v{k_v}||ac \rangle 
+$ \\
+$
+I^2_{i_vJKa} =  - \langle i_vJ ||Ka \rangle 
+                + 2\sum_{l_v} t_{l_v}^a I^4_{i_vJK{l_v}} 
+                + \sum_b t_{i_v}^b \langle Jb||Ka \rangle
+                + \sum_{{l_v}c} t_{i_v{l_v}}^{ac} \langle Jc || K{l_v} \rangle 
+$ \\
+
+$
+I^2_{IJKa} =  - \langle IJ ||Ka \rangle 
+              + \sum_{l_v} t_{l_v}^a \langle IJ || K{l_v} \rangle 
+$ \\
+
+$
+        I^{3}_{Iabc} = 
+            - \langle Ia || bc \rangle 
+            - \frac{1}{2} \sum_{j_vk_v} t_{j_vk_v}^{bc} \langle j_vk_v || Ia \rangle 
+            - \sum_{j_v} t_{j_v}^c ( 
+                    \langle j_vb || Ia \rangle 
+                    - \frac{1}{2} \sum_{k_v} t_{k_v}^b \langle j_vk_v || Ia \rangle)
+            $\\ \hspace{1cm}$ 
+            + \sum_{j_v} t_{j_v}^b ( 
+                    \langle j_vc || Ia \rangle 
+                    - \frac{1}{2} \sum_{k_v} t_{k_v}^c \langle j_vk_v || Ia \rangle)
+$ \\
+$
+        I^3_{i_vabc} =
+            - \langle i_va || bc \rangle
+            + \sum_d t_{i_v}^d I^5_{bcad} 
+            - \sum_{j_v} (t_{j_v}^c (
+                    \langle j_vb ||i_va \rangle 
+                    - \frac{1}{2} \sum_{k_v} \langle j_vk_v||i_va \rangle
+                    - \sum_{k_vd} t_{i_vk_v}^{bd} \langle j_vk_v||ad \rangle))
+                    $\\ \hspace{1cm}$
+            + \sum_{j_v} (t_{j_v}^b (
+                    \langle j_vc ||i_va \rangle 
+                    - \frac{1}{2} \sum_{k_v} \langle j_vk_v||i_va \rangle
+                    - \sum_{k_vd} t_{i_vk_v}^{bd} \langle j_vk_v||ad \rangle))
+            + \sum_{k_vd} t_{i_vk_v}^{bd} \langle k_vc||ad \rangle
+                    $\\ \hspace{1cm}$
+            - \sum_{k_vd} t_{i_vk_v}^{cd} \langle k_vb||ad \rangle
+            + \sum_{k_vj_vd} t_{j_v}^{d} t_{i_vk_v}^{bc} \langle k_vj_v||ad \rangle
+            + \sum_{k_v} t_{i_vk_v}^{bc} f_{k_va}
+$ \\
+
+
+$
+        I^{4}_{Ij_vKL} = \frac{1}{2} \langle Ij_v || KL \rangle 
+                        + \frac{1}{2} \sum_{a} t_{j_v}^a \langle KL || Ia \rangle
+$ \\
+$
+        I^{4}_{i_vJk_vL} = \frac{1}{2} \langle i_vJ || k_vL \rangle 
+                          - \frac{1}{2} \sum_{a} t_{i_v}^a \langle k_vL || Ja \rangle
+$ \\
+$
+        I^{5}_{abcd} = \frac{1}{2} \langle ab || cd \rangle 
+                     - \frac{1}{2} \left( 
+                         \sum_{i_v} t_{i_v}^a \langle i_vb || cd \rangle
+                         - t_{i_v}^b \langle i_va || cd \rangle \right)
+                     + \frac{1}{2} \sum_{i_vj_v} t_{i_v}^a t_{j_v}^b \langle i_v j_v || cd \rangle + \frac{1}{4} \sum_{k_vl_v} t_{k_vl_v}^{ab} \langle k_vl_v || cd \rangle
+$ \\
+
+$
+        I^6_{IJk_va} =
+            \langle IJ || k_va \rangle -
+            \sum_c t_{k_v}^c \langle IJ || ac \rangle
+$ \\
+$
+        I^6_{i_vJk_va} =
+            \langle i_vJ || k_va \rangle -
+            \sum_c t_{k_v}^c \langle i_vJ || ac \rangle
+$ \\
+$
+        I^7_{Iabc} =
+            \langle Ia || bc \rangle -
+            \sum_{j_v} t_{j_v}^a \langle I{j_v} || bc \rangle
+$ \\
+$
+        I^7_{i_vabc} =
+            \langle i_va || bc \rangle -
+            \sum_{j_v} t_{j_v}^a \langle {i_v}{j_v} || bc \rangle
+$ \\
+\\
+
+$\tilde{T}_{Ij_v}^1=\sum_{Kc}r_K^c \langle j_vK || Ic \rangle$ \\
+
+$
+\tilde{T}_{Ij_v}^3= \frac{1}{2} \left( \sum_{Kcd}r_{IK}^{cd} \langle j_vK || cd \rangle + \sum_{k_vcd}r_{Ik_v}^{cd} \langle j_vk_v || cd \rangle \right)
+$ \\
+
+$
+\tilde{T}_{Ij_v}^5= \frac{1}{2}  \sum_{k_vab} l_{Ik_v}^{ab} t_{j_vk_v}^{ab} 
+$ \\
+\\
+$
+r_{0}= \frac{1}{\omega} 
+\left[
+    \sum_{Ia} r_{I}^{a} f_{I}^{a} 
++ \sum_{Ij_vab} r_{I}^{a} t_{j_v}^{b} \langle Ij_v || ab \rangle 
++ \frac{1}{2}
+\sum_{Ij_vab}r_{Ij_v}^{ab} \langle Ij_v || ab \rangle 
++ \frac{1}{4}
+\sum_{IJab}r_{IJ}^{ab} \langle IJ || ab \rangle
+\right] 
+$ \\
+\hline
+\end{tabular}
+\end{table}
+\clearpage
+
+
+\subsubsection{One-Electron Density Matrices}
+
+\begin{flalign}
+% &\gamma'_{JI} = \frac{1}{2} \mathcal{P}_{+}(IJ) \left( - \sum_a l_I^a r_J^a 
+%             - \frac{1}{2}  \sum_{Kab} r_{JK}^{ab} l_{IK}^{ab} 
+%             + \frac{1}{2}\sum_{k_vab} r_{Jk_v}^{ab} l_{Ik_v}^{ab} \right) &
+% \\
+&\gamma'_{JI} = 
+	- \sum_a l_I^a r_J^a 
+    - \frac{1}{2} \left(
+      \sum_{Kab} l_{IK}^{ab} r_{JK}^{ab}  
+	+ \sum_{k_vab} l_{Ik_v}^{ab} r_{Jk_v}^{ab} 
+\right) &
+\\
+ &\gamma'_{j_vI} = 
+ 	- \frac{1}{2} r_0 \left( 
+ 			\sum_a t_{j_v}^a l_I^a 
+          + \sum_{k_v ab} t_{j_v k_v}^{ab} l_{Ik_v}^{ab} \right)
+          - \frac{1}{2} \sum_{Kab} r_{j_vK}^{ab} l_{IK}^{ab}  
+          - \sum_a t_{j_v}^a  \sum_{Kb}  r_K^b l_{IK}^{ab}
+ \\
+%  &\gamma'_{j_vI} = \frac{1}{2} \left(
+%  	- \tilde{l}_{Ij_v}
+%     - \tilde{l}_{j_vI}
+%     - \sum_a r_0 t_{j_v}^a l_I^a       
+%     - \sum_a t_{j_v}^a  Y^1_{Ia}
+%  \right)
+% \\
+ &\gamma'_{Ji_v} =
+ 	-  \frac{1}{2}  \sum_{Kab} l_{i_vK}^{ab} r_{JK}^{ab}
+ \\
+%&\gamma'_{i_vj_v} = - \frac{1}{2} \sum_{Kab} r_{j_vK}^{ab} l_{i_vK}^{ab} 
+%             - \sum_a t_{i_v}^a \left( \sum_{Kb} r_K^b l_{j_vK}^{ab}  \right)
+&\gamma'_{i_vj_v} = 
+	-\frac{1}{2} \sum_{Kab} l_{i_vK}^{ab} r_{j_vK}^{ab} 
+    - \sum_a t_{j_v}^a \sum_{Kb} l_{i_vK}^{ab} r_{K}^{b}  
+ \\
+ &\gamma'_{ab} = \sum_I r_I^a l_I^b
+             + \frac{1}{2} \sum_{IJc} r_{IJ}^{bc} l_{IJ}^{ac} 
+             + \sum_{Ij_vc} r_{Ij_v}^{bc} l_{Ij_v}^{ac} 
+             +      \sum_{i_v} t_{i_v}^b  \sum_{Kc}  r_K^c l_{i_vK}^{ac}
+ \\
+&\gamma'_{Ia} = r_0 l_I^a
+             + \sum_{Jb}  r_J^b l_{IJ}^{ab}
+ \\
+ &\gamma'_{i_va} = \sum_{Jb}  r_J^b l_{i_vJ}^{ab}
+ \\
+ &\gamma'_{aI} = \sum_{Jb}  r_{IJ}^{ab} l_{J}^{b}
+             - \frac{1}{2} \sum_{j_v} t_{j_v}^a \left( \sum_K r_{IK}^{bc} l_{j_vK}^{bc} \right)
+ \\
+ &\gamma'_{ai_v} = 
+               t_{i_v}^a
+             + \sum_{Jb}  \left( r_{i_vJ}^{ab} - t_{i_v}^b r_J^a\right) l_{J}^{b} 
+             + \sum_{j_vb}  \left[ \left( t_{i_vj_v}^{ab} - t_{j_v}^a t_{i_v}^b\right) \sum_{Kc} l_{j_vK}^{bc}r_K^c \right]
+             \notag \\
+             & \quad\quad
+             - \frac{1}{2} \sum_K r_K^a \left( \sum_{j_vbc} l_{Kj_v}^{bc} t_{i_vj_v}^{bc} \right) %\notag \\
+             - \frac{1}{2} \sum_{j_v} t_{j_v}^a \left( \sum_K r_{i_vK}^{bc} l_{j_vK}^{bc} \right)
+\notag \\             
+             &\quad\quad
+             - \sum_b t_{i_v}^b \left( \frac{1}{2} \sum_{JKc} r_{JK}^{ac} l_{JK}^{bc} 
+             + \sum_{Jk_v c} r_{Jk_v}^{ac} l_{Jk_v}^{bc} 
+             \right)   
+\end{flalign}
+
+% \begin{table}[h]
+% \caption{Intermediates.
+% \label{Tab:intermediates2}
+% }
+% \begin{tabular}{l}
+% \hline
+% $
+% \tilde{l}_{IJ} = \frac{1}{2}  \sum_{Kab} l_{IK}^{ab} r_{JK}^{ab}  
+%             + \frac{1}{2}\sum_{k_vab} l_{Ik_v}^{ab} r_{Jk_v}^{ab} 
+% $ \\
+% $
+% \tilde{l}_{Ij_v} = \frac{1}{2}  \sum_{Kab} l_{IK}^{ab} r_{j_vK}^{ab}  
+%             + \frac{1}{2} r_0 \sum_{k_vab} l_{Ik_v}^{ab} t_{j_vk_v}^{ab}
+% $\\
+% $
+% \tilde{l}_{i_vJ} = \frac{1}{2}  \sum_{Kab} l_{i_vK}^{ab} r_{JK}^{ab}  
+% $\\
+% $
+% \tilde{l}_{i_vj_v} = \frac{1}{2} \sum_{Kab} l_{i_vK}^{ab} r_{j_vK}^{ab} 
+% $\\
+% $
+% Y^1_{i_va} = \sum_{Jb} l_{i_vJ}^{ab} r_{J}^{b} 
+% $\\
+% \hline
+% \end{tabular}
+% \end{table}
+\clearpage
+
+\subsection{fc-CVS-EOMIP-CCSD}
+
+\subsubsection{Right transformation}
+\begin{flalign}
+\sigma_I= ([\bar{H}_{SS}-E_{CC}]R_1)_I + (\bar{H}_{SD}R_2)_I
+\end{flalign}
+\begin{flalign}
+        ([\bar{H}_{SS}-E_{CC}&]R_1)_I = - \sum_J F_{IJ} r_J 
+\\
+(\bar{H}_{SD}R_2)_I = &
+            \sum_{Jb} F_{Jb} r_{IJ}^b +
+            \sum_{j_{v}b} F_{j_{v}b} r_{Ij_{v}}^b \notag \\ 
+          &- \frac{1}{2} \sum_{JKb} \langle JK || Ib \rangle r^{b}_{JK} +
+            \sum_{Jk_{v}b} \langle k_{v}J||Ib \rangle r^{b}_{Jk_{v}} & 
+\end{flalign}
+% %
+\begin{flalign}
+\sigma_{ij}^{a} = (\bar{H}_{DS}R_1)_{ij}^{a} + ([\bar{H}_{DD}-E_{CC}]R_2)_{ij}^{a}
+\quad \text{with occupied index either $I$ or $J$ or both}
+\end{flalign}
+\begin{flalign}
+        (\bar{H}_{DS}R_1)_{IJ}^{a} =&  -\sum_K r_K I^{2}_{IJKa} 
+\\
+([\bar{H}_{DD}-E_{CC}&]R_2)_{IJ}^{a} = \mathcal{P}_-(IJ) \left( \sum_K r_{JK}^a F_{IK} 
+           + \sum_{k_{v}} r_{Jk_{v}}^a F_{Ik_{v}} \right)  
+           + \sum_b r_{IJ}^b F_{ab} \notag \\
+         & - \mathcal{P}_-(IJ) \left( \sum_{Kb} I^{1}_{JbKa} r_{IK}^b 
+           + \sum_{k_vb} I^{1}_{Jbk_va} r_{Ik_v}^b \right) \notag \\
+         & + \frac{1}{2} \sum_{KL} \langle IJ||KL \rangle r_{KL}^{a} 
+           + \sum_{Kl_v} \langle IJ||Kl_v\rangle r_{Kl_v}^{a} &
+\end{flalign}
+
+\begin{flalign}
+(\bar{H}_{DS}R_1)_{Ij_v}^{a} =&  -\sum_K r_K I^{2}_{Ij_vKa} 
+\\
+([\bar{H}_{DD}-E_{CC}]&R_2)_{Ij_v}^{a} =
+           + \sum_K r_{j_vK}^a F_{IK} 
+           - \sum_K r_{IK}^a F_{j_vK}
+           - \sum_{k_v} r_{Ik_v}^a F_{j_vk_v} \notag \\ 
+         & + \sum_b r_{Ij_v}^b F_{ab} 
+           - \sum_{Kb} I^{1}_{j_vbKa} r_{IK}^b 
+           - \sum_{k_vb} I^{1}_{j_vbk_va} r_{Ik_v}^b 
+           + \sum_{Kb} I^{1}_{IbKa} r_{j_vK}^b \notag \\
+         & + \sum_{KL} I^{4}_{Ij_vKL} r_{KL}^{a} 
+           + 2 \sum_{Kl_v} I^{4}_{j_vIl_vK} r_{Kl_v}^{a} &
+\end{flalign}
+
+\subsubsection{Left transformation}
+\begin{flalign}
+\tilde{\sigma}_I = (L_1[\bar{H}_{SS}-E_{CC}])_I + (L_2\bar{H}_{DS})_I
+\end{flalign}
+\begin{flalign}
+        (L_1[\bar{H}_{SS}-&E_{CC}])_I = -\sum_J F_{JI} l_J 
+\\
+(L_2\bar{H}_{DS})_I &= 
+        - \frac{1}{2} \sum_{JKb} I^{2}_{JKIb} l_{JK}^b 
+        + \sum_{Jk_vb} I^{2}_{k_vJIb} l_{Jk_v}^b &
+\end{flalign}
+\begin{flalign}
+\tilde{\sigma}_{ij}^{a} = (L_1\bar{H}_{SD})_{ij}^{a} + ([L_2\bar{H}_{DD}-E_{CC}])_{ij}^{a}
+˜\quad \quad \text{with occupied index either $I$ or $J$ or both}
+\end{flalign}
+%
+\begin{flalign}
+        (L_1\bar{H}_{SD})_{IJ}^a =&
+            \mathcal{P}_-(IJ) l_I F_{Ja} -
+            \sum_K l_K \langle IJ || Ka \rangle 
+\\
+([L_2\bar{H}_{DD}-E_{CC}&])_{IJ}^{a} =
+            \mathcal{P}_-(IJ) \left( 
+            \sum_K l_{JK}^a F_{KI} +
+            \sum_k l_{Jk_v}^a F_{k_vI} \right) +
+            \sum_b l_{IJ}^b F_{ba} \notag \\
+          & + \frac{1}{2} \sum_{KL} \langle KL||IJ \rangle l_{KL}^a 
+           + 2 \sum_{Kl_v} I^{4}_{Kl_vIJ} l_{Kl_v}^a \notag \\
+           & - \mathcal{P}_-(IJ) \left( 
+            \sum_{Kb} I^{1}_{k_vaJb} l_{IK}^b 
+           + \sum_{k_vb} I^{1}_{k_vaJb} l_{Ik_v}^b 
+            \right) &
+\end{flalign}
+%
+\begin{flalign}
+        (L_1\bar{H}_{SD})_{Ij_v}^a = &
+            l_I F_{j_va} -
+            \sum_K l_K \langle Ij_v||Ka \rangle -
+            \sum_{k_v} l_{k_v} \langle Ij_v||k_va \rangle &
+\\
+ ([L_2\bar{H}_{DD}-E_{CC}&])_{Ij_v}^{a} =
+            \sum_K l_{j_vK}^a F_{KI} -
+            \sum_K l_{IK}^a F_{Kj_v} +
+            \sum_{k_v} l_{Ik_v}^a F_{Kj_v} +
+            \sum_b l_{Ij_v}^b F_{ba} \notag \\
+          & + \frac{1}{2} \sum_{KL} \langle KL||Ij_v \rangle l_{KL}^a 
+           + 2 \sum_{Kl_v} I^{4}_{l_vKj_vI} l_{Kl_v}^a \notag \\
+          & -\sum_{Kb} I^{1}_{k_vaj_vb} l_{IK}^b 
+           + \sum_{k_vb} I^{1}_{k_vaj_vb} l_{Ik_v}^b 
+           - \sum_{Kb} I^{1}_{KaIb} l_{j_vK}^b &
+\end{flalign}
+
+ \subsubsection{One-electron Density Matrices}
+
+\begin{flalign}
+&\gamma_{JI} = - l_I r_J 
+            - \sum_{Ka} l_{IK}^{a} r_{JK}^{a} 
+            + \sum_{k_v a} r_{Jk_v}^{a} l_{Ik_v}^{a} \\
+&\gamma_{Ij_v} = - \sum_{Ka} r_{j_vK}^{a} l_{IK}^{a} \\
+&\gamma_{j_vI} = \sum_{Ka} l_{IK}^{a} r_{J_VK}^{a}  
+	+ \sum_{k_v a} r_{Jk_v}^{a} l_{Ik_v}^{a} \\
+&\gamma_{i_vj_v} = - \sum_{Ka} r_{j_vK}^{a} l_{i_vK}^{a} 
+            - \sum_a t_{i_v}^a \sum_{K} r_K l_{j_vK}^{a} \\
+&\gamma_{ab} = 
+            \frac{1}{2} \sum_{IJ} r_{IJ}^{b} l_{IJ}^{a} + \sum_{Ij_v} r_{Ij_v}^{b} l_{Ij_v}^{a}   
+            +    \sum_{i_v} t_{i_v}^b  \sum_{K}  r_K l_{i_vK}^{a} \\
+&\gamma_{Ia} = 
+            \sum_{J}  r_J l_{IJ}^{a} \\
+&\gamma_{i_va} = \sum_{J}  r_J l_{i_vJ}^{a} \\
+&\gamma_{aI} = \sum_{J}  r_{IJ}^{a} l_{J}
+            - \sum_{j_v} t_{j_v}^a \sum_K r_{IK}^{b} l_{j_vK}^{b} \\
+&\gamma_{ai_v} = \hspace{2mm} t_{i_v}^a
+           - \sum_{J} r_{i_vJ}^{a} l_{J} 
+            + \sum_{j_vb}  \left[ \left( t_{i_vj_v}^{ab} - t_{j_v}^a t_{i_v}^b\right) \sum_{K} l_{j_vK}^{b}r_K \right] \notag \\
+            &\qquad- \sum_{j_v} t_{j_v}^a \sum_{Kb} r_{i_vK}^{b} l_{j_vK}^{b} 
+            - \sum_b t_{i_v}^b \left( \frac{1}{2} \sum_{JK} r_{JK}^{a} l_{JK}^{b} + \sum_{Jk_v} r_{Jk_v}^{a} l_{Jk_v}^{b} \right)  & 
+\end{flalign}
+

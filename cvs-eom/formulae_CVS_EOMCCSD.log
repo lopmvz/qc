@@ -1,0 +1,3855 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.27)  3 JAN 2019 15:24
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**formulae_CVS_EOMCCSD.tex
+(./formulae_CVS_EOMCCSD.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+! Undefined control sequence.
+l.1 \section
+            {Implementation formulas of the fc-CVS-EOM-CCSD method}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{I
+              mplementation formulas of the fc-CVS-EOM-CCSD method}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.2 \subsection
+               *{Notation}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
+[]
+ []
+
+Missing character: There is no - in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+Overfull \hbox (5.18054pt too wide) in paragraph at lines 4--5
+\OML/cmm/m/it/10 I$
+ []
+
+
+Overfull \hbox (6.50694pt too wide) in paragraph at lines 4--5
+\OML/cmm/m/it/10 J$
+ []
+
+
+Overfull \hbox (7.54167pt too wide) in paragraph at lines 4--5
+\OML/cmm/m/it/10 Z$
+ []
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+
+Overfull \hbox (8.19632pt too wide) in paragraph at lines 5--6
+\OML/cmm/m/it/10 i[]$
+ []
+
+
+Overfull \hbox (8.86925pt too wide) in paragraph at lines 5--6
+\OML/cmm/m/it/10 j[]$
+ []
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+Overfull \hbox (3.44513pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/10 i$
+ []
+
+
+Overfull \hbox (4.69049pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/10 j$
+ []
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (30.98457pt too wide) in paragraph at lines 8--9
+$\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 qr\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (31.09567pt too wide) in paragraph at lines 8--9
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 qr\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (231.33827pt too wide) detected at line 11
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 qr\OT1/cmr/m/n/10 )\OML/c
+mm/m/it/10 f\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 pqrs []\OT1/cmr/m/n/10 ) \OMS/
+cmsy/m/n/10 ^^Q \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 pqrs []\
+OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 prqs 
+[]\OT1/cmr/m/n/10 )
+ []
+
+
+Overfull \hbox (231.44937pt too wide) detected at line 14
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 qr\OT1/cmr/m/n/10 )\OML/c
+mm/m/it/10 f\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 pqrs []\OT1/cmr/m/n/10 ) \OMS/
+cmsy/m/n/10 ^^Q \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 pqrs []\
+OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ([] \OM
+L/cmm/m/it/10 prqs []\OT1/cmr/m/n/10 )
+ []
+
+! Undefined control sequence.
+l.17  \subsection
+                 {fc-CVS-EOMEE-CCSD}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no D in font nullfont!
+! Undefined control sequence.
+l.18  \subsubsection
+                    {Right transformation}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19  \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.21  \sigma
+            _I^a
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.22 =&
+        \sum_{b}r_I^b F_{ab}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.25 \notag
+            \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.26 &
+      + \sum_{Jb}r^{ab}_{IJ}F_{Jb}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.28 ...b}_{Jk_v}\langle Jk_v || Ib \rangle \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.29 &
+      - \frac{1}{2} \sum_{JKb}r^{ab}_{JK} \langle JK || Ib \rangle
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.32 &
+      
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \end{flalign}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.33 \end{flalign}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \begin{flalign}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 \sigma
+           _{IJ}^{ab}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.37 =&
+        - \mathcal{P}_-(ab) \sum_{K} I_{IJKb}^2 r_K^a
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.39 \notag
+            \\ &
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.39 \notag \\ &
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.42 ...}_-(ab) \sum_{c} r_{IJ}^{ac} F_{bc} \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.43 &
+      + \mathcal{P}_-(IJ)  \mathcal{P}_-(ab) (
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.46 \notag
+            \\ &
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.46 \notag \\ &
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.49 &
+      
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \end{flalign}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.51 \end{flalign}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 17--52
+[]
+ []
+
+
+Overfull \hbox (21.46606pt too wide) in paragraph at lines 17--52
+\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (47.90134pt too wide) in paragraph at lines 17--52
+[][] \OML/cmm/m/it/10 r[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (51.78452pt too wide) in paragraph at lines 17--52
+[][] \OML/cmm/m/it/10 r[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (53.34297pt too wide) in paragraph at lines 17--52
+[][] \OML/cmm/m/it/10 r[]I[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 17--52
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (58.81784pt too wide) in paragraph at lines 17--52
+[][] \OML/cmm/m/it/10 r[]F[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (66.36247pt too wide) in paragraph at lines 17--52
+[][] \OML/cmm/m/it/10 r[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (87.77307pt too wide) in paragraph at lines 17--52
+[][] \OML/cmm/m/it/10 r[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 Jk[]\OMS/cmsy/m/n/1
+0 jj\OML/cmm/m/it/10 Ib\OMS/cmsy/m/n/10 i[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 17--52
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (100.19081pt too wide) in paragraph at lines 17--52
+[] [][] \OML/cmm/m/it/10 r[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 JK\OMS/cmsy/m/n/
+10 jj\OML/cmm/m/it/10 Ib\OMS/cmsy/m/n/10 i ^^@
+ []
+
+
+Overfull \hbox (76.32101pt too wide) in paragraph at lines 17--52
+[] [][] \OML/cmm/m/it/10 r[]I[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (76.08784pt too wide) in paragraph at lines 17--52
+[] [][] \OML/cmm/m/it/10 r[]I[]$
+ []
+
+
+Overfull \hbox (25.94257pt too wide) in paragraph at lines 17--52
+\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (105.23169pt too wide) in paragraph at lines 17--52
+\OMS/cmsy/m/n/10 ^^@P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) []
+[] \OML/cmm/m/it/10 I[]r[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (81.64188pt too wide) in paragraph at lines 17--52
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 I[]r[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 17--52
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (100.30415pt too wide) in paragraph at lines 17--52
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 )([][] 
+\OML/cmm/m/it/10 r[]F[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (71.12914pt too wide) in paragraph at lines 17--52
+[][] \OML/cmm/m/it/10 r[]F[]\OT1/cmr/m/n/10 ) +
+ []
+
+
+Overfull \hbox (77.229pt too wide) in paragraph at lines 17--52
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 r[]F[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 17--52
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (139.99454pt too wide) in paragraph at lines 17--52
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 )\OMS/c
+msy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 )([][] \OML/c
+mm/m/it/10 r[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (71.98077pt too wide) in paragraph at lines 17--52
+[][] \OML/cmm/m/it/10 r[]I[]\OT1/cmr/m/n/10 )[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 17--52
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (99.99092pt too wide) in paragraph at lines 17--52
+[] [][] \OML/cmm/m/it/10 r[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 IJ\OMS/cmsy/m/n/
+10 jj\OML/cmm/m/it/10 KL\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (95.53421pt too wide) in paragraph at lines 17--52
+[][] \OML/cmm/m/it/10 r[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 IJ\OMS/cmsy/m/n/10 
+jj\OML/cmm/m/it/10 Kl[]\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (63.18286pt too wide) in paragraph at lines 17--52
+[] [][] \OML/cmm/m/it/10 r[]I[][]$ 
+ []
+
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \begin{flalign}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.55 \sigma
+           _{Ij_v}^{ab}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.57 &
+       \mathcal{P}_-(ab) \sum_{K} r_K^a I_{j_vIKb}^2
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.60 \notag
+            \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.61 &
+      + \sum_{K} r_{j_vK}^{ab} F_{IK}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.64 \notag
+            \\&
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.64 \notag \\&
+               
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.66 ..._vc} r_{Ik_v}^{ac} I_{j_vck_vb}^{1} \notag
+                                                   \\&
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.66 ... r_{Ik_v}^{ac} I_{j_vck_vb}^{1} \notag \\&
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.70 \notag
+            \\&
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.70 \notag \\&
+               
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.75 &
+      
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \end{flalign}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.76 \end{flalign}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (48.45744pt too wide) in paragraph at lines 55--78
+[]$\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (99.96877pt too wide) in paragraph at lines 55--78
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 r[]I[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (57.09705pt too wide) in paragraph at lines 55--78
+[][] \OML/cmm/m/it/10 r[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (55.32326pt too wide) in paragraph at lines 55--78
+[][] []\OML/cmm/m/it/10 t[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 55--78
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (65.75925pt too wide) in paragraph at lines 55--78
+[][] \OML/cmm/m/it/10 r[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (65.75925pt too wide) in paragraph at lines 55--78
+[][] \OML/cmm/m/it/10 r[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (61.97731pt too wide) in paragraph at lines 55--78
+[][] \OML/cmm/m/it/10 r[]F[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 55--78
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (87.52168pt too wide) in paragraph at lines 55--78
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 r[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (103.33432pt too wide) in paragraph at lines 55--78
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 r[]I[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 55--78
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (110.15952pt too wide) in paragraph at lines 55--78
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][](
+\OML/cmm/m/it/10 r[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (46.99406pt too wide) in paragraph at lines 55--78
+\OML/cmm/m/it/10 r[]I[]\OT1/cmr/m/n/10 )[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 55--78
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (88.23572pt too wide) in paragraph at lines 55--78
+[] [][] \OML/cmm/m/it/10 r[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (84.1829pt too wide) in paragraph at lines 55--78
+[][] \OML/cmm/m/it/10 r[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (73.47554pt too wide) in paragraph at lines 55--78
+[] [][] \OML/cmm/m/it/10 r[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (55.32326pt too wide) in paragraph at lines 55--78
+[][] []\OML/cmm/m/it/10 t[]$ 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \clearpage
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+! Undefined control sequence.
+<write> \newlabel{doppie_1}{{}{\thepage 
+                                        }}
+l.78 \clearpage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{doppie_1}{{}{}}
+! Undefined control sequence.
+<write> \newlabel{doppie_2}{{}{\thepage 
+                                        }}
+l.78 \clearpage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{doppie_2}{{}{}}
+]
+! Undefined control sequence.
+l.79 \subsubsection
+                   {Left transformation}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 \begin{flalign}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 \tilde
+           {\sigma}_I^a
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.82 =&
+        \sum_{b}l_I^b F_{ba} - \sum_{J}l_J^aF_{JI}-\sum_{Jb}l_J^bI^1_{JaIb}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.84 \notag
+            \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.85  &
+       Ëœ
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.89 ...e{T}_{k_vL}^5 \langle k_vI || La \rangle &
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \end{flalign}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 \end{flalign}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no Ë in font cmr10!
+Missing character: There is no œ in font cmr10!
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \begin{flalign}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.93 \tilde
+           {\sigma}_{IJ}^{ab}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.94 = &
+         \mathcal{P}_-(IJ) \mathcal{P}_-(ab) l_I^a F_{Jb}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.97 \notag
+            \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.98 &
+      + \mathcal{P}_-(IJ) \left(
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.101 ..._-(ab) \sum_{c} l_{IJ}^{ac} F_{cb} \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.102 &
+       + \frac{1}{2} \sum_{KL} l_{KL}^{ab} \langle KL || IJ \rangle
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.104 ... \sum_{cd} l_{IJ}^{cd} I_{cdab}^5  \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.105 &
+       - \mathcal{P}_-(IJ) \mathcal{P}_-(ab) \left(
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.109 &
+       
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.110 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.113 \tilde
+            {\sigma}_{Ij_v}^{ab}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.114 = &
+          \mathcal{P}_-(ab) l_I^a F_{j_vb}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.116 - \sum_{c}  l_I^c I_{j_vcab}^7  \notag
+                                             \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.117 &
+       + \sum_{K} (l_{j_vK}^{ab} F_{KI} - l_{IK}^{ab} F_{Kj_v})
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.119 ...(ab) \sum_{c} l_{Ij_v}^{ac} F_{cb} \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.120 &
+       - \frac{1}{2} \sum_{KL} l_{KL}^{ab} \langle j_vI || KL \rangle
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.124     \notag
+                 \\&
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.124     \notag \\&
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.125 ...vc} l_{Ik_v}^{ac} I_{k_vbj_vc}^{1} \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.126 &
+       + \sum_{k_v} \tilde{T}_{k_vI}^5 \langle j_vk_v|| ab \rangle &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.126 ...T}_{k_vI}^5 \langle j_vk_v|| ab \rangle &
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.127 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 79--128
+[]
+ []
+
+
+Overfull \hbox (21.46606pt too wide) in paragraph at lines 79--128
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (46.37355pt too wide) in paragraph at lines 79--128
+[][] \OML/cmm/m/it/10 l[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (50.25673pt too wide) in paragraph at lines 79--128
+[][] \OML/cmm/m/it/10 l[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (59.59299pt too wide) in paragraph at lines 79--128
+[][] \OML/cmm/m/it/10 l[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (73.10269pt too wide) in paragraph at lines 79--128
+[][] \OML/cmm/m/it/10 l[]I[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (84.93738pt too wide) in paragraph at lines 79--128
+[] [][] \OML/cmm/m/it/10 l[]I[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (74.79323pt too wide) in paragraph at lines 79--128
+[] [][] \OML/cmm/m/it/10 l[]I[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (82.33786pt too wide) in paragraph at lines 79--128
+[] [][] \OML/cmm/m/it/10 l[]I[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (87.6843pt too wide) in paragraph at lines 79--128
+[][] []\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 k[]I\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/
+10 La\OMS/cmsy/m/n/10 i$
+ []
+
+
+Overfull \hbox (25.94257pt too wide) in paragraph at lines 79--128
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (95.55978pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 )\OMS/c
+msy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 )\OML/cmm/m/i
+t/10 l[]F[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (110.64598pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 l[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 IJ\OMS/cmsy/m/n/10 jj\OM
+L/cmm/m/it/10 Ka\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (80.11409pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 l[]I[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 79--128
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (175.8776pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 ) [] +
+ []
+
+
+Overfull \hbox (75.70122pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 l[]F[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 79--128
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (98.46313pt too wide) in paragraph at lines 79--128
+[] [][] \OML/cmm/m/it/10 l[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 KL\OMS/cmsy/m/n/
+10 jj\OML/cmm/m/it/10 IJ\OMS/cmsy/m/n/10 i ^^@
+ []
+
+
+Overfull \hbox (80.14024pt too wide) in paragraph at lines 79--128
+[][] \OML/cmm/m/it/10 l[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (61.65508pt too wide) in paragraph at lines 79--128
+[] [][] \OML/cmm/m/it/10 l[]I[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (224.19742pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 )\OMS/c
+msy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [] \OMS/cms
+y/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (114.45021pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 ) [][] 
+[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 k[]J\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 ab
+\OMS/cmsy/m/n/10 i$
+ []
+
+
+Overfull \hbox (28.45744pt too wide) in paragraph at lines 79--128
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.90378pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 )\OML/c
+mm/m/it/10 l[]F[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (113.00829pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 l[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 j[]I\OMS/cmsy/m/n/10 jj\
+OML/cmm/m/it/10 Ka\OMS/cmsy/m/n/10 i ^^@
+ []
+
+
+Overfull \hbox (47.79146pt too wide) in paragraph at lines 79--128
+[][] \OML/cmm/m/it/10 l[]I[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 79--128
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (66.45374pt too wide) in paragraph at lines 79--128
+[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 l[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (48.18839pt too wide) in paragraph at lines 79--128
+\OML/cmm/m/it/10 l[]F[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (68.22733pt too wide) in paragraph at lines 79--128
+[][] \OML/cmm/m/it/10 l[]F[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (78.2161pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 l[]F[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (100.82544pt too wide) in paragraph at lines 79--128
+[] [][] \OML/cmm/m/it/10 l[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 j[]I\OMS/cmsy/m/
+n/10 jj\OML/cmm/m/it/10 KL\OMS/cmsy/m/n/10 i \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (82.65512pt too wide) in paragraph at lines 79--128
+[][] \OML/cmm/m/it/10 l[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (171.9807pt too wide) in paragraph at lines 79--128
+[] [][] \OML/cmm/m/it/10 l[]I[]\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 ab\OT1/cmr/m/n/10 ) [][](\OML/cmm/m/it/10 l[]I[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (45.46628pt too wide) in paragraph at lines 79--128
+\OML/cmm/m/it/10 l[]I[]\OT1/cmr/m/n/10 )[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (101.80653pt too wide) in paragraph at lines 79--128
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 ) [][] 
+\OML/cmm/m/it/10 l[]I[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 79--128
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (81.975pt too wide) in paragraph at lines 79--128
+[][] []\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 j[]k[]\OMS/cmsy/m/n/10 jj\OML/cmm/m/i
+t/10 ab\OMS/cmsy/m/n/10 i$ 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \clearpage
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2
+
+]
+
+! LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 \begin{table}
+                   [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 \caption
+              {Intermediates.
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.286 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 130--287
+[]
+ []
+
+
+Overfull \hbox (455.44536pt too wide) in paragraph at lines 130--287
+[]
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 \clearpage
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3
+
+
+! Undefined control sequence.
+<write> \newlabel{Tab:intermediates}{{}{\thepage 
+                                                 }}
+l.287 \clearpage
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{Tab:intermediates}{{}{}}
+]
+! Undefined control sequence.
+l.290 \subsubsection
+                    {One-Electron Density Matrices}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 290--291
+[]
+ []
+
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.292 \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced alignment tab character &.
+l.293 &
+       \gamma_{JI} =
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.293 &\gamma
+             _{JI} =
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.298 \right) &
+               
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.300  &
+        \gamma_{j_vI} =
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.308  &
+        \gamma_{Ji_v} =
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.311 &
+       \gamma_{i_vj_v} =
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.315  &
+        \gamma_{ab} = \sum_I r_I^b l_I^a
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.320 &
+       \gamma_{Ia} = \sum_{Jb}  r_{IJ}^{ab} l_{J}^{b}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.323  &
+        \gamma_{i_va} = t_{i_v}^a
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.326              \notag
+                          \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.327              &
+                     \quad\quad
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.330 \notag
+             \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.331              &
+                    \quad\quad
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.336  &
+        \gamma_{aI} = r_0 l_I^a
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.339  &
+        \gamma_{ai_v} = \sum_{Jb}  r_J^b l_{i_vJ}^{ab}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.340 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (45.40575pt too wide) in paragraph at lines 293--341
+[]$\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (52.3966pt too wide) in paragraph at lines 293--341
+\OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 l[]r[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (154.85233pt too wide) in paragraph at lines 293--341
+[] [] [] 
+ []
+
+
+Overfull \hbox (27.92062pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (186.31267pt too wide) in paragraph at lines 293--341
+\OMS/cmsy/m/n/10 ^^@[] [] ^^@
+ []
+
+
+Overfull \hbox (55.23093pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 r[] [][] t[]l[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (80.88895pt too wide) in paragraph at lines 293--341
+[][] \OML/cmm/m/it/10 t[] [][] r[]l[][] 
+ []
+
+
+Overfull \hbox (28.43735pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (78.73627pt too wide) in paragraph at lines 293--341
+\OMS/cmsy/m/n/10 ^^@[] [][] \OML/cmm/m/it/10 l[]r[][] 
+ []
+
+
+Overfull \hbox (30.95222pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (89.02895pt too wide) in paragraph at lines 293--341
+\OMS/cmsy/m/n/10 ^^@[] [][] \OML/cmm/m/it/10 l[]r[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (83.92055pt too wide) in paragraph at lines 293--341
+[][] \OML/cmm/m/it/10 t[] [][] l[]r[][] 
+ []
+
+
+Overfull \hbox (24.08713pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (41.70624pt too wide) in paragraph at lines 293--341
+[][] \OML/cmm/m/it/10 r[]l[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (68.14067pt too wide) in paragraph at lines 293--341
+[] [][] \OML/cmm/m/it/10 r[]l[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (67.63255pt too wide) in paragraph at lines 293--341
+[][] \OML/cmm/m/it/10 r[]l[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (86.28001pt too wide) in paragraph at lines 293--341
+[][] \OML/cmm/m/it/10 t[] [][] r[]l[][] 
+ []
+
+
+Overfull \hbox (24.65868pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (51.85442pt too wide) in paragraph at lines 293--341
+[][] \OML/cmm/m/it/10 r[]l[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (114.21033pt too wide) in paragraph at lines 293--341
+[] [][] \OML/cmm/m/it/10 t[] [] [] 
+ []
+
+
+Overfull \hbox (27.69028pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (19.00873pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (99.26872pt too wide) in paragraph at lines 293--341
+[][] [] \OML/cmm/m/it/10 l[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (152.68633pt too wide) in paragraph at lines 293--341
+[][] [] [] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 293--341
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (126.13084pt too wide) in paragraph at lines 293--341
+[] [][] \OML/cmm/m/it/10 r[] [] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (117.24193pt too wide) in paragraph at lines 293--341
+[] [][] \OML/cmm/m/it/10 t[] [] [] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 293--341
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (187.59007pt too wide) in paragraph at lines 293--341
+[][] \OML/cmm/m/it/10 t[] [] [] 
+ []
+
+
+Overfull \hbox (24.65868pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (24.79373pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 r[]l[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (44.07661pt too wide) in paragraph at lines 293--341
+[][] \OML/cmm/m/it/10 r[]l[][] 
+ []
+
+
+Overfull \hbox (27.69028pt too wide) in paragraph at lines 293--341
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (47.10822pt too wide) in paragraph at lines 293--341
+[][] \OML/cmm/m/it/10 r[]l[]$ 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.368 \clearpage
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[4
+
+]
+! Undefined control sequence.
+l.370 \subsection
+                 {fc-CVS-EOMIP-CCSD}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no D in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 370--371
+[] 
+ []
+
+! Undefined control sequence.
+l.372 \subsubsection
+                    {Right transformation}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.374 \sigma
+            _I=&
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.374 \sigma_I=&
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.376 \notag
+             \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.377 &
+       +
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.379 ...m_{j_{v}b} F_{j_{v}b} r_{Ij_{v}}^b \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.380           &
+                 - \frac{1}{2} \sum_{JKb} \langle JK || Ib \rangle r^{b}_{JK} +
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.381 ...angle k_{v}J||Ib \rangle r^{b}_{Jk_{v}} &
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.382 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.382 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.384 \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.385 \sigma
+            _{IJ}^{a} =&  -\sum_K r_K I^{2}_{IJKa}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.385 \sigma_{IJ}^{a} =&
+                          -\sum_K r_K I^{2}_{IJKa}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.386 \notag
+             \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.387 &
+       + \mathcal{P}_-(IJ) \left( \sum_K r_{JK}^a F_{IK}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.389            + \sum_b r_{IJ}^b F_{ab} \notag
+                                                 \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.390          &
+                 - \mathcal{P}_-(IJ) \left( \sum_{Kb} I^{1}_{JbKa} r_{IK}^b
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.391 ... I^{1}_{Jbk_va} r_{Ik_v}^b \right) \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.392          &
+                 + \frac{1}{2} \sum_{KL} \langle IJ||KL \rangle r_{KL}^{a}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.393 ...v} \langle IJ||Kl_v\rangle r_{Kl_v}^{a} &
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.394 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.394 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 372--395
+[]
+ []
+
+
+Overfull \hbox (20.85785pt too wide) in paragraph at lines 372--395
+\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (53.45114pt too wide) in paragraph at lines 372--395
+\OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 F[]r[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 372--395
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (58.81784pt too wide) in paragraph at lines 372--395
+[][] \OML/cmm/m/it/10 F[]r[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (58.58467pt too wide) in paragraph at lines 372--395
+[][] \OML/cmm/m/it/10 F[]r[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 372--395
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (98.52419pt too wide) in paragraph at lines 372--395
+[] [][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 JK\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10
+ Ib\OMS/cmsy/m/n/10 i\OML/cmm/m/it/10 r[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (86.10645pt too wide) in paragraph at lines 372--395
+[][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 k[]J\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 
+Ib\OMS/cmsy/m/n/10 i\OML/cmm/m/it/10 r[]$
+ []
+
+
+Overfull \hbox (25.94257pt too wide) in paragraph at lines 372--395
+\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (67.21393pt too wide) in paragraph at lines 372--395
+\OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 r[]I[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 372--395
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (178.93317pt too wide) in paragraph at lines 372--395
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 ) [] +
+ []
+
+
+Overfull \hbox (45.20825pt too wide) in paragraph at lines 372--395
+[][] \OML/cmm/m/it/10 r[]F[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 372--395
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (191.4945pt too wide) in paragraph at lines 372--395
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 ) [] []
+ 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 372--395
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (98.3243pt too wide) in paragraph at lines 372--395
+[] [][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 IJ\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10
+ KL\OMS/cmsy/m/n/10 i\OML/cmm/m/it/10 r[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (86.08978pt too wide) in paragraph at lines 372--395
+[][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 IJ\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 Kl
+[]\OMS/cmsy/m/n/10 i\OML/cmm/m/it/10 r[]$ 
+ []
+
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.396 \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.397 \sigma
+            _{Ij_v}^{a} =&  \sum_K r_K I^{2}_{j_vIKa}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.397 \sigma_{Ij_v}^{a} =&
+                            \sum_K r_K I^{2}_{j_vIKa}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.398 \notag
+             \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.399 &
+       +
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.403            + \sum_b r_{Ij_v}^b F_{ab} \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.404          &
+                 - \sum_{Kb} I^{1}_{j_vbKa} r_{IK}^b
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.406 ... \sum_{Kb} I^{1}_{IbKa} r_{j_vK}^b \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.407          &
+                 - \frac{1}{2} \sum_{KL} I^{4}_{j_vIKL} r_{KL}^{a}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.408 ...um_{Kl_v} I^{4}_{j_vIl_vK} r_{Kl_v}^{a} &
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.409 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (48.45744pt too wide) in paragraph at lines 397--410
+[]$\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (60.28438pt too wide) in paragraph at lines 397--410
+[][] \OML/cmm/m/it/10 r[]I[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 397--410
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (65.75925pt too wide) in paragraph at lines 397--410
+[][] \OML/cmm/m/it/10 r[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (65.75925pt too wide) in paragraph at lines 397--410
+[][] \OML/cmm/m/it/10 r[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (69.75511pt too wide) in paragraph at lines 397--410
+[][] \OML/cmm/m/it/10 r[]F[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (47.72313pt too wide) in paragraph at lines 397--410
+[][] \OML/cmm/m/it/10 r[]F[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 397--410
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (75.0955pt too wide) in paragraph at lines 397--410
+[][] \OML/cmm/m/it/10 I[]r[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (79.09137pt too wide) in paragraph at lines 397--410
+[][] \OML/cmm/m/it/10 I[]r[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (67.3177pt too wide) in paragraph at lines 397--410
+[][] \OML/cmm/m/it/10 I[]r[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 397--410
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (88.23572pt too wide) in paragraph at lines 397--410
+[] [][] \OML/cmm/m/it/10 I[]r[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (76.4051pt too wide) in paragraph at lines 397--410
+[][] \OML/cmm/m/it/10 I[]r[]$ 
+ []
+
+! Undefined control sequence.
+l.411 \subsubsection
+                    {Left transformation}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.412 \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.413 \tilde
+            {\sigma}_I  &=
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.413 \tilde{\sigma}_I  &
+                         =
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.416 ... \sum_{Jk_vb} I^{2}_{k_vJIb} l_{Jk_v}^b &
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.417 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.418 \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.419 \tilde
+            {\sigma}_{IJ}^a =&
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.419 \tilde{\sigma}_{IJ}^a =&
+                              
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.422 \notag
+             \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.423 &
+       +
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.427             \sum_b l_{IJ}^b F_{ba} \notag
+                                                \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.428           &
+                  + \frac{1}{2} \sum_{KL} \langle KL||IJ \rangle l_{KL}^a
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.429 ...m_{Kl_v} I^{4}_{l_vKIJ} l_{Kl_v}^a \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.430            &
+                   - \mathcal{P}_-(IJ) \left(
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.433             \right) &
+                           
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.434 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.434 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.436 \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.437 \tilde
+            {\sigma}_{Ij_v}^a = &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.437 \tilde{\sigma}_{Ij_v}^a = &
+                                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.439 ...    \sum_K l_K \langle Ij_v||Ka \rangle &
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.440 \notag
+             \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.441 &
+       +
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.445             \sum_b l_{Ij_v}^b F_{ba} \notag
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.446           &
+                  + \frac{1}{2} \sum_{KL} \langle KL||Ij_v \rangle l_{KL}^a
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.447 ...{Kl_v} I^{4}_{l_vKj_vI} l_{Kl_v}^a \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.448           &
+                  -\sum_{Kb} I^{1}_{Kaj_vb} l_{IK}^b
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.450 ...    + \sum_{Kb} I^{1}_{KaIb} l_{j_vK}^b &
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.451 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.451 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 411--452
+[]
+ []
+
+
+Overfull \hbox (20.85785pt too wide) in paragraph at lines 411--452
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (59.70116pt too wide) in paragraph at lines 411--452
+\OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 F[]l[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (84.93738pt too wide) in paragraph at lines 411--452
+[] [][] \OML/cmm/m/it/10 I[]l[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (73.10269pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 I[]l[]$
+ []
+
+
+Overfull \hbox (25.94257pt too wide) in paragraph at lines 411--452
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.87361pt too wide) in paragraph at lines 411--452
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 )\OML/c
+mm/m/it/10 l[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (70.14061pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 l[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 IJ\OMS/cmsy/m/n/10 
+jj\OML/cmm/m/it/10 Ka\OMS/cmsy/m/n/10 i[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 411--452
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (175.8776pt too wide) in paragraph at lines 411--452
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 ) [] +
+ []
+
+
+Overfull \hbox (43.68047pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 l[]F[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 411--452
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (96.79651pt too wide) in paragraph at lines 411--452
+[] [][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 KL\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10
+ IJ\OMS/cmsy/m/n/10 i\OML/cmm/m/it/10 l[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (72.36244pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 I[]l[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 411--452
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (186.77231pt too wide) in paragraph at lines 411--452
+\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IJ\OT1/cmr/m/n/10 ) []$
+ []
+
+
+Overfull \hbox (28.45744pt too wide) in paragraph at lines 411--452
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (34.2176pt too wide) in paragraph at lines 411--452
+\OML/cmm/m/it/10 l[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (72.50291pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 l[]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 Ij[]\OMS/cmsy/m/n/1
+0 jj\OML/cmm/m/it/10 Ka\OMS/cmsy/m/n/10 i[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 411--452
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (64.23146pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 l[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (64.23146pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 l[]F[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (68.22733pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 l[]F[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (46.19534pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 l[]F[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 411--452
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (99.15881pt too wide) in paragraph at lines 411--452
+[] [][]\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 KL\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10
+ Ij[]\OMS/cmsy/m/n/10 i\OML/cmm/m/it/10 l[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (74.87732pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 I[]l[][] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 411--452
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (73.56772pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 I[]l[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (77.56358pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 I[]l[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (65.78992pt too wide) in paragraph at lines 411--452
+[][] \OML/cmm/m/it/10 I[]l[]$ 
+ []
+
+! Undefined control sequence.
+l.453  \subsubsection
+                     {One-electron Density Matrices}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 453--454
+[]
+ []
+
+
+! LaTeX Error: Environment flalign undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.455 \begin{flalign}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced alignment tab character &.
+l.456 &
+       \gamma_{JI} = - l_I r_J
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.456 &\gamma
+             _{JI} = - l_I r_J
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.459 &
+       \gamma_{Ji_v} = - \sum_{Ka} l_{i_vK}^{a} r_{JK}^{a} \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.460 &
+       \gamma_{j_vI} = - \sum_{Ka} l_{IK}^{a} r_{j_vK}^{a}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.462 &
+       \gamma_{j_vi_v} = - \sum_{Ka} l_{i_vK}^{a} r_{j_vK}^{a}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.465 &
+       \gamma_{ab} =
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.470 &
+       \gamma_{Ia} = \sum_{J}  r_{JI}^{a} l_J
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.472 &
+       \gamma_{i_va} =  \hspace{2mm} t_{i_v}^a
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.474 ...) \sum_{K} l_{j_vK}^{b}r_K \right] \notag
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.475             &
+                   \qquad- \sum_{j_v} t_{j_v}^a \sum_{Kb} l_{j_vK}^{b} r_{i_...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.478 ...k_v} l_{Jk_v}^{b} r_{Jk_v}^{a} \right)  &
+                                                   \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.480 &
+       \gamma_{aI} = - \sum_{J}  l_{IJ}^{a} r_{J} \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.481 &
+       \gamma_{ai_v} = - \sum_{J}  l_{i_vJ}^{a} r_J \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{flalign}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.482 \end{flalign}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.482 \end{flalign}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (45.40575pt too wide) in paragraph at lines 456--483
+[]$\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (33.2239pt too wide) in paragraph at lines 456--483
+\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 l[]r[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (64.13525pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 l[]r[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (60.35332pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 l[]r[][] 
+ []
+
+
+Overfull \hbox (28.43735pt too wide) in paragraph at lines 456--483
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (68.83348pt too wide) in paragraph at lines 456--483
+\OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 l[]r[][] 
+ []
+
+
+Overfull \hbox (27.92062pt too wide) in paragraph at lines 456--483
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (76.09456pt too wide) in paragraph at lines 456--483
+\OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 l[]r[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (77.37228pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 t[] [][] l[]r[][] 
+ []
+
+
+Overfull \hbox (30.95222pt too wide) in paragraph at lines 456--483
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (79.12616pt too wide) in paragraph at lines 456--483
+\OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 l[]r[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (80.40388pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 t[] [][] l[]r[][] 
+ []
+
+
+Overfull \hbox (24.08713pt too wide) in paragraph at lines 456--483
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.56693pt too wide) in paragraph at lines 456--483
+[] [][] \OML/cmm/m/it/10 l[]r[] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (64.0588pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 l[]r[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (82.70627pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 t[] [][] l[]r[][] 
+ []
+
+
+Overfull \hbox (24.65868pt too wide) in paragraph at lines 456--483
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (48.33775pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 r[]l[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (92.57147pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 t[] [][] l[]r[][] 
+ []
+
+
+Overfull \hbox (27.69028pt too wide) in paragraph at lines 456--483
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (19.00873pt too wide) in paragraph at lines 456--483
+\OML/cmm/m/it/10 t[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (51.36935pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 r[]l[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (149.11258pt too wide) in paragraph at lines 456--483
+[][] [] [] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 456--483
+\OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (102.55989pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 t[] [][] l[]r[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (180.44258pt too wide) in paragraph at lines 456--483
+[][] \OML/cmm/m/it/10 t[] [] [] 
+ []
+
+
+Overfull \hbox (24.65868pt too wide) in paragraph at lines 456--483
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (50.00438pt too wide) in paragraph at lines 456--483
+\OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 l[]r[][] 
+ []
+
+
+Overfull \hbox (27.69028pt too wide) in paragraph at lines 456--483
+\OML/cmm/m/it/10 ^^M[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (53.03598pt too wide) in paragraph at lines 456--483
+\OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 l[]r[][] 
+ []
+
+)
+! Emergency stop.
+<*> formulae_CVS_EOMCCSD.tex
+                            
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 16 strings out of 492982
+ 298 string characters out of 6134895
+ 66917 words of memory out of 5000000
+ 3680 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,9n,12p,267b,113s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
