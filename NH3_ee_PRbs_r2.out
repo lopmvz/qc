@@ -1,0 +1,3595 @@
+Q-Chem Developer Version!
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 5.1, Q-Chem, Inc., Pleasanton, CA (2018)
+
+ Yihan Shao,  Zhengting Gan,  E. Epifanovsky,  A. T. B. Gilbert,  M. Wormit,  
+ J. Kussmann,  A. W. Lange,  A. Behn,  Jia Deng,  Xintian Feng,  D. Ghosh,  
+ M. Goldey,  P. R. Horn,  L. D. Jacobson,  I. Kaliman,  T. Kus,  A. Landau,  
+ Jie Liu,  E. I. Proynov,  R. M. Richard,  R. P. Steele,  E. J. Sundstrom,  
+ H. L. Woodcock III,  P. M. Zimmerman,  D. Zuev,  B. Albrecht,  E. Alguire,  
+ S. A. Baeppler,  D. Barton,  Z. Benda,  Y. A. Bernard,  E. J. Berquist,  
+ K. B. Bravaya,  H. Burton,  D. Casanova,  Chun-Min Chang,  Yunqing Chen,  
+ A. Chien,  K. D. Closser,  M. P. Coons,  S. Coriani,  S. Dasgupta,  
+ A. L. Dempwolff,  M. Diedenhofen,  Hainam Do,  R. G. Edgar,  Po-Tung Fang,  
+ S. Faraji,  S. Fatehi,  Qingguo Feng,  K. D. Fenk,  J. Fosso-Tande,  
+ Qinghui Ge,  A. Ghysels,  G. Gidofalvi,  J. Gomes,  J. Gonthier,  A. Gunina,  
+ D. Hait,  M. W. D. Hanson-Heine,  P. H. P. Harbach,  A. W. Hauser,  
+ J. E. Herr,  E. G. Hohenstein,  Z. C. Holden,  Kerwin Hui,  B. C. Huynh,  
+ T.-C. Jagau,  Hyunjun Ji,  B. Kaduk,  K. Khistyaev,  Jaehoon Kim,  
+ P. Klunzinger,  K. Koh,  D. Kosenkov,  L. Koulias,  T. Kowalczyk,  
+ C. M. Krauter,  A. Kunitsa,  Ka Un Lao,  A. Laurent,  K. V. Lawler,  
+ Joonho Lee,  D. Lefrancois,  S. Lehtola,  D. S. Levine,  Yi-Pei Li,  
+ You-Sheng Lin,  Fenglai Liu,  E. Livshits,  A. Luenser,  P. Manohar,  
+ E. Mansoor,  S. F. Manzer,  Shan-Ping Mao,  Yuezhi Mao,  N. Mardirossian,  
+ A. V. Marenich,  T. Markovich,  L. A. Martinez-Martinez,  S. A. Maurer,  
+ N. J. Mayhall,  S. C. McKenzie,  J.-M. Mewes,  A. F. Morrison,  
+ J. W. Mullinax,  K. Nanda,  T. S. Nguyen-Beck,  R. Olivares-Amaya,  
+ J. A. Parkhill,  T. M. Perrine,  F. Plasser,  P. Pokhilko,  S. Prager,  
+ A. Prociuk,  E. Ramos,  D. R. Rehn,  F. Rob,  M. Schneider,  N. Sergueev,  
+ S. M. Sharada,  S. Sharma,  D. W. Small,  T. Stauch,  T. Stein,  
+ Yu-Chuan Su,  A. J. W. Thom,  A. Tkatchenko,  T. Tsuchimochi,  N. M. Tubman,  
+ L. Vogt,  M. L. Vidal,  O. Vydrov,  M. A. Watson,  J. Wenzel,  
+ M. de Wergifosse,  T. A. Wesolowski,  A. White,  J. Witte,  A. Yamada,  
+ Jun Yang,  K. Yao,  S. Yeganeh,  S. R. Yost,  Zhi-Qiang You,  A. Zech,  
+ Igor Ying Zhang,  Xing Zhang,  Yan Zhao,  Ying Zhu,  B. R. Brooks,  
+ G. K. L. Chan,  C. J. Cramer,  M. S. Gordon,  W. J. Hehre,  A. Klamt,  
+ M. W. Schmidt,  C. D. Sherrill,  D. G. Truhlar,  A. Aspuru-Guzik,  R. Baer,  
+ A. T. Bell,  N. A. Besley,  Jeng-Da Chai,  A. E. DePrince, III,  
+ R. A. DiStasio Jr.,  A. Dreuw,  B. D. Dunietz,  T. R. Furlani,  
+ Chao-Ping Hsu,  Yousung Jung,  Jing Kong,  D. S. Lambrecht,  WanZhen Liang,  
+ C. Ochsenfeld,  V. A. Rassolov,  L. V. Slipchenko,  J. E. Subotnik,  
+ T. Van Voorhis,  J. M. Herbert,  A. I. Krylov,  P. M. W. Gill,  M. Head-Gordon
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  J. Baker,  G. J. O. Beran,  K. Brandhorst,  
+ S. T. Brown,  E. F. C. Byrd,  A. K. Chakraborty,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  L. Fusti-Molnar,  W. A. Goddard III,  
+ A. Golubeva-Zadorozhnaya,  S. R. Gwaltney,  G. Hawkins,  A. Heyden,  
+ S. Hirata,  G. Kedziora,  F. J. Keil,  C. Kelley,  Jihan Kim,  R. A. King,  
+ R. Z. Khaliullin,  P. P. Korambath,  W. Kurlancheek,  A. M. Lee,  M. S. Lee,  
+ S. V. Levchenko,  Ching Yeh Lin,  D. Liotard,  R. C. Lochan,  I. Lotan,  
+ P. E. Maslen,  N. Nair,  D. P. O'Neill,  D. Neuhauser,  E. Neuscamman,  
+ C. M. Oana,  R. Olson,  B. Peters,  R. Peverati,  P. A. Pieniazek,  
+ Y. M. Rhee,  J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  
+ H. F. Schaefer III,  N. E. Schultz,  N. Shenvi,  A. C. Simmonett,  A. Sodt,  
+ D. Stuck,  K. S. Thanthiriwatte,  V. Vanovschi,  Tao Wang,  A. Warshel,  
+ C. F. Williams,  Q. Wu,  X. Xu,  W. Zhang
+
+ Please cite Q-Chem as follows:
+ Y. Shao et al., Mol. Phys. 113, 184-215 (2015)
+ DOI: 10.1080/00268976.2014.952696
+
+ Q-Chem 5.1.1 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 8.300.2 (Tropical Shenanigans).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Thu Jan 10 16:21:37 2019  
+
+
+Host: 0
+
+     Scratch files written to /work1/malop/qc_7608330.hnode2//
+Input Ideriv = 0
+Curr. Ideriv = -1
+Max.  Ideriv = 0
+
+Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$comment 
+NEXAFS AMMONIA / 6-311++G**+Rydberg
+Optimized geometry: NH3_opt_coord.out
+$end
+
+$molecule
+0 1
+N      -0.0002568808    -0.2210075702    -0.0000000021
+H       0.8838383819     0.5154343604     1.5287018716
+H      -1.7658867303     0.5161842661     0.0000000000
+H       0.8838383819     0.5154343604    -1.5287018716
+Gh      0.0000000000     0.0000000000     0.0000000000
+$end
+
+$rem
+    input_bohr = true
+    jobtype = sp
+    method = eom-ccsd
+    cvs_ee_singlets    [15,10]
+    basis = gen
+    n_frozen_core = fc 
+    cc_trans_prop = true
+    cc_eom_prop = true
+   EOM_DAVIDSON_MAXVECTORS = 1000
+   eom_preconv_singles = true
+   eom_davidson_convergence = 4
+   use_libqints = 1
+   thresh = 14
+   scf_convergence = 12
+   cc_convergence = 12
+   basis_lin_dep_thresh = 8
+   cc_memory = 100000
+   eom_shift = 14760
+   cc_memory = 100000
+   EOM_DAVIDSON_MAX_ITER 200
+state_analysis = true
+molden_format  = true
+nto_pairs      = 4
+pop_mulliken   = true
+$end
+
+$basis
+N    0
+S    6    1.000000
+   6.29348000E+03    1.96979000E-03
+   9.49044000E+02    1.49613000E-02
+   2.18776000E+02    7.35006000E-02
+   6.36916000E+01    2.48937000E-01
+   1.88282000E+01    6.02460000E-01
+   2.72023000E+00    2.56202000E-01
+SP   3    1.000000
+   3.06331000E+01    1.11906000E-01   3.83119000E-02
+   7.02614000E+00    9.21666000E-01   2.37403000E-01
+   2.11205000E+00   -2.56919000E-03   8.17592000E-01
+SP   1    1.000000
+   6.84009000E-01    1.00000000E+00   1.00000000E+00
+SP   1    1.000000
+   2.00878000E-01    1.00000000E+00   1.00000000E+00
+SP   1    1.000000
+   6.39000000E-02    1.00000000E+00   1.00000000E+00
+D    1    1.000000
+   9.13000000E-01    1.00000000E+00
+****
+H    0
+S    3    1.000000
+   3.38650000E+01    2.54938000E-02
+   5.09479000E+00    1.90373000E-01
+   1.15879000E+00    8.52161000E-01
+S    1    1.000000
+   3.25840000E-01    1.00000000E+00
+S    1    1.000000
+   1.02741000E-01    1.00000000E+00
+S    1    1.000000
+   3.60000000E-02    1.00000000E+00
+P    1    1.000000
+   7.50000000E-01    1.00000000E+00
+****
+H    0
+S    3    1.000000
+   3.38650000E+01    2.54938000E-02
+   5.09479000E+00    1.90373000E-01
+   1.15879000E+00    8.52161000E-01
+S    1    1.000000
+   3.25840000E-01    1.00000000E+00
+S    1    1.000000
+   1.02741000E-01    1.00000000E+00
+S    1    1.000000
+   3.60000000E-02    1.00000000E+00
+P    1    1.000000
+   7.50000000E-01    1.00000000E+00
+****
+H    0
+S    3    1.000000
+   3.38650000E+01    2.54938000E-02
+   5.09479000E+00    1.90373000E-01
+   1.15879000E+00    8.52161000E-01
+S    1    1.000000
+   3.25840000E-01    1.00000000E+00
+S    1    1.000000
+   1.02741000E-01    1.00000000E+00
+S    1    1.000000
+   3.60000000E-02    1.00000000E+00
+P    1    1.000000
+   7.50000000E-01    1.00000000E+00
+****
+Gh   0
+S   1   1.00
+        0.0112533427        1.0000000000
+S   1   1.00
+        0.0058583805        1.0000000000
+S   1   1.00
+        0.0033459739        1.0000000000
+S   1   1.00
+        0.0020484225        1.0000000000
+S   1   1.00
+        0.0013236424        1.0000000000
+P   1   1.00
+        0.0192542060        1.0000000000
+P   1   1.00
+        0.0099882106        1.0000000000
+P   1   1.00
+        0.0056893607        1.0000000000
+P   1   1.00
+        0.0034756797        1.0000000000
+P   1   1.00
+        0.0022420590        1.0000000000
+D   1   1.00
+        0.0274456919        1.0000000000
+D   1   1.00
+        0.0142043987        1.0000000000
+D   1   1.00
+        0.0080765930        1.0000000000
+D   1   1.00
+        0.0049271863        1.0000000000
+D   1   1.00
+        0.0031748110        1.0000000000
+****
+$end
+
+--------------------------------------------------------------
+
+ Q-Chem warning in module forms1/BasisType.C, line 1761:
+
+ Setting pure/cartesian flag to 2111 for general basis
+
+
+ Requested basis set is non-standard
+ There are 36 shells and 88 basis functions
+MEM_TOTAL is adjusted to CC_MEMORY + MEM_STATIC!
+ Total memory of 100192MB is distributed as follows: 
+   QALLOC including MEM_STATIC uses 192MB
+   MEM_STATIC is set to 192MB
+   CCMAN JOB total memory use is  100000MB
+ Warning: actual memory use might exceed 100192MB
+
+ Total QAlloc Memory Limit    192 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+ Smallest overlap matrix eigenvalue = 1.38E-04
+
+ Scale SEOQF with 1.000000e-02/1.000000e-02/1.000000e-02
+
+ Standard Electronic Orientation quadrupole field applied
+ Guess MOs from core Hamiltonian diagonalization
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky
+ -----------------------------------------------------------------------
+ Hartree-Fock
+ A restricted SCF calculation will be
+ performed using DIIS
+ SCF converges when DIIS error is below 1.0e-12
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -42.3180013435      1.65e-01  
+    2     -41.8612883988      5.28e-02  
+    3     -53.0502136638      6.59e-02  
+    4     -55.3207515975      3.21e-02  
+    5     -56.1834777011      4.78e-03  
+    6     -56.2134509167      1.07e-03  
+    7     -56.2143482089      1.18e-04  
+    8     -56.2143663480      1.60e-05  
+    9     -56.2143669065      3.80e-06  
+   10     -56.2143669380      8.07e-07  
+   11     -56.2143669402      3.80e-07  
+   12     -56.2143669404      4.61e-08  
+   13     -56.2143669404      5.27e-09  
+   14     -56.2143669404      1.40e-09  
+   15     -56.2143669404      1.11e-10  
+   16     -56.2143669404      1.67e-11  
+   17     -56.2143669404      2.05e-12  
+   18     -56.2143669404      1.68e-13  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 39.36s  wall 6.00s 
+ SCF   energy in the final basis set =      -56.2143669404
+ Total energy in the final basis set =      -56.2143669404
+
+
+ ------------------------------------------------------------------------------
+
+   CCMAN2: suite of methods based on coupled cluster
+           and equation of motion theories.
+
+   Components:
+   * libvmm-1.3-trunk
+     by Evgeny Epifanovsky, Ilya Kaliman.
+   * libtensor-2.5-trunk
+     by Evgeny Epifanovsky, Michael Wormit, Dmitry Zuev, Sam Manzer, 
+        Ilya Kaliman.
+   * libcc-2.5-trunk
+     by Evgeny Epifanovsky, Arik Landau, Tomasz Kus, Kirill Khistyaev, 
+        Dmitry Zuev, Prashant Manohar, Xintian Feng, Anna Krylov, 
+        Matthew Goldey, Alec White, Thomas Jagau, Kaushik Nanda, 
+        Anastasia Gunina, Alexander Kunitsa, Joonho Lee.
+
+   CCMAN original authors:
+   Anna I. Krylov, C. David Sherrill, Steven R. Gwaltney,
+   Edward F. C. Byrd (2000)
+   Sergey V. Levchenko, Lyudmila V. Slipchenko, Tao Wang,
+   Ana-Maria C. Cristian (2003)
+   Piotr A. Pieniazek, C. Melania Oana, Evgeny Epifanovsky (2007)
+   Prashant Manohar (2009)
+
+ ------------------------------------------------------------------------------
+
+
+ Allocating and initializing 100000MB of RAM...
+ Calculation will run on 10 cores.
+
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Bohr)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      N      -0.0002558797    -0.2210075701    -0.0000000010
+    2      H       0.8838385113     0.5154354066     1.5287018729
+    3      H      -1.7658866026     0.5161821742     0.0000000028
+    4      H       0.8838385096     0.5154354094    -1.5287018703
+    5      GH      0.0000007393     0.0000000004     0.0000000013
+ ----------------------------------------------------------------
+ Molecular Point Group                 Cs    NOp =  2
+ Largest Abelian Subgroup              Cs    NOp =  2
+ Nuclear Repulsion Energy =    11.9563917634 hartrees
+ There are        5 alpha and        5 beta electrons
+
+                       Distance Matrix (Bohrs)
+             N (  1)   H (  2)   H (  3)   H (  4)
+   H (  2)  1.913348
+   H (  3)  1.913348  3.059080
+   H (  4)  1.913348  3.057404  3.059080
+   GH(  5)  0.221008  1.839503  1.839783  1.839503
+
+ A cutoff of  1.0D-14 yielded    666 shell pairs
+ There are      4024 function pairs (      4603 Cartesian)
+
+ -------------------------------------------------------
+ OpenMP Integral Computing Module                       
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ Integral Job Info:
+ Integral job number is                      11
+ Integral operator is                         1
+ short-range coefficients                     0
+ long-range coefficients              100000000
+ Omega coefficients                           0
+ if combine SR and LR in K                    0
+ Integral screening is                        0
+ Integral computing path is                   2
+ max size of driver memory is            800000
+ size of driver memory is                593474
+ size of scratch memory is              2361544
+ max col of scratch BK array               1296
+ max len of scratch array in speh3          155
+ max len of scratch index in speh4           18
+ max int batch size is                      520
+ min int batch size is                       52
+ fixed nKL is                                52
+ max L of basis functions is                  2
+ order of int derivative is                   0
+ number of shells is                         36
+ number of basis is                          94
+ number of cartesian basis is                94
+ number of contracted shell pairs           666
+ number of primitive shell pairs           1225
+ maxK2 (contraction) of shell pair           36
+ max number of K2 of shell pair               1
+ max number of CS2 of shell pair            112
+ max number of PS2 of shell pair            126
+ mem total for path MDJ                  517512
+ -------------------------------------------------------
+
+ Alpha MOs, Restricted
+ -- Occupied --                  
+-15.542  -1.145  -0.629  -0.629  -0.430
+  1 A'    2 A'    3 A'    1 A"    4 A'                                         
+ -- Virtual --                   
+  0.001   0.004   0.004   0.004   0.005   0.008   0.008   0.008
+  5 A'    6 A'    2 A"    7 A'    8 A'    3 A"    9 A'   10 A'                 
+  0.008   0.008   0.011   0.011   0.011   0.013   0.021   0.021
+  4 A"   11 A'   12 A'   13 A'    5 A"   14 A'    6 A"   15 A'                 
+  0.021   0.021   0.021   0.025   0.026   0.026   0.029   0.044
+ 16 A'    7 A"   17 A'   18 A'   19 A'    8 A"   20 A'    9 A"                 
+  0.044   0.045   0.045   0.045   0.051   0.051   0.053   0.059
+ 21 A'   22 A'   10 A"   23 A'   24 A'   11 A"   25 A'   26 A'                 
+  0.086   0.086   0.088   0.088   0.088   0.100   0.100   0.114
+ 12 A"   27 A'   28 A'   13 A"   29 A'   30 A'   14 A"   31 A'                 
+  0.131   0.165   0.165   0.174   0.174   0.176   0.196   0.196
+ 32 A'   15 A"   33 A'   34 A'   16 A"   35 A'   36 A'   17 A"                 
+  0.291   0.333   0.333   0.351   0.394   0.416   0.416   0.748
+ 37 A'   18 A"   38 A'   39 A'   40 A'   41 A'   19 A"   20 A"                 
+
+ Occupation and symmetry of molecular orbitals
+
+ Point group: Cs (2 irreducible representations).
+
+                           A'   A"    All 
+ ------------------------------------------
+ All molecular orbitals:
+  - Alpha                  59   29    88  
+  - Beta                   59   29    88  
+ ------------------------------------------
+ Alpha orbitals:
+  - Frozen occupied        1    0     1   
+  - Active occupied        3    1     4   
+  - Active virtual         55   28    83  
+  - Frozen virtual         0    0     0   
+ ------------------------------------------
+ Beta orbitals:
+  - Frozen occupied        1    0     1   
+  - Active occupied        3    1     4   
+  - Active virtual         55   28    83  
+  - Frozen virtual         0    0     0   
+ ------------------------------------------
+
+ Import integrals:   CPU 0.00 s  wall 0.00 s
+
+ Import integrals:   CPU 10.58 s  wall 4.54 s
+
+ MP2 amplitudes:   CPU 0.22 s  wall 0.15 s
+
+Running a double precision version
+           CCSD T amplitudes will be solved using DIIS.
+
+           Start     Size      MaxIter   EConv     TConv     
+           3         7         100       1.00e-12  1.00e-11  
+ ------------------------------------------------------------------------------
+           Energy (a.u.)   Ediff      Tdiff       Comment
+ ------------------------------------------------------------------------------
+           -56.41607296                           
+     1     -56.42414463   8.07e-03   4.16e-01     
+     2     -56.42844935   4.30e-03   4.62e-02     
+     3     -56.42923833   7.89e-04   1.49e-02     
+     4     -56.42976558   5.27e-04   6.55e-03     Switched to DIIS steps.
+     5     -56.42985114   8.56e-05   2.24e-03     
+     6     -56.42985271   1.57e-06   5.19e-04     
+     7     -56.42985244   2.70e-07   1.74e-04     
+     8     -56.42985260   1.61e-07   5.02e-05     
+     9     -56.42985261   6.84e-09   2.14e-05     
+    10     -56.42985260   8.70e-09   8.50e-06     
+    11     -56.42985259   8.42e-09   3.93e-06     
+    12     -56.42985258   1.42e-08   1.70e-06     
+    13     -56.42985257   4.47e-09   5.64e-07     
+    14     -56.42985257   1.81e-09   2.52e-07     
+    15     -56.42985257   1.30e-09   8.63e-08     
+    16     -56.42985257   5.35e-10   2.90e-08     
+    17     -56.42985257   2.65e-10   1.39e-08     
+    18     -56.42985257   9.29e-11   4.54e-09     
+    19     -56.42985257   3.32e-11   2.14e-09     
+    20     -56.42985257   1.77e-12   7.92e-10     
+    21     -56.42985257   8.65e-13   3.80e-10     
+    22     -56.42985257   1.24e-12   1.84e-10     
+    23     -56.42985257   6.07e-13   8.82e-11     
+    24     -56.42985257   1.45e-14   3.22e-11     
+    25     -56.42985257   8.17e-14   1.21e-11     
+    26     -56.42985257   7.62e-14   5.17e-12     
+ ------------------------------------------------------------------------------
+           -56.42985257                           CCSD T converged.
+
+End of double precision
+ SCF energy                 = -56.21436694
+ MP2 energy                 = -56.41607296
+ CCSD correlation energy     =  -0.21548563
+ CCSD total energy           = -56.42985257
+
+ CCSD  T1^2 = 0.0012  T2^2 = 0.0703  Leading amplitudes:
+
+ Amplitude    Orbitals with energies
+  0.0111       4 (A') A                  ->    37 (A') A                  
+              -0.4299                          0.2906                     
+  0.0111       4 (A') B                  ->    37 (A') B                  
+              -0.4299                          0.2906                     
+ -0.0104       4 (A') A                  ->    31 (A') A                  
+              -0.4299                          0.1144                     
+ -0.0104       4 (A') B                  ->    31 (A') B                  
+              -0.4299                          0.1144                     
+
+ Amplitude    Orbitals with energies
+ -0.0267       4 (A') A      4 (A') B    ->    44 (A') A     44 (A') B    
+              -0.4299       -0.4299            1.0652        1.0652       
+  0.0267       4 (A') A      4 (A') B    ->    44 (A') B     44 (A') A    
+              -0.4299       -0.4299            1.0652        1.0652       
+  0.0267       4 (A') B      4 (A') A    ->    44 (A') A     44 (A') B    
+              -0.4299       -0.4299            1.0652        1.0652       
+ -0.0267       4 (A') B      4 (A') A    ->    44 (A') B     44 (A') A    
+              -0.4299       -0.4299            1.0652        1.0652       
+
+ Computing CCSD intemediates for later calculations in double precision
+ Finished.
+
+Running a double precision version
+           CCSD Lambda amplitudes will be solved using DIIS.
+           Start     Size      MaxIter   EConv     LConv     
+           3         7         100       1.00e-12  1.00e-11  
+ ------------------------------------------------------------------------------
+            Enorm      Ldiff       Comment
+ ------------------------------------------------------------------------------
+     1     1.30e-02   9.58e-03     
+     2     3.05e-03   1.73e-03     
+     3     1.14e-03   3.99e-04     
+     4     4.48e-04   2.44e-04     Switched to DIIS steps.
+     5     1.30e-04   6.19e-05     
+     6     4.13e-05   9.69e-06     
+     7     1.36e-05   3.38e-07     
+     8     5.60e-06   4.40e-08     
+     9     2.58e-06   8.69e-08     
+    10     9.91e-07   1.98e-08     
+    11     2.75e-07   3.77e-08     
+    12     8.37e-08   9.74e-10     
+    13     3.08e-08   1.70e-09     
+    14     1.19e-08   1.89e-09     
+    15     4.92e-09   7.62e-10     
+    16     2.08e-09   3.50e-10     
+    17     9.22e-10   1.13e-10     
+    18     3.96e-10   3.55e-11     
+    19     2.00e-10   1.00e-11     
+    20     1.03e-10   3.38e-12     
+    21     4.01e-11   2.99e-12     
+    22     1.47e-11   5.68e-13     
+    23     5.49e-12   1.38e-13     
+    24     2.12e-12   8.28e-14     
+    25     7.99e-13   4.06e-14     
+ ------------------------------------------------------------------------------
+                                   CCSD Lambda converged.
+
+ CCSD calculation:   CPU 239.72 s  wall 39.85 s
+
+        Solving for CVS-EOMEE-CCSD A' singlet states.
+
+       EOMEE-CCSD-SINGLES right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using shifted  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      15        1000      200       1         1.00e-04  1.48e+01  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    2      15    5.12e-04   420.1041   421.0254   421.3506   421.6815   421.6841   421.6988   421.7244   421.8974   422.0252   422.1510   422.1817   422.1883*  422.1937*  422.2788   422.3267   
+Rerun orthogonalization...
+      1    0      28    9.62e-03   417.7457   420.0057   420.5903   421.0711   421.2187   421.3224   421.3491   421.5506   421.7335   421.8632   421.9101   421.9457   421.9576   422.0436   422.1353   
+Rerun orthogonalization...
+      2    0      43    1.48e-03   416.2668   417.0412   419.2133   420.6251   420.6568   421.1903   421.2237   421.2257   421.3069   421.6500   421.6713   421.8677   421.8786   421.8793   421.9232   
+Rerun orthogonalization...
+      3    15     55    7.78e-21   416.2621*  416.8507*  419.2026*  420.5188*  420.6068*  421.1812*  421.2057*  421.2140*  421.2890*  421.5940*  421.6301*  421.8583*  421.8590*  421.8682*  421.9075*  
+
+     Davidson procedure converged
+
+        CVS-EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using shifted  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      15        1000      200       1         1.00e-04  1.48e+01  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      15    2.69e+00   416.2621   416.8507   419.2026   420.5188   420.6068   421.1812   421.2057   421.2140   421.2890   421.5940   421.6301   421.8583   421.8590   421.8682   421.9075   
+      1    0      30    1.77e+00   413.5428   414.3448   416.4005   417.5442   417.6340   418.1913   418.2127   418.2240   418.3241   418.6036   418.6420   418.8641   418.8642   418.8762   418.9244   
+      2    0      45    9.47e-02   402.2655   404.1125   404.6526   405.2862   405.3095   405.6159   405.6361   405.8714   406.0307   406.2038   406.2386   406.3393   406.3426   406.5917   406.6688   
+      3    0      60    1.03e-02   401.6760   403.4235   404.0057   404.6212   404.6591   404.9718   404.9911   405.1497   405.3110   405.5010   405.5110   405.6281   405.6308   405.8143   405.9054   
+      4    0      75    1.40e-03   401.6097   403.3201   403.9525   404.5842   404.6146   404.9580   404.9772   405.1079   405.2760   405.4640   405.4775   405.6113   405.6139   405.7382   405.8370   
+      5    4      90    1.28e-03   401.5865   403.2742   403.9246   404.5712   404.5989   404.9563*  404.9758*  405.0915   405.2595   405.4541   405.4676   405.6099*  405.6125*  405.7132   405.8076   
+      6    4      101   4.77e-04   401.5760   403.2518   403.9052   404.5625   404.5890   404.9561*  404.9756*  405.0805   405.2445   405.4465   405.4598   405.6098*  405.6123*  405.6962   405.7815   
+      7    4      112   3.89e-04   401.5698   403.2385   403.8958   404.5550   404.5802   404.9557*  404.9754*  405.0729   405.2346   405.4384   405.4520   405.6095*  405.6121*  405.6838   405.7632   
+      8    6      123   1.49e-04   401.5688*  403.2347   403.8929   404.5529*  404.5768   404.9555*  404.9754*  405.0698   405.2307   405.4343   405.4490   405.6091*  405.6120*  405.6780   405.7551   
+      9    8      132   1.42e-04   401.5686*  403.2334*  403.8910*  404.5519*  404.5745   404.9553*  404.9753*  405.0675   405.2271   405.4309   405.4473   405.6087*  405.6118*  405.6726   405.7474   
+      10   11     139   9.30e-05   401.5687*  403.2336*  403.8913*  404.5508*  404.5737*  404.9552*  404.9753*  405.0660*  405.2247*  405.4278   405.4453   405.6083*  405.6117*  405.6681   405.7396   
+Found complex roots...
+      11   12     143   4.90e-05   401.5687*  403.2336*  403.8914*  404.5505*  404.5737*  404.9551*  404.9753*  405.0655*  405.2243*  405.4266*  405.4437   405.6082*  405.6117*  405.6662   405.7364   
+Found complex roots...
+      12   15     146   3.14e-05   401.5687*  403.2334*  403.8912*  404.5505*  404.5735*  404.9551*  404.9753*  405.0654*  405.2240*  405.4262*  405.4430*  405.6082*  405.6117*  405.6654*  405.7350*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/A'
+ Total energy = -41.67247361 a.u.  Excitation energy = 401.5687 eV.
+ R0^2 = 0.0000  R1^2 = 0.8299  R2_CCVV^2 = 0.0008  R2_COVV^2 = 0.0846  Res^2 = 1.96e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.2854       1 (A') A                  ->    32 (A') A                  
+  0.2854       1 (A') B                  ->    32 (A') B                  
+  0.2426       1 (A') A                  ->    25 (A') A                  
+  0.2426       1 (A') B                  ->    25 (A') B                  
+ -0.2311       1 (A') A                  ->    26 (A') A                  
+ -0.2311       1 (A') B                  ->    26 (A') B                  
+ -0.2205       1 (A') A                  ->    18 (A') A                  
+ -0.2205       1 (A') B                  ->    18 (A') B                  
+  0.1655       1 (A') A                  ->    20 (A') A                  
+  0.1655       1 (A') B                  ->    20 (A') B                  
+ -0.1610       1 (A') A                  ->    31 (A') A                  
+ -0.1610       1 (A') B                  ->    31 (A') B                  
+  0.1573       1 (A') A                  ->    14 (A') A                  
+  0.1573       1 (A') B                  ->    14 (A') B                  
+  0.1403       1 (A') A                  ->    39 (A') A                  
+  0.1403       1 (A') B                  ->    39 (A') B                  
+ -0.1377       1 (A') A                  ->    12 (A') A                  
+ -0.1377       1 (A') B                  ->    12 (A') B                  
+ -0.1356       1 (A') A                  ->    8 (A') A                   
+ -0.1356       1 (A') B                  ->    8 (A') B                   
+  0.1211       1 (A') A                  ->    37 (A') A                  
+  0.1211       1 (A') B                  ->    37 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               10      Vir  Alpha       8 (A')      0.0049
+               16      Vir  Alpha      12 (A')      0.0112
+               19      Vir  Alpha      14 (A')      0.0132
+               25      Vir  Alpha      18 (A')      0.0251
+               28      Vir  Alpha      20 (A')      0.0288
+               36      Vir  Alpha      25 (A')      0.0530
+               37      Vir  Alpha      26 (A')      0.0592
+               45      Vir  Alpha      31 (A')      0.1144
+               46      Vir  Alpha      32 (A')      0.1310
+               54      Vir  Alpha      37 (A')      0.2906
+               57      Vir  Alpha      39 (A')      0.3514
+               10      Vir  Beta        8 (A')      0.0049
+               16      Vir  Beta       12 (A')      0.0112
+               19      Vir  Beta       14 (A')      0.0132
+               25      Vir  Beta       18 (A')      0.0251
+               28      Vir  Beta       20 (A')      0.0288
+               36      Vir  Beta       25 (A')      0.0530
+               37      Vir  Beta       26 (A')      0.0592
+               45      Vir  Beta       31 (A')      0.1144
+               46      Vir  Beta       32 (A')      0.1310
+               54      Vir  Beta       37 (A')      0.2906
+               57      Vir  Beta       39 (A')      0.3514
+
+
+ EOMEE transition 2/A'
+ Total energy = -41.61129636 a.u.  Excitation energy = 403.2334 eV.
+ R0^2 = 0.0000  R1^2 = 0.8328  R2_CCVV^2 = 0.0008  R2_COVV^2 = 0.0832  Res^2 = 5.10e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.3065       1 (A') A                  ->    30 (A') A                  
+ -0.3065       1 (A') B                  ->    30 (A') B                  
+ -0.2995       1 (A') A                  ->    24 (A') A                  
+ -0.2995       1 (A') B                  ->    24 (A') B                  
+  0.2601       1 (A') A                  ->    36 (A') A                  
+  0.2601       1 (A') B                  ->    36 (A') B                  
+ -0.2304       1 (A') A                  ->    19 (A') A                  
+ -0.2304       1 (A') B                  ->    19 (A') B                  
+ -0.1967       1 (A') A                  ->    41 (A') A                  
+ -0.1967       1 (A') B                  ->    41 (A') B                  
+ -0.1386       1 (A') A                  ->    13 (A') A                  
+ -0.1386       1 (A') B                  ->    13 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               17      Vir  Alpha      13 (A')      0.0113
+               26      Vir  Alpha      19 (A')      0.0255
+               34      Vir  Alpha      24 (A')      0.0512
+               43      Vir  Alpha      30 (A')      0.1003
+               52      Vir  Alpha      36 (A')      0.1958
+               59      Vir  Alpha      41 (A')      0.4155
+               17      Vir  Beta       13 (A')      0.0113
+               26      Vir  Beta       19 (A')      0.0255
+               34      Vir  Beta       24 (A')      0.0512
+               43      Vir  Beta       30 (A')      0.1003
+               52      Vir  Beta       36 (A')      0.1958
+               59      Vir  Beta       41 (A')      0.4155
+
+
+ EOMEE transition 3/A'
+ Total energy = -41.58712440 a.u.  Excitation energy = 403.8912 eV.
+ R0^2 = 0.0000  R1^2 = 0.8265  R2_CCVV^2 = 0.0008  R2_COVV^2 = 0.0864  Res^2 = 3.49e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.2837       1 (A') A                  ->    31 (A') A                  
+ -0.2837       1 (A') B                  ->    31 (A') B                  
+  0.2657       1 (A') A                  ->    26 (A') A                  
+  0.2657       1 (A') B                  ->    26 (A') B                  
+ -0.2601       1 (A') A                  ->    20 (A') A                  
+ -0.2601       1 (A') B                  ->    20 (A') B                  
+  0.2351       1 (A') A                  ->    25 (A') A                  
+  0.2351       1 (A') B                  ->    25 (A') B                  
+ -0.1677       1 (A') A                  ->    18 (A') A                  
+ -0.1677       1 (A') B                  ->    18 (A') B                  
+ -0.1455       1 (A') A                  ->    32 (A') A                  
+ -0.1455       1 (A') B                  ->    32 (A') B                  
+  0.1398       1 (A') A                  ->    37 (A') A                  
+  0.1398       1 (A') B                  ->    37 (A') B                  
+ -0.1397       1 (A') A                  ->    14 (A') A                  
+ -0.1397       1 (A') B                  ->    14 (A') B                  
+ -0.1353       1 (A') A                  ->    12 (A') A                  
+ -0.1353       1 (A') B                  ->    12 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               16      Vir  Alpha      12 (A')      0.0112
+               19      Vir  Alpha      14 (A')      0.0132
+               25      Vir  Alpha      18 (A')      0.0251
+               28      Vir  Alpha      20 (A')      0.0288
+               36      Vir  Alpha      25 (A')      0.0530
+               37      Vir  Alpha      26 (A')      0.0592
+               45      Vir  Alpha      31 (A')      0.1144
+               46      Vir  Alpha      32 (A')      0.1310
+               54      Vir  Alpha      37 (A')      0.2906
+               16      Vir  Beta       12 (A')      0.0112
+               19      Vir  Beta       14 (A')      0.0132
+               25      Vir  Beta       18 (A')      0.0251
+               28      Vir  Beta       20 (A')      0.0288
+               36      Vir  Beta       25 (A')      0.0530
+               37      Vir  Beta       26 (A')      0.0592
+               45      Vir  Beta       31 (A')      0.1144
+               46      Vir  Beta       32 (A')      0.1310
+               54      Vir  Beta       37 (A')      0.2906
+
+
+ EOMEE transition 4/A'
+ Total energy = -41.56289390 a.u.  Excitation energy = 404.5505 eV.
+ R0^2 = 0.0000  R1^2 = 0.8244  R2_CCVV^2 = 0.0008  R2_COVV^2 = 0.0874  Res^2 = 8.60e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.3266       1 (A') A                  ->    8 (A') A                   
+ -0.3266       1 (A') B                  ->    8 (A') B                   
+  0.2525       1 (A') A                  ->    5 (A') A                   
+  0.2525       1 (A') B                  ->    5 (A') B                   
+ -0.2230       1 (A') A                  ->    32 (A') A                  
+ -0.2230       1 (A') B                  ->    32 (A') B                  
+  0.2182       1 (A') A                  ->    14 (A') A                  
+  0.2182       1 (A') B                  ->    14 (A') B                  
+ -0.2087       1 (A') A                  ->    12 (A') A                  
+ -0.2087       1 (A') B                  ->    12 (A') B                  
+  0.1309       1 (A') A                  ->    31 (A') A                  
+  0.1309       1 (A') B                  ->    31 (A') B                  
+  0.1302       1 (A') A                  ->    7 (A') A                   
+  0.1302       1 (A') B                  ->    7 (A') B                   
+ -0.1011       1 (A') A                  ->    25 (A') A                  
+ -0.1011       1 (A') B                  ->    25 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               6       Vir  Alpha       5 (A')      0.0010
+               9       Vir  Alpha       7 (A')      0.0036
+               10      Vir  Alpha       8 (A')      0.0049
+               16      Vir  Alpha      12 (A')      0.0112
+               19      Vir  Alpha      14 (A')      0.0132
+               36      Vir  Alpha      25 (A')      0.0530
+               45      Vir  Alpha      31 (A')      0.1144
+               46      Vir  Alpha      32 (A')      0.1310
+               6       Vir  Beta        5 (A')      0.0010
+               9       Vir  Beta        7 (A')      0.0036
+               10      Vir  Beta        8 (A')      0.0049
+               16      Vir  Beta       12 (A')      0.0112
+               19      Vir  Beta       14 (A')      0.0132
+               36      Vir  Beta       25 (A')      0.0530
+               45      Vir  Beta       31 (A')      0.1144
+               46      Vir  Beta       32 (A')      0.1310
+
+
+ EOMEE transition 5/A'
+ Total energy = -41.56204822 a.u.  Excitation energy = 404.5735 eV.
+ R0^2 = 0.0000  R1^2 = 0.8254  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0869  Res^2 = 5.56e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.2951       1 (A') A                  ->    27 (A') A                  
+  0.2951       1 (A') B                  ->    27 (A') B                  
+ -0.2709       1 (A') A                  ->    33 (A') A                  
+ -0.2709       1 (A') B                  ->    33 (A') B                  
+  0.2602       1 (A') A                  ->    21 (A') A                  
+  0.2602       1 (A') B                  ->    21 (A') B                  
+  0.2077       1 (A') A                  ->    19 (A') A                  
+  0.2077       1 (A') B                  ->    19 (A') B                  
+  0.1782       1 (A') A                  ->    13 (A') A                  
+  0.1782       1 (A') B                  ->    13 (A') B                  
+ -0.1674       1 (A') A                  ->    38 (A') A                  
+ -0.1674       1 (A') B                  ->    38 (A') B                  
+ -0.1658       1 (A') A                  ->    15 (A') A                  
+ -0.1658       1 (A') B                  ->    15 (A') B                  
+  0.1360       1 (A') A                  ->    24 (A') A                  
+  0.1360       1 (A') B                  ->    24 (A') B                  
+ -0.1033       1 (A') A                  ->    41 (A') A                  
+ -0.1033       1 (A') B                  ->    41 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               17      Vir  Alpha      13 (A')      0.0113
+               21      Vir  Alpha      15 (A')      0.0211
+               26      Vir  Alpha      19 (A')      0.0255
+               30      Vir  Alpha      21 (A')      0.0444
+               34      Vir  Alpha      24 (A')      0.0512
+               39      Vir  Alpha      27 (A')      0.0859
+               48      Vir  Alpha      33 (A')      0.1652
+               56      Vir  Alpha      38 (A')      0.3333
+               59      Vir  Alpha      41 (A')      0.4155
+               17      Vir  Beta       13 (A')      0.0113
+               21      Vir  Beta       15 (A')      0.0211
+               26      Vir  Beta       19 (A')      0.0255
+               30      Vir  Beta       21 (A')      0.0444
+               34      Vir  Beta       24 (A')      0.0512
+               39      Vir  Beta       27 (A')      0.0859
+               48      Vir  Beta       33 (A')      0.1652
+               56      Vir  Beta       38 (A')      0.3333
+               59      Vir  Beta       41 (A')      0.4155
+
+
+ EOMEE transition 6/A'
+ Total energy = -41.54802492 a.u.  Excitation energy = 404.9551 eV.
+ R0^2 = 0.0000  R1^2 = 0.8234  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0879  Res^2 = 5.54e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.3721       1 (A') A                  ->    22 (A') A                  
+ -0.3721       1 (A') B                  ->    22 (A') B                  
+  0.3080       1 (A') A                  ->    16 (A') A                  
+  0.3080       1 (A') B                  ->    16 (A') B                  
+ -0.2839       1 (A') A                  ->    28 (A') A                  
+ -0.2839       1 (A') B                  ->    28 (A') B                  
+  0.1591       1 (A') A                  ->    34 (A') A                  
+  0.1591       1 (A') B                  ->    34 (A') B                  
+ -0.1414       1 (A') A                  ->    10 (A') A                  
+ -0.1414       1 (A') B                  ->    10 (A') B                  
+  0.1036       1 (A') A                  ->    15 (A') A                  
+  0.1036       1 (A') B                  ->    15 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               13      Vir  Alpha      10 (A')      0.0079
+               21      Vir  Alpha      15 (A')      0.0211
+               22      Vir  Alpha      16 (A')      0.0213
+               31      Vir  Alpha      22 (A')      0.0449
+               40      Vir  Alpha      28 (A')      0.0881
+               49      Vir  Alpha      34 (A')      0.1736
+               13      Vir  Beta       10 (A')      0.0079
+               21      Vir  Beta       15 (A')      0.0211
+               22      Vir  Beta       16 (A')      0.0213
+               31      Vir  Beta       22 (A')      0.0449
+               40      Vir  Beta       28 (A')      0.0881
+               49      Vir  Beta       34 (A')      0.1736
+
+
+ EOMEE transition 7/A'
+ Total energy = -41.54728403 a.u.  Excitation energy = 404.9753 eV.
+ R0^2 = 0.0000  R1^2 = 0.8235  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0879  Res^2 = 5.82e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.3755       1 (A') A                  ->    23 (A') A                  
+ -0.3755       1 (A') B                  ->    23 (A') B                  
+  0.3178       1 (A') A                  ->    17 (A') A                  
+  0.3178       1 (A') B                  ->    17 (A') B                  
+  0.2900       1 (A') A                  ->    29 (A') A                  
+  0.2900       1 (A') B                  ->    29 (A') B                  
+  0.1665       1 (A') A                  ->    35 (A') A                  
+  0.1665       1 (A') B                  ->    35 (A') B                  
+  0.1507       1 (A') A                  ->    11 (A') A                  
+  0.1507       1 (A') B                  ->    11 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               15      Vir  Alpha      11 (A')      0.0079
+               24      Vir  Alpha      17 (A')      0.0214
+               33      Vir  Alpha      23 (A')      0.0452
+               42      Vir  Alpha      29 (A')      0.0883
+               51      Vir  Alpha      35 (A')      0.1756
+               15      Vir  Beta       11 (A')      0.0079
+               24      Vir  Beta       17 (A')      0.0214
+               33      Vir  Beta       23 (A')      0.0452
+               42      Vir  Beta       29 (A')      0.0883
+               51      Vir  Beta       35 (A')      0.1756
+
+
+ EOMEE transition 8/A'
+ Total energy = -41.54397283 a.u.  Excitation energy = 405.0654 eV.
+ R0^2 = 0.0000  R1^2 = 0.8245  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0874  Res^2 = 1.15e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.3361       1 (A') A                  ->    13 (A') A                  
+ -0.3361       1 (A') B                  ->    13 (A') B                  
+ -0.2446       1 (A') A                  ->    6 (A') A                   
+ -0.2446       1 (A') B                  ->    6 (A') B                   
+  0.1969       1 (A') A                  ->    21 (A') A                  
+  0.1969       1 (A') B                  ->    21 (A') B                  
+ -0.1966       1 (A') A                  ->    15 (A') A                  
+ -0.1966       1 (A') B                  ->    15 (A') B                  
+  0.1832       1 (A') A                  ->    30 (A') A                  
+  0.1832       1 (A') B                  ->    30 (A') B                  
+ -0.1681       1 (A') A                  ->    19 (A') A                  
+ -0.1681       1 (A') B                  ->    19 (A') B                  
+ -0.1475       1 (A') A                  ->    36 (A') A                  
+ -0.1475       1 (A') B                  ->    36 (A') B                  
+  0.1426       1 (A') A                  ->    16 (A') A                  
+  0.1426       1 (A') B                  ->    16 (A') B                  
+  0.1136       1 (A') A                  ->    27 (A') A                  
+  0.1136       1 (A') B                  ->    27 (A') B                  
+ -0.1011       1 (A') A                  ->    10 (A') A                  
+ -0.1011       1 (A') B                  ->    10 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               7       Vir  Alpha       6 (A')      0.0035
+               13      Vir  Alpha      10 (A')      0.0079
+               17      Vir  Alpha      13 (A')      0.0113
+               21      Vir  Alpha      15 (A')      0.0211
+               22      Vir  Alpha      16 (A')      0.0213
+               26      Vir  Alpha      19 (A')      0.0255
+               30      Vir  Alpha      21 (A')      0.0444
+               39      Vir  Alpha      27 (A')      0.0859
+               43      Vir  Alpha      30 (A')      0.1003
+               52      Vir  Alpha      36 (A')      0.1958
+               7       Vir  Beta        6 (A')      0.0035
+               13      Vir  Beta       10 (A')      0.0079
+               17      Vir  Beta       13 (A')      0.0113
+               21      Vir  Beta       15 (A')      0.0211
+               22      Vir  Beta       16 (A')      0.0213
+               26      Vir  Beta       19 (A')      0.0255
+               30      Vir  Beta       21 (A')      0.0444
+               39      Vir  Beta       27 (A')      0.0859
+               43      Vir  Beta       30 (A')      0.1003
+               52      Vir  Beta       36 (A')      0.1958
+
+
+ EOMEE transition 9/A'
+ Total energy = -41.53814382 a.u.  Excitation energy = 405.2240 eV.
+ R0^2 = 0.0000  R1^2 = 0.8240  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0876  Res^2 = 1.13e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.2984       1 (A') A                  ->    7 (A') A                   
+  0.2984       1 (A') B                  ->    7 (A') B                   
+ -0.2945       1 (A') A                  ->    12 (A') A                  
+ -0.2945       1 (A') B                  ->    12 (A') B                  
+ -0.2861       1 (A') A                  ->    14 (A') A                  
+ -0.2861       1 (A') B                  ->    14 (A') B                  
+  0.2059       1 (A') A                  ->    31 (A') A                  
+  0.2059       1 (A') B                  ->    31 (A') B                  
+  0.1474       1 (A') A                  ->    8 (A') A                   
+  0.1474       1 (A') B                  ->    8 (A') B                   
+ -0.1354       1 (A') A                  ->    26 (A') A                  
+ -0.1354       1 (A') B                  ->    26 (A') B                  
+  0.1147       1 (A') A                  ->    32 (A') A                  
+  0.1147       1 (A') B                  ->    32 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               9       Vir  Alpha       7 (A')      0.0036
+               10      Vir  Alpha       8 (A')      0.0049
+               16      Vir  Alpha      12 (A')      0.0112
+               19      Vir  Alpha      14 (A')      0.0132
+               37      Vir  Alpha      26 (A')      0.0592
+               45      Vir  Alpha      31 (A')      0.1144
+               46      Vir  Alpha      32 (A')      0.1310
+               9       Vir  Beta        7 (A')      0.0036
+               10      Vir  Beta        8 (A')      0.0049
+               16      Vir  Beta       12 (A')      0.0112
+               19      Vir  Beta       14 (A')      0.0132
+               37      Vir  Beta       26 (A')      0.0592
+               45      Vir  Beta       31 (A')      0.1144
+               46      Vir  Beta       32 (A')      0.1310
+
+
+ EOMEE transition 10/A'
+ Total energy = -41.53071328 a.u.  Excitation energy = 405.4262 eV.
+ R0^2 = 0.0000  R1^2 = 0.8238  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0877  Res^2 = 3.88e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.3378       1 (A') A                  ->    15 (A') A                  
+  0.3378       1 (A') B                  ->    15 (A') B                  
+ -0.2968       1 (A') A                  ->    9 (A') A                   
+ -0.2968       1 (A') B                  ->    9 (A') B                   
+ -0.2109       1 (A') A                  ->    6 (A') A                   
+ -0.2109       1 (A') B                  ->    6 (A') B                   
+ -0.1955       1 (A') A                  ->    13 (A') A                  
+ -0.1955       1 (A') B                  ->    13 (A') B                  
+ -0.1893       1 (A') A                  ->    33 (A') A                  
+ -0.1893       1 (A') B                  ->    33 (A') B                  
+  0.1478       1 (A') A                  ->    24 (A') A                  
+  0.1478       1 (A') B                  ->    24 (A') B                  
+  0.1253       1 (A') A                  ->    27 (A') A                  
+  0.1253       1 (A') B                  ->    27 (A') B                  
+ -0.1245       1 (A') A                  ->    38 (A') A                  
+ -0.1245       1 (A') B                  ->    38 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               7       Vir  Alpha       6 (A')      0.0035
+               12      Vir  Alpha       9 (A')      0.0078
+               17      Vir  Alpha      13 (A')      0.0113
+               21      Vir  Alpha      15 (A')      0.0211
+               34      Vir  Alpha      24 (A')      0.0512
+               39      Vir  Alpha      27 (A')      0.0859
+               48      Vir  Alpha      33 (A')      0.1652
+               56      Vir  Alpha      38 (A')      0.3333
+               7       Vir  Beta        6 (A')      0.0035
+               12      Vir  Beta        9 (A')      0.0078
+               17      Vir  Beta       13 (A')      0.0113
+               21      Vir  Beta       15 (A')      0.0211
+               34      Vir  Beta       24 (A')      0.0512
+               39      Vir  Beta       27 (A')      0.0859
+               48      Vir  Beta       33 (A')      0.1652
+               56      Vir  Beta       38 (A')      0.3333
+
+
+ EOMEE transition 11/A'
+ Total energy = -41.53009744 a.u.  Excitation energy = 405.4430 eV.
+ R0^2 = 0.0000  R1^2 = 0.8235  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0879  Res^2 = 4.35e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.3866       1 (A') A                  ->    5 (A') A                   
+ -0.3866       1 (A') B                  ->    5 (A') B                   
+ -0.2888       1 (A') A                  ->    18 (A') A                  
+ -0.2888       1 (A') B                  ->    18 (A') B                  
+  0.1820       1 (A') A                  ->    8 (A') A                   
+  0.1820       1 (A') B                  ->    8 (A') B                   
+  0.1665       1 (A') A                  ->    20 (A') A                  
+  0.1665       1 (A') B                  ->    20 (A') B                  
+  0.1614       1 (A') A                  ->    14 (A') A                  
+  0.1614       1 (A') B                  ->    14 (A') B                  
+ -0.1602       1 (A') A                  ->    32 (A') A                  
+ -0.1602       1 (A') B                  ->    32 (A') B                  
+ -0.1584       1 (A') A                  ->    12 (A') A                  
+ -0.1584       1 (A') B                  ->    12 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               6       Vir  Alpha       5 (A')      0.0010
+               10      Vir  Alpha       8 (A')      0.0049
+               16      Vir  Alpha      12 (A')      0.0112
+               19      Vir  Alpha      14 (A')      0.0132
+               25      Vir  Alpha      18 (A')      0.0251
+               28      Vir  Alpha      20 (A')      0.0288
+               46      Vir  Alpha      32 (A')      0.1310
+               6       Vir  Beta        5 (A')      0.0010
+               10      Vir  Beta        8 (A')      0.0049
+               16      Vir  Beta       12 (A')      0.0112
+               19      Vir  Beta       14 (A')      0.0132
+               25      Vir  Beta       18 (A')      0.0251
+               28      Vir  Beta       20 (A')      0.0288
+               46      Vir  Beta       32 (A')      0.1310
+
+
+ EOMEE transition 12/A'
+ Total energy = -41.52402550 a.u.  Excitation energy = 405.6082 eV.
+ R0^2 = 0.0000  R1^2 = 0.8232  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0880  Res^2 = 4.80e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.4585       1 (A') A                  ->    10 (A') A                  
+  0.4585       1 (A') B                  ->    10 (A') B                  
+ -0.2240       1 (A') A                  ->    16 (A') A                  
+ -0.2240       1 (A') B                  ->    16 (A') B                  
+ -0.2206       1 (A') A                  ->    28 (A') A                  
+ -0.2206       1 (A') B                  ->    28 (A') B                  
+  0.1936       1 (A') A                  ->    9 (A') A                   
+  0.1936       1 (A') B                  ->    9 (A') B                   
+ -0.1592       1 (A') A                  ->    22 (A') A                  
+ -0.1592       1 (A') B                  ->    22 (A') B                  
+  0.1336       1 (A') A                  ->    34 (A') A                  
+  0.1336       1 (A') B                  ->    34 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               12      Vir  Alpha       9 (A')      0.0078
+               13      Vir  Alpha      10 (A')      0.0079
+               22      Vir  Alpha      16 (A')      0.0213
+               31      Vir  Alpha      22 (A')      0.0449
+               40      Vir  Alpha      28 (A')      0.0881
+               49      Vir  Alpha      34 (A')      0.1736
+               12      Vir  Beta        9 (A')      0.0078
+               13      Vir  Beta       10 (A')      0.0079
+               22      Vir  Beta       16 (A')      0.0213
+               31      Vir  Beta       22 (A')      0.0449
+               40      Vir  Beta       28 (A')      0.0881
+               49      Vir  Beta       34 (A')      0.1736
+
+
+ EOMEE transition 13/A'
+ Total energy = -41.52389785 a.u.  Excitation energy = 405.6117 eV.
+ R0^2 = 0.0000  R1^2 = 0.8233  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0880  Res^2 = 6.63e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.4772       1 (A') A                  ->    11 (A') A                  
+  0.4772       1 (A') B                  ->    11 (A') B                  
+  0.2353       1 (A') A                  ->    17 (A') A                  
+  0.2353       1 (A') B                  ->    17 (A') B                  
+ -0.2261       1 (A') A                  ->    29 (A') A                  
+ -0.2261       1 (A') B                  ->    29 (A') B                  
+  0.1541       1 (A') A                  ->    23 (A') A                  
+  0.1541       1 (A') B                  ->    23 (A') B                  
+ -0.1436       1 (A') A                  ->    35 (A') A                  
+ -0.1436       1 (A') B                  ->    35 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               15      Vir  Alpha      11 (A')      0.0079
+               24      Vir  Alpha      17 (A')      0.0214
+               33      Vir  Alpha      23 (A')      0.0452
+               42      Vir  Alpha      29 (A')      0.0883
+               51      Vir  Alpha      35 (A')      0.1756
+               15      Vir  Beta       11 (A')      0.0079
+               24      Vir  Beta       17 (A')      0.0214
+               33      Vir  Beta       23 (A')      0.0452
+               42      Vir  Beta       29 (A')      0.0883
+               51      Vir  Beta       35 (A')      0.1756
+
+
+ EOMEE transition 14/A'
+ Total energy = -41.52192388 a.u.  Excitation energy = 405.6654 eV.
+ R0^2 = 0.0000  R1^2 = 0.8238  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0877  Res^2 = 5.15e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.3712       1 (A') A                  ->    6 (A') A                   
+  0.3712       1 (A') B                  ->    6 (A') B                   
+ -0.2813       1 (A') A                  ->    9 (A') A                   
+ -0.2813       1 (A') B                  ->    9 (A') B                   
+ -0.2810       1 (A') A                  ->    19 (A') A                  
+ -0.2810       1 (A') B                  ->    19 (A') B                  
+  0.1670       1 (A') A                  ->    10 (A') A                  
+  0.1670       1 (A') B                  ->    10 (A') B                  
+  0.1643       1 (A') A                  ->    21 (A') A                  
+  0.1643       1 (A') B                  ->    21 (A') B                  
+  0.1264       1 (A') A                  ->    30 (A') A                  
+  0.1264       1 (A') B                  ->    30 (A') B                  
+ -0.1136       1 (A') A                  ->    36 (A') A                  
+ -0.1136       1 (A') B                  ->    36 (A') B                  
+  0.1063       1 (A') A                  ->    27 (A') A                  
+  0.1063       1 (A') B                  ->    27 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               7       Vir  Alpha       6 (A')      0.0035
+               12      Vir  Alpha       9 (A')      0.0078
+               13      Vir  Alpha      10 (A')      0.0079
+               26      Vir  Alpha      19 (A')      0.0255
+               30      Vir  Alpha      21 (A')      0.0444
+               39      Vir  Alpha      27 (A')      0.0859
+               43      Vir  Alpha      30 (A')      0.1003
+               52      Vir  Alpha      36 (A')      0.1958
+               7       Vir  Beta        6 (A')      0.0035
+               12      Vir  Beta        9 (A')      0.0078
+               13      Vir  Beta       10 (A')      0.0079
+               26      Vir  Beta       19 (A')      0.0255
+               30      Vir  Beta       21 (A')      0.0444
+               39      Vir  Beta       27 (A')      0.0859
+               43      Vir  Beta       30 (A')      0.1003
+               52      Vir  Beta       36 (A')      0.1958
+
+
+ EOMEE transition 15/A'
+ Total energy = -41.51936496 a.u.  Excitation energy = 405.7350 eV.
+ R0^2 = 0.0000  R1^2 = 0.8236  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0878  Res^2 = 6.11e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.4435       1 (A') A                  ->    7 (A') A                   
+  0.4435       1 (A') B                  ->    7 (A') B                   
+  0.2372       1 (A') A                  ->    20 (A') A                  
+  0.2372       1 (A') B                  ->    20 (A') B                  
+  0.2244       1 (A') A                  ->    18 (A') A                  
+  0.2244       1 (A') B                  ->    18 (A') B                  
+ -0.1720       1 (A') A                  ->    31 (A') A                  
+ -0.1720       1 (A') B                  ->    31 (A') B                  
+  0.1689       1 (A') A                  ->    8 (A') A                   
+  0.1689       1 (A') B                  ->    8 (A') B                   
+  0.1388       1 (A') A                  ->    14 (A') A                  
+  0.1388       1 (A') B                  ->    14 (A') B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               9       Vir  Alpha       7 (A')      0.0036
+               10      Vir  Alpha       8 (A')      0.0049
+               19      Vir  Alpha      14 (A')      0.0132
+               25      Vir  Alpha      18 (A')      0.0251
+               28      Vir  Alpha      20 (A')      0.0288
+               45      Vir  Alpha      31 (A')      0.1144
+               9       Vir  Beta        7 (A')      0.0036
+               10      Vir  Beta        8 (A')      0.0049
+               19      Vir  Beta       14 (A')      0.0132
+               25      Vir  Beta       18 (A')      0.0251
+               28      Vir  Beta       20 (A')      0.0288
+               45      Vir  Beta       31 (A')      0.1144
+
+
+      CVS-EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      15        1000      200       1         1.00e-04  1.48e+01  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      15    5.10e-02   401.5687   403.2334   403.8912   404.5505   404.5735   404.9551   404.9753   405.0654   405.2240   405.4262   405.4430   405.6082   405.6117   405.6654   405.7350   
+      1    0      30    1.92e-02   401.5688   403.2333   403.8911   404.5504   404.5735   404.9543   404.9745   405.0652   405.2238   405.4259   405.4424   405.6077   405.6109   405.6648   405.7342   
+      2    0      45    2.45e-04   401.5687   403.2334   403.8912   404.5504   404.5735   404.9544   404.9746   405.0652   405.2239   405.4260   405.4425   405.6077   405.6110   405.6648   405.7342   
+      3    15     60    1.82e-05   401.5687*  403.2334*  403.8912*  404.5504*  404.5734*  404.9543*  404.9744*  405.0652*  405.2238*  405.4259*  405.4424*  405.6075*  405.6108*  405.6646*  405.7340*  
+
+     Davidson procedure converged
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 1/A'
+ Dipole moment (a.u.): 0.528938 (X -0.001144, Y -0.528936, Z 0.000000)
+ R-squared (a.u.): 44.742622 (XX 15.516708, YY 13.716398, ZZ 15.509516)
+
+State OPDM analysis using libwa module will be excecuted
+Created directory /work1/malop/qc_7608330.hnode2/plots
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0047   0.9861   1.0090   1.9964   1.9964   1.9977
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00090, n_u,nl =  1.99997
+   NO participation ratio (PR_NO):  2.048384
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N        0.324244
+ 2  H       -0.104647
+ 3  H       -0.104529
+ 4  H       -0.104647
+ 5 GH       -0.010422
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 2/A'
+ Dipole moment (a.u.): 0.975463 (X 0.929630, Y -0.295492, Z 0.000002)
+ R-squared (a.u.): 56.773011 (XX 28.224372, YY 13.652690, ZZ 14.895949)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0029   0.0033   0.0047   0.9964   0.9999   1.9966   1.9974   1.9980
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.01440, n_u,nl =  2.00051
+   NO participation ratio (PR_NO):  2.036295
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N        0.082061
+ 2  H        0.174854
+ 3  H       -0.315097
+ 4  H        0.174848
+ 5 GH       -0.116667
+ --------------------
+ Sum:       -0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 3/A'
+ Dipole moment (a.u.): 1.136594 (X -0.000201, Y 1.136594, Z 0.000000)
+ R-squared (a.u.): 79.454701 (XX 20.670153, YY 38.120520, ZZ 20.664028)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0042   0.9967   1.0018   1.9977   1.9982   1.9982
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00689, n_u,nl =  2.00041
+   NO participation ratio (PR_NO):  2.024042
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.204970
+ 2  H        0.321811
+ 3  H        0.321947
+ 4  H        0.321811
+ 5 GH       -0.760600
+ --------------------
+ Sum:       -0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 4/A'
+ Dipole moment (a.u.): 2.420951 (X 0.044512, Y -2.420542, Z 0.000000)
+ R-squared (a.u.): 155.266166 (XX 47.340684, YY 60.120406, ZZ 47.805075)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0047   0.9943   1.0047   1.9979   1.9980   1.9980
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00002, n_u,nl =  2.00047
+   NO participation ratio (PR_NO):  2.020791
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.004669
+ 2  H        0.330898
+ 3  H        0.330382
+ 4  H        0.330898
+ 5 GH       -0.987509
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 5/A'
+ Dipole moment (a.u.): 3.108171 (X -2.786883, Y 1.376228, Z -0.000005)
+ R-squared (a.u.): 97.841658 (XX 46.437621, YY 20.429392, ZZ 30.974645)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0031   0.0032   0.0050   0.9979   0.9999   1.9974   1.9977   1.9978
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.01202, n_u,nl =  2.00058
+   NO participation ratio (PR_NO):  2.028517
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.230437
+ 2  H        0.345224
+ 3  H        0.333052
+ 4  H        0.345225
+ 5 GH       -0.793064
+ --------------------
+ Sum:       -0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 6/A'
+ Dipole moment (a.u.): 3.068885 (X 1.184380, Y 2.831131, Z 0.000002)
+ R-squared (a.u.): 152.434427 (XX 65.481305, YY 51.698622, ZZ 35.254500)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0048   0.9993   0.9999   1.9980   1.9985   1.9986
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00655, n_u,nl =  2.00059
+   NO participation ratio (PR_NO):  2.014721
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.080362
+ 2  H        0.351968
+ 3  H        0.355203
+ 4  H        0.351968
+ 5 GH       -0.978778
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 7/A'
+ Dipole moment (a.u.): 3.492338 (X 0.005257, Y 3.492334, Z 0.000000)
+ R-squared (a.u.): 154.803406 (XX 43.043178, YY 68.571124, ZZ 43.189105)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0048   0.9993   1.0000   1.9980   1.9986   1.9986
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00662, n_u,nl =  2.00063
+   NO participation ratio (PR_NO):  2.014552
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.125491
+ 2  H        0.361531
+ 3  H        0.361643
+ 4  H        0.361531
+ 5 GH       -0.959214
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 8/A'
+ Dipole moment (a.u.): 4.676233 (X 3.426598, Y -3.182072, Z 0.000006)
+ R-squared (a.u.): 226.755340 (XX 118.616365, YY 54.865237, ZZ 53.273739)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0048   0.9989   0.9999   1.9979   1.9983   1.9984
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00754, n_u,nl =  2.00060
+   NO participation ratio (PR_NO):  2.017452
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.089670
+ 2  H        0.343880
+ 3  H        0.324390
+ 4  H        0.343880
+ 5 GH       -0.922479
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 9/A'
+ Dipole moment (a.u.): 0.830726 (X -0.001899, Y 0.830724, Z 0.000000)
+ R-squared (a.u.): 302.685860 (XX 72.748794, YY 157.228223, ZZ 72.708842)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0050   0.9984   1.0013   1.9979   1.9984   1.9984
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00488, n_u,nl =  2.00068
+   NO participation ratio (PR_NO):  2.015441
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.116553
+ 2  H        0.343580
+ 3  H        0.343716
+ 4  H        0.343580
+ 5 GH       -0.914322
+ --------------------
+ Sum:       -0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 10/A'
+ Dipole moment (a.u.): 6.859965 (X -6.247430, Y 2.833502, Z -0.000011)
+ R-squared (a.u.): 343.203124 (XX 165.894120, YY 65.563136, ZZ 111.745868)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0031   0.0031   0.0049   0.9981   0.9999   1.9979   1.9981   1.9982
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00874, n_u,nl =  2.00060
+   NO participation ratio (PR_NO):  2.021460
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.157484
+ 2  H        0.355156
+ 3  H        0.364980
+ 4  H        0.355156
+ 5 GH       -0.917807
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 11/A'
+ Dipole moment (a.u.): 4.301189 (X -0.059842, Y -4.300772, Z 0.000000)
+ R-squared (a.u.): 458.165236 (XX 130.455820, YY 198.383194, ZZ 129.326223)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0048   0.9959   1.0026   1.9979   1.9983   1.9983
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00260, n_u,nl =  2.00056
+   NO participation ratio (PR_NO):  2.018405
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.054585
+ 2  H        0.353001
+ 3  H        0.353136
+ 4  H        0.353001
+ 5 GH       -1.004552
+ --------------------
+ Sum:       -0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 12/A'
+ Dipole moment (a.u.): 4.526542 (X 1.934242, Y 4.092468, Z 0.000003)
+ R-squared (a.u.): 519.224507 (XX 225.424166, YY 179.438652, ZZ 114.361688)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0048   0.9986   0.9999   1.9980   1.9985   1.9986
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00643, n_u,nl =  2.00059
+   NO participation ratio (PR_NO):  2.015755
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.080040
+ 2  H        0.352620
+ 3  H        0.353971
+ 4  H        0.352620
+ 5 GH       -0.979171
+ --------------------
+ Sum:       -0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 13/A'
+ Dipole moment (a.u.): 6.352898 (X 0.026717, Y 6.352841, Z 0.000000)
+ R-squared (a.u.): 522.161226 (XX 143.997078, YY 232.543649, ZZ 145.620498)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0048   0.9987   0.9999   1.9980   1.9986   1.9986
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00640, n_u,nl =  2.00063
+   NO participation ratio (PR_NO):  2.015479
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.110020
+ 2  H        0.359027
+ 3  H        0.359189
+ 4  H        0.359027
+ 5 GH       -0.967223
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 14/A'
+ Dipole moment (a.u.): 9.385545 (X 7.289150, Y -5.912424, Z 0.000013)
+ R-squared (a.u.): 614.352322 (XX 318.496817, YY 144.203155, ZZ 151.652350)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0031   0.0048   0.9977   0.9999   1.9979   1.9984   1.9984
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00706, n_u,nl =  2.00063
+   NO participation ratio (PR_NO):  2.018995
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.084925
+ 2  H        0.348754
+ 3  H        0.341960
+ 4  H        0.348755
+ 5 GH       -0.954545
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 15/A'
+ Dipole moment (a.u.): 4.585317 (X 0.000681, Y 4.585317, Z 0.000000)
+ R-squared (a.u.): 759.178345 (XX 185.693013, YY 387.850591, ZZ 185.634741)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0042   0.0052   0.9980   1.0002   1.9979   1.9985   1.9985
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00660, n_u,nl =  2.00075
+   NO participation ratio (PR_NO):  2.017413
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.102771
+ 2  H        0.349707
+ 3  H        0.349853
+ 4  H        0.349707
+ 5 GH       -0.946496
+ --------------------
+ Sum:       -0.000000
+ 
+
+        Solving for CVS-EOMEE-CCSD A" singlet states.
+
+       EOMEE-CCSD-SINGLES right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using shifted  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      10        1000      200       1         1.00e-04  1.48e+01  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      10    4.55e-04   420.6320   421.4692   421.4968   421.7228   422.0246   422.0348   422.1266   422.4860   422.4964   422.5783   
+Rerun orthogonalization...
+      1    0      20    6.24e-03   418.7831   420.9181   421.2072   421.2673   421.7516   421.8671   421.8997   422.1382   422.2217   422.2387   
+Rerun orthogonalization...
+      2    10     28    2.14e-19   416.8495*  420.5179*  421.1813*  421.2141*  421.5937*  421.8584*  421.8683*  422.0404*  422.2097*  422.2247*  
+
+     Davidson procedure converged
+
+        CVS-EOMEE-CCSD/MP2 right amplitudes will be solved using Davidson.
+        Amplitudes will be solved using shifted  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      10        1000      200       1         1.00e-04  1.48e+01  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      10    2.69e+00   416.8495   420.5179   421.1813   421.2141   421.5937   421.8584   421.8683   422.0404   422.2097   422.2247   
+      1    0      20    1.78e+00   414.3429   417.5432   418.1914   418.2240   418.6033   418.8642   418.8762   419.0470   419.2159   419.2313   
+      2    0      30    9.78e-02   404.0877   405.2681   405.6133   405.8502   406.1786   406.3346   406.4599   406.6154   406.7100   406.8891   
+      3    0      40    8.85e-03   403.4058   404.6459   404.9705   405.1342   405.4768   405.6252   405.7128   405.8867   405.9831   406.1161   
+      4    0      50    1.11e-03   403.3086   404.6054   404.9578   405.0973   405.4473   405.6103   405.6845   405.8542   405.9655   406.0550   
+      5    2      60    8.89e-04   403.2674   404.5916   404.9559*  405.0835   405.4397   405.6086*  405.6755   405.8466   405.9637   406.0369   
+      6    3      68    3.01e-04   403.2483   404.5835   404.9557*  405.0750   405.4346   405.6085*  405.6694   405.8409   405.9625*  406.0246   
+      7    3      75    2.65e-04   403.2373   404.5766   404.9554*  405.0694   405.4296   405.6083*  405.6651   405.8352   405.9619*  406.0160   
+      8    7      82    9.35e-05   403.2343*  404.5743*  404.9552*  405.0674*  405.4275   405.6082*  405.6632*  405.8324   405.9615*  406.0122   
+      9    8      85    8.39e-05   403.2336*  404.5730*  404.9551*  405.0661*  405.4258*  405.6081*  405.6617*  405.8306   405.9612*  406.0091   
+      10   9      87    4.46e-05   403.2337*  404.5724*  404.9550*  405.0653*  405.4245*  405.6080*  405.6605*  405.8279*  405.9608*  406.0063   
+      11   10     88    3.72e-05   403.2337*  404.5725*  404.9550*  405.0650*  405.4244*  405.6080*  405.6599*  405.8271*  405.9606*  406.0048*  
+
+     Davidson procedure converged
+
+ EOMEE transition 1/A"
+ Total energy = -41.61128615 a.u.  Excitation energy = 403.2337 eV.
+ R0^2 = 0.0000  R1^2 = 0.8328  R2_CCVV^2 = 0.0008  R2_COVV^2 = 0.0832  Res^2 = 6.62e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.3065       1 (A') A                  ->    14 (A") A                  
+  0.3065       1 (A') B                  ->    14 (A") B                  
+  0.2991       1 (A') A                  ->    11 (A") A                  
+  0.2991       1 (A') B                  ->    11 (A") B                  
+  0.2602       1 (A') A                  ->    17 (A") A                  
+  0.2602       1 (A') B                  ->    17 (A") B                  
+  0.2307       1 (A') A                  ->    8 (A") A                   
+  0.2307       1 (A') B                  ->    8 (A") B                   
+ -0.1967       1 (A') A                  ->    19 (A") A                  
+ -0.1967       1 (A') B                  ->    19 (A") B                  
+  0.1382       1 (A') A                  ->    5 (A") A                   
+  0.1382       1 (A') B                  ->    5 (A") B                   
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               18      Vir  Alpha       5 (A")      0.0113
+               27      Vir  Alpha       8 (A")      0.0255
+               35      Vir  Alpha      11 (A")      0.0512
+               44      Vir  Alpha      14 (A")      0.1003
+               53      Vir  Alpha      17 (A")      0.1958
+               60      Vir  Alpha      19 (A")      0.4155
+               18      Vir  Beta        5 (A")      0.0113
+               27      Vir  Beta        8 (A")      0.0255
+               35      Vir  Beta       11 (A")      0.0512
+               44      Vir  Beta       14 (A")      0.1003
+               53      Vir  Beta       17 (A")      0.1958
+               60      Vir  Beta       19 (A")      0.4155
+
+
+ EOMEE transition 2/A"
+ Total energy = -41.56208473 a.u.  Excitation energy = 404.5725 eV.
+ R0^2 = 0.0000  R1^2 = 0.8254  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0869  Res^2 = 8.84e-06
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.2943       1 (A') A                  ->    12 (A") A                  
+ -0.2943       1 (A') B                  ->    12 (A") B                  
+  0.2707       1 (A') A                  ->    15 (A") A                  
+  0.2707       1 (A') B                  ->    15 (A") B                  
+ -0.2612       1 (A') A                  ->    9 (A") A                   
+ -0.2612       1 (A') B                  ->    9 (A") B                   
+ -0.2069       1 (A') A                  ->    8 (A") A                   
+ -0.2069       1 (A') B                  ->    8 (A") B                   
+ -0.1809       1 (A') A                  ->    5 (A") A                   
+ -0.1809       1 (A') B                  ->    5 (A") B                   
+ -0.1673       1 (A') A                  ->    18 (A") A                  
+ -0.1673       1 (A') B                  ->    18 (A") B                  
+  0.1664       1 (A') A                  ->    6 (A") A                   
+  0.1664       1 (A') B                  ->    6 (A") B                   
+ -0.1359       1 (A') A                  ->    11 (A") A                  
+ -0.1359       1 (A') B                  ->    11 (A") B                  
+ -0.1031       1 (A') A                  ->    19 (A") A                  
+ -0.1031       1 (A') B                  ->    19 (A") B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               18      Vir  Alpha       5 (A")      0.0113
+               20      Vir  Alpha       6 (A")      0.0211
+               27      Vir  Alpha       8 (A")      0.0255
+               29      Vir  Alpha       9 (A")      0.0444
+               35      Vir  Alpha      11 (A")      0.0512
+               38      Vir  Alpha      12 (A")      0.0859
+               47      Vir  Alpha      15 (A")      0.1652
+               55      Vir  Alpha      18 (A")      0.3333
+               60      Vir  Alpha      19 (A")      0.4155
+               18      Vir  Beta        5 (A")      0.0113
+               20      Vir  Beta        6 (A")      0.0211
+               27      Vir  Beta        8 (A")      0.0255
+               29      Vir  Beta        9 (A")      0.0444
+               35      Vir  Beta       11 (A")      0.0512
+               38      Vir  Beta       12 (A")      0.0859
+               47      Vir  Beta       15 (A")      0.1652
+               55      Vir  Beta       18 (A")      0.3333
+               60      Vir  Beta       19 (A")      0.4155
+
+
+ EOMEE transition 3/A"
+ Total energy = -41.54802836 a.u.  Excitation energy = 404.9550 eV.
+ R0^2 = 0.0000  R1^2 = 0.8234  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0879  Res^2 = 4.44e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.3721       1 (A') A                  ->    10 (A") A                  
+  0.3721       1 (A') B                  ->    10 (A") B                  
+ -0.3068       1 (A') A                  ->    7 (A") A                   
+ -0.3068       1 (A') B                  ->    7 (A") B                   
+  0.2848       1 (A') A                  ->    13 (A") A                  
+  0.2848       1 (A') B                  ->    13 (A") B                  
+ -0.1597       1 (A') A                  ->    16 (A") A                  
+ -0.1597       1 (A') B                  ->    16 (A") B                  
+ -0.1414       1 (A') A                  ->    4 (A") A                   
+ -0.1414       1 (A') B                  ->    4 (A") B                   
+ -0.1029       1 (A') A                  ->    6 (A") A                   
+ -0.1029       1 (A') B                  ->    6 (A") B                   
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               14      Vir  Alpha       4 (A")      0.0079
+               20      Vir  Alpha       6 (A")      0.0211
+               23      Vir  Alpha       7 (A")      0.0213
+               32      Vir  Alpha      10 (A")      0.0449
+               41      Vir  Alpha      13 (A")      0.0881
+               50      Vir  Alpha      16 (A")      0.1736
+               14      Vir  Beta        4 (A")      0.0079
+               20      Vir  Beta        6 (A")      0.0211
+               23      Vir  Beta        7 (A")      0.0213
+               32      Vir  Beta       10 (A")      0.0449
+               41      Vir  Beta       13 (A")      0.0881
+               50      Vir  Beta       16 (A")      0.1736
+
+
+ EOMEE transition 4/A"
+ Total energy = -41.54398601 a.u.  Excitation energy = 405.0650 eV.
+ R0^2 = 0.0000  R1^2 = 0.8244  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0874  Res^2 = 1.73e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.3427       1 (A') A                  ->    5 (A") A                   
+ -0.3427       1 (A') B                  ->    5 (A") B                   
+ -0.2378       1 (A') A                  ->    2 (A") A                   
+ -0.2378       1 (A') B                  ->    2 (A") B                   
+ -0.1980       1 (A') A                  ->    6 (A") A                   
+ -0.1980       1 (A') B                  ->    6 (A") B                   
+  0.1926       1 (A') A                  ->    9 (A") A                   
+  0.1926       1 (A') B                  ->    9 (A") B                   
+  0.1817       1 (A') A                  ->    14 (A") A                  
+  0.1817       1 (A') B                  ->    14 (A") B                  
+ -0.1637       1 (A') A                  ->    8 (A") A                   
+ -0.1637       1 (A') B                  ->    8 (A") B                   
+  0.1490       1 (A') A                  ->    7 (A") A                   
+  0.1490       1 (A') B                  ->    7 (A") B                   
+  0.1487       1 (A') A                  ->    17 (A") A                  
+  0.1487       1 (A') B                  ->    17 (A") B                  
+  0.1139       1 (A') A                  ->    12 (A") A                  
+  0.1139       1 (A') B                  ->    12 (A") B                  
+  0.1014       1 (A') A                  ->    3 (A") A                   
+  0.1014       1 (A') B                  ->    3 (A") B                   
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               8       Vir  Alpha       2 (A")      0.0035
+               11      Vir  Alpha       3 (A")      0.0078
+               18      Vir  Alpha       5 (A")      0.0113
+               20      Vir  Alpha       6 (A")      0.0211
+               23      Vir  Alpha       7 (A")      0.0213
+               27      Vir  Alpha       8 (A")      0.0255
+               29      Vir  Alpha       9 (A")      0.0444
+               38      Vir  Alpha      12 (A")      0.0859
+               44      Vir  Alpha      14 (A")      0.1003
+               53      Vir  Alpha      17 (A")      0.1958
+               8       Vir  Beta        2 (A")      0.0035
+               11      Vir  Beta        3 (A")      0.0078
+               18      Vir  Beta        5 (A")      0.0113
+               20      Vir  Beta        6 (A")      0.0211
+               23      Vir  Beta        7 (A")      0.0213
+               27      Vir  Beta        8 (A")      0.0255
+               29      Vir  Beta        9 (A")      0.0444
+               38      Vir  Beta       12 (A")      0.0859
+               44      Vir  Beta       14 (A")      0.1003
+               53      Vir  Beta       17 (A")      0.1958
+
+
+ EOMEE transition 5/A"
+ Total energy = -41.53078093 a.u.  Excitation energy = 405.4244 eV.
+ R0^2 = 0.0000  R1^2 = 0.8238  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0877  Res^2 = 2.69e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.3275       1 (A') A                  ->    6 (A") A                   
+ -0.3275       1 (A') B                  ->    6 (A") B                   
+  0.3112       1 (A') A                  ->    3 (A") A                   
+  0.3112       1 (A') B                  ->    3 (A") B                   
+  0.2368       1 (A') A                  ->    2 (A") A                   
+  0.2368       1 (A') B                  ->    2 (A") B                   
+  0.1845       1 (A') A                  ->    15 (A") A                  
+  0.1845       1 (A') B                  ->    15 (A") B                  
+  0.1774       1 (A') A                  ->    5 (A") A                   
+  0.1774       1 (A') B                  ->    5 (A") B                   
+ -0.1407       1 (A') A                  ->    11 (A") A                  
+ -0.1407       1 (A') B                  ->    11 (A") B                  
+ -0.1221       1 (A') A                  ->    18 (A") A                  
+ -0.1221       1 (A') B                  ->    18 (A") B                  
+ -0.1189       1 (A') A                  ->    12 (A") A                  
+ -0.1189       1 (A') B                  ->    12 (A") B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               8       Vir  Alpha       2 (A")      0.0035
+               11      Vir  Alpha       3 (A")      0.0078
+               18      Vir  Alpha       5 (A")      0.0113
+               20      Vir  Alpha       6 (A")      0.0211
+               35      Vir  Alpha      11 (A")      0.0512
+               38      Vir  Alpha      12 (A")      0.0859
+               47      Vir  Alpha      15 (A")      0.1652
+               55      Vir  Alpha      18 (A")      0.3333
+               8       Vir  Beta        2 (A")      0.0035
+               11      Vir  Beta        3 (A")      0.0078
+               18      Vir  Beta        5 (A")      0.0113
+               20      Vir  Beta        6 (A")      0.0211
+               35      Vir  Beta       11 (A")      0.0512
+               38      Vir  Beta       12 (A")      0.0859
+               47      Vir  Beta       15 (A")      0.1652
+               55      Vir  Beta       18 (A")      0.3333
+
+
+ EOMEE transition 6/A"
+ Total energy = -41.52403363 a.u.  Excitation energy = 405.6080 eV.
+ R0^2 = 0.0000  R1^2 = 0.8233  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0880  Res^2 = 4.87e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.4614       1 (A') A                  ->    4 (A") A                   
+ -0.4614       1 (A') B                  ->    4 (A") B                   
+ -0.2209       1 (A') A                  ->    7 (A") A                   
+ -0.2209       1 (A') B                  ->    7 (A") B                   
+ -0.2194       1 (A') A                  ->    13 (A") A                  
+ -0.2194       1 (A') B                  ->    13 (A") B                  
+  0.1883       1 (A') A                  ->    3 (A") A                   
+  0.1883       1 (A') B                  ->    3 (A") B                   
+ -0.1597       1 (A') A                  ->    10 (A") A                  
+ -0.1597       1 (A') B                  ->    10 (A") B                  
+  0.1340       1 (A') A                  ->    16 (A") A                  
+  0.1340       1 (A') B                  ->    16 (A") B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               11      Vir  Alpha       3 (A")      0.0078
+               14      Vir  Alpha       4 (A")      0.0079
+               23      Vir  Alpha       7 (A")      0.0213
+               32      Vir  Alpha      10 (A")      0.0449
+               41      Vir  Alpha      13 (A")      0.0881
+               50      Vir  Alpha      16 (A")      0.1736
+               11      Vir  Beta        3 (A")      0.0078
+               14      Vir  Beta        4 (A")      0.0079
+               23      Vir  Beta        7 (A")      0.0213
+               32      Vir  Beta       10 (A")      0.0449
+               41      Vir  Beta       13 (A")      0.0881
+               50      Vir  Beta       16 (A")      0.1736
+
+
+ EOMEE transition 7/A"
+ Total energy = -41.52212350 a.u.  Excitation energy = 405.6599 eV.
+ R0^2 = 0.0000  R1^2 = 0.8236  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0878  Res^2 = 3.39e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.4203       1 (A') A                  ->    2 (A") A                   
+  0.4203       1 (A') B                  ->    2 (A") B                   
+ -0.2628       1 (A') A                  ->    8 (A") A                   
+ -0.2628       1 (A') B                  ->    8 (A") B                   
+ -0.2473       1 (A') A                  ->    3 (A") A                   
+ -0.2473       1 (A') B                  ->    3 (A") B                   
+ -0.1715       1 (A') A                  ->    4 (A") A                   
+ -0.1715       1 (A') B                  ->    4 (A") B                   
+  0.1285       1 (A') A                  ->    9 (A") A                   
+  0.1285       1 (A') B                  ->    9 (A") B                   
+  0.1212       1 (A') A                  ->    14 (A") A                  
+  0.1212       1 (A') B                  ->    14 (A") B                  
+  0.1089       1 (A') A                  ->    17 (A") A                  
+  0.1089       1 (A') B                  ->    17 (A") B                  
+  0.1077       1 (A') A                  ->    12 (A") A                  
+  0.1077       1 (A') B                  ->    12 (A") B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               8       Vir  Alpha       2 (A")      0.0035
+               11      Vir  Alpha       3 (A")      0.0078
+               14      Vir  Alpha       4 (A")      0.0079
+               27      Vir  Alpha       8 (A")      0.0255
+               29      Vir  Alpha       9 (A")      0.0444
+               38      Vir  Alpha      12 (A")      0.0859
+               44      Vir  Alpha      14 (A")      0.1003
+               53      Vir  Alpha      17 (A")      0.1958
+               8       Vir  Beta        2 (A")      0.0035
+               11      Vir  Beta        3 (A")      0.0078
+               14      Vir  Beta        4 (A")      0.0079
+               27      Vir  Beta        8 (A")      0.0255
+               29      Vir  Beta        9 (A")      0.0444
+               38      Vir  Beta       12 (A")      0.0859
+               44      Vir  Beta       14 (A")      0.1003
+               53      Vir  Beta       17 (A")      0.1958
+
+
+ EOMEE transition 8/A"
+ Total energy = -41.51598108 a.u.  Excitation energy = 405.8271 eV.
+ R0^2 = 0.0000  R1^2 = 0.8235  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0879  Res^2 = 6.94e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.3826       1 (A') A                  ->    3 (A") A                   
+  0.3826       1 (A') B                  ->    3 (A") B                   
+  0.2433       1 (A') A                  ->    2 (A") A                   
+  0.2433       1 (A') B                  ->    2 (A") B                   
+ -0.2152       1 (A') A                  ->    9 (A") A                   
+ -0.2152       1 (A') B                  ->    9 (A") B                   
+  0.1942       1 (A') A                  ->    6 (A") A                   
+  0.1942       1 (A') B                  ->    6 (A") B                   
+ -0.1784       1 (A') A                  ->    5 (A") A                   
+ -0.1784       1 (A') B                  ->    5 (A") B                   
+ -0.1467       1 (A') A                  ->    15 (A") A                  
+ -0.1467       1 (A') B                  ->    15 (A") B                  
+  0.1358       1 (A') A                  ->    4 (A") A                   
+  0.1358       1 (A') B                  ->    4 (A") B                   
+  0.1178       1 (A') A                  ->    11 (A") A                  
+  0.1178       1 (A') B                  ->    11 (A") B                  
+  0.1016       1 (A') A                  ->    18 (A") A                  
+  0.1016       1 (A') B                  ->    18 (A") B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               8       Vir  Alpha       2 (A")      0.0035
+               11      Vir  Alpha       3 (A")      0.0078
+               14      Vir  Alpha       4 (A")      0.0079
+               18      Vir  Alpha       5 (A")      0.0113
+               20      Vir  Alpha       6 (A")      0.0211
+               29      Vir  Alpha       9 (A")      0.0444
+               35      Vir  Alpha      11 (A")      0.0512
+               47      Vir  Alpha      15 (A")      0.1652
+               55      Vir  Alpha      18 (A")      0.3333
+               8       Vir  Beta        2 (A")      0.0035
+               11      Vir  Beta        3 (A")      0.0078
+               14      Vir  Beta        4 (A")      0.0079
+               18      Vir  Beta        5 (A")      0.0113
+               20      Vir  Beta        6 (A")      0.0211
+               29      Vir  Beta        9 (A")      0.0444
+               35      Vir  Beta       11 (A")      0.0512
+               47      Vir  Beta       15 (A")      0.1652
+               55      Vir  Beta       18 (A")      0.3333
+
+
+ EOMEE transition 9/A"
+ Total energy = -41.51107409 a.u.  Excitation energy = 405.9606 eV.
+ R0^2 = 0.0000  R1^2 = 0.8231  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0881  Res^2 = 1.74e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+  0.4030       1 (A') A                  ->    7 (A") A                   
+  0.4030       1 (A') B                  ->    7 (A") B                   
+ -0.3136       1 (A') A                  ->    4 (A") A                   
+ -0.3136       1 (A') B                  ->    4 (A") B                   
+  0.2052       1 (A') A                  ->    13 (A") A                  
+  0.2052       1 (A') B                  ->    13 (A") B                  
+  0.1871       1 (A') A                  ->    6 (A") A                   
+  0.1871       1 (A') B                  ->    6 (A") B                   
+  0.1595       1 (A') A                  ->    3 (A") A                   
+  0.1595       1 (A') B                  ->    3 (A") B                   
+ -0.1445       1 (A') A                  ->    16 (A") A                  
+ -0.1445       1 (A') B                  ->    16 (A") B                  
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               11      Vir  Alpha       3 (A")      0.0078
+               14      Vir  Alpha       4 (A")      0.0079
+               20      Vir  Alpha       6 (A")      0.0211
+               23      Vir  Alpha       7 (A")      0.0213
+               41      Vir  Alpha      13 (A")      0.0881
+               50      Vir  Alpha      16 (A")      0.1736
+               11      Vir  Beta        3 (A")      0.0078
+               14      Vir  Beta        4 (A")      0.0079
+               20      Vir  Beta        6 (A")      0.0211
+               23      Vir  Beta        7 (A")      0.0213
+               41      Vir  Beta       13 (A")      0.0881
+               50      Vir  Beta       16 (A")      0.1736
+
+
+ EOMEE transition 10/A"
+ Total energy = -41.50945194 a.u.  Excitation energy = 406.0047 eV.
+ R0^2 = 0.0000  R1^2 = 0.8235  R2_CCVV^2 = 0.0007  R2_COVV^2 = 0.0879  Res^2 = 9.88e-05
+ Conv-d = yes
+
+ Amplitude    Transitions between orbitals
+ -0.3421       1 (A') A                  ->    5 (A") A                   
+ -0.3421       1 (A') B                  ->    5 (A") B                   
+  0.2675       1 (A') A                  ->    8 (A") A                   
+  0.2675       1 (A') B                  ->    8 (A") B                   
+ -0.2065       1 (A') A                  ->    6 (A") A                   
+ -0.2065       1 (A') B                  ->    6 (A") B                   
+  0.1838       1 (A') A                  ->    2 (A") A                   
+  0.1838       1 (A') B                  ->    2 (A") B                   
+  0.1730       1 (A') A                  ->    7 (A") A                   
+  0.1730       1 (A') B                  ->    7 (A") B                   
+  0.1394       1 (A') A                  ->    11 (A") A                  
+  0.1394       1 (A') B                  ->    11 (A") B                  
+ -0.1332       1 (A') A                  ->    14 (A") A                  
+ -0.1332       1 (A') B                  ->    14 (A") B                  
+ -0.1252       1 (A') A                  ->    12 (A") A                  
+ -0.1252       1 (A') B                  ->    12 (A") B                  
+ -0.1208       1 (A') A                  ->    4 (A") A                   
+ -0.1208       1 (A') B                  ->    4 (A") B                   
+ -0.1187       1 (A') A                  ->    17 (A") A                  
+ -0.1187       1 (A') B                  ->    17 (A") B                  
+ -0.1186       1 (A') A                  ->    3 (A") A                   
+ -0.1186       1 (A') B                  ->    3 (A") B                   
+
+              Summary of significant orbitals:
+
+               Number  Type             Irrep      Energy
+               1       Occ  Alpha       1 (A')    -15.5422
+               1       Occ  Beta        1 (A')    -15.5422
+               8       Vir  Alpha       2 (A")      0.0035
+               11      Vir  Alpha       3 (A")      0.0078
+               14      Vir  Alpha       4 (A")      0.0079
+               18      Vir  Alpha       5 (A")      0.0113
+               20      Vir  Alpha       6 (A")      0.0211
+               23      Vir  Alpha       7 (A")      0.0213
+               27      Vir  Alpha       8 (A")      0.0255
+               35      Vir  Alpha      11 (A")      0.0512
+               38      Vir  Alpha      12 (A")      0.0859
+               44      Vir  Alpha      14 (A")      0.1003
+               53      Vir  Alpha      17 (A")      0.1958
+               8       Vir  Beta        2 (A")      0.0035
+               11      Vir  Beta        3 (A")      0.0078
+               14      Vir  Beta        4 (A")      0.0079
+               18      Vir  Beta        5 (A")      0.0113
+               20      Vir  Beta        6 (A")      0.0211
+               23      Vir  Beta        7 (A")      0.0213
+               27      Vir  Beta        8 (A")      0.0255
+               35      Vir  Beta       11 (A")      0.0512
+               38      Vir  Beta       12 (A")      0.0859
+               44      Vir  Beta       14 (A")      0.1003
+               53      Vir  Beta       17 (A")      0.1958
+
+
+      CVS-EOM-CCSD/MP2 left amplitudes will be solved using Davidson.
+        Amplitudes will be solved using MOM  algorithm.
+     Hard-coded thresholds: 
+     LinDepThresh=1.00e-15  NormThresh=1.00e-06  ReorthogonThresh=1.00e-02
+
+      Roots     MaxVec    MaxIter   Precond   Conv      Shift    
+      10        1000      200       1         1.00e-04  1.48e+01  
+ ------------------------------------------------------------------------------
+      Iter ConvRoots NVecs ResNorm Current eigenvalues (eV)
+ ------------------------------------------------------------------------------
+      0    0      10    5.15e-02   403.2337   404.5725   404.9550   405.0650   405.4244   405.6080   405.6599   405.8271   405.9606   406.0048   
+      1    0      20    1.80e-02   403.2337   404.5725   404.9543   405.0649   405.4241   405.6073   405.6597   405.8263   405.9603   406.0038   
+      2    0      30    2.44e-04   403.2336   404.5725   404.9544   405.0650   405.4243   405.6074   405.6598   405.8266   405.9605   406.0041   
+      3    10     40    1.59e-05   403.2336*  404.5724*  404.9543*  405.0650*  405.4243*  405.6073*  405.6597*  405.8265*  405.9606*  406.0040*  
+
+     Davidson procedure converged
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 1/A"
+ Dipole moment (a.u.): 0.975415 (X -0.928788, Y -0.297974, Z -0.000002)
+ R-squared (a.u.): 56.769096 (XX 14.900863, YY 13.656055, ZZ 28.212177)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0029   0.0031   0.0047   0.9962   0.9999   1.9967   1.9971   1.9982
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.01438, n_u,nl =  2.00052
+   NO participation ratio (PR_NO):  2.036666
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N        0.079888
+ 2  H       -0.150444
+ 3  H        0.338199
+ 4  H       -0.150438
+ 5 GH       -0.117205
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 2/A"
+ Dipole moment (a.u.): 3.066758 (X 2.743435, Y 1.370609, Z 0.000005)
+ R-squared (a.u.): 97.749418 (XX 31.197063, YY 20.396239, ZZ 46.156116)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0031   0.0032   0.0050   0.9981   0.9999   1.9975   1.9975   1.9978
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.01204, n_u,nl =  2.00058
+   NO participation ratio (PR_NO):  2.028102
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.230734
+ 2  H        0.337858
+ 3  H        0.350236
+ 4  H        0.337858
+ 5 GH       -0.795217
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 3/A"
+ Dipole moment (a.u.): 3.070317 (X -1.184561, Y 2.832606, Z -0.000002)
+ R-squared (a.u.): 152.256608 (XX 35.296030, YY 51.628390, ZZ 65.332188)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0048   0.9993   0.9999   1.9980   1.9985   1.9986
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00661, n_u,nl =  2.00060
+   NO participation ratio (PR_NO):  2.014880
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.079899
+ 2  H        0.353846
+ 3  H        0.350960
+ 4  H        0.353846
+ 5 GH       -0.978754
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 4/A"
+ Dipole moment (a.u.): 4.697263 (X -3.419523, Y -3.220426, Z -0.000006)
+ R-squared (a.u.): 226.580312 (XX 53.254050, YY 54.957943, ZZ 118.368318)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0048   0.9991   0.9999   1.9980   1.9983   1.9984
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00757, n_u,nl =  2.00060
+   NO participation ratio (PR_NO):  2.017037
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.091102
+ 2  H        0.331541
+ 3  H        0.350820
+ 4  H        0.331541
+ 5 GH       -0.922800
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 5/A"
+ Dipole moment (a.u.): 7.171465 (X 6.546590, Y 2.927810, Z 0.000011)
+ R-squared (a.u.): 364.825398 (XX 117.164585, YY 69.641454, ZZ 178.019359)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0031   0.0049   0.9994   0.9999   1.9979   1.9981   1.9982
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00867, n_u,nl =  2.00059
+   NO participation ratio (PR_NO):  2.018755
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.155962
+ 2  H        0.364456
+ 3  H        0.352157
+ 4  H        0.364455
+ 5 GH       -0.925107
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 6/A"
+ Dipole moment (a.u.): 4.965767 (X -2.154965, Y 4.473809, Z -0.000003)
+ R-squared (a.u.): 523.536986 (XX 114.899176, YY 180.682836, ZZ 227.954974)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0029   0.0030   0.0048   0.9993   0.9999   1.9980   1.9986   1.9986
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00635, n_u,nl =  2.00058
+   NO participation ratio (PR_NO):  2.014381
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.079144
+ 2  H        0.353461
+ 3  H        0.352257
+ 4  H        0.353461
+ 5 GH       -0.980033
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 7/A"
+ Dipole moment (a.u.): 9.280799 (X -6.529425, Y -6.595441, Z -0.000012)
+ R-squared (a.u.): 687.947987 (XX 157.130449, YY 163.148466, ZZ 367.669073)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0048   0.9994   0.9999   1.9980   1.9984   1.9984
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00697, n_u,nl =  2.00059
+   NO participation ratio (PR_NO):  2.015328
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.089743
+ 2  H        0.348053
+ 3  H        0.352207
+ 4  H        0.348053
+ 5 GH       -0.958569
+ --------------------
+ Sum:       -0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 8/A"
+ Dipole moment (a.u.): 10.572249 (X 9.695507, Y 4.215399, Z 0.000017)
+ R-squared (a.u.): 804.596014 (XX 253.113159, YY 152.871029, ZZ 398.611827)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0031   0.0049   0.9989   0.9999   1.9979   1.9983   1.9983
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00785, n_u,nl =  2.00059
+   NO participation ratio (PR_NO):  2.018123
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.123286
+ 2  H        0.361194
+ 3  H        0.352256
+ 4  H        0.361193
+ 5 GH       -0.951357
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 9/A"
+ Dipole moment (a.u.): 7.801223 (X -4.425122, Y 6.424747, Z -0.000006)
+ R-squared (a.u.): 875.742000 (XX 214.113993, YY 267.699746, ZZ 393.928261)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0030   0.0049   0.9993   0.9999   1.9980   1.9985   1.9985
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00666, n_u,nl =  2.00060
+   NO participation ratio (PR_NO):  2.014927
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.078314
+ 2  H        0.354691
+ 3  H        0.352308
+ 4  H        0.354691
+ 5 GH       -0.983377
+ --------------------
+ Sum:        0.000000
+ 
+
+ Excited state properties for  CVS-EOMEE-CCSD transition 10/A"
+ Dipole moment (a.u.): 9.509992 (X -5.429723, Y -7.807564, Z -0.000010)
+ R-squared (a.u.): 930.426439 (XX 197.058902, YY 244.541966, ZZ 488.825571)
+
+State OPDM analysis using libwa module will be excecuted
+ NOs
+   Occupation of frontier NOs:
+      0.0030   0.0031   0.0048   0.9988   0.9999   1.9980   1.9984   1.9984
+   Number of electrons: 10.000000
+   Number of unpaired electrons: n_u =  2.00693, n_u,nl =  2.00062
+   NO participation ratio (PR_NO):  2.016365
+ 
+ Mulliken Population Analysis
+ Atom      Charge (e)
+ --------------------
+ 1  N       -0.083527
+ 2  H        0.348985
+ 3  H        0.352575
+ 4  H        0.348985
+ 5 GH       -0.967019
+ --------------------
+ Sum:        0.000000
+ 
+
+ CVS-EOMEE-CCSD calculation:   CPU 2535.30 s  wall 657.60 s
+
+
+ Start computing the transition properties
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 1/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.025338 (X 0.000021, Y 0.025338, Z 0.000000)
+   B->A: 0.025477 (X 0.000021, Y 0.025477, Z 0.000000)
+ Oscillator strength (a.u.): 0.006351
+ Norm of one-particle transition density matrix:
+   A->B: 0.908271;   B->A: 0.878180
+   ||gamma^AB||*||gamma^BA||: 0.797625
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8250   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2794  -0.4169  -0.4172  -0.3780  -0.1571   0.7746   0.7747
+ E(e)   0.0997  -0.1309  -0.2109  -0.2112   0.0571  -0.5335   0.6546   0.6548
+ 
+   Sum of SVs (Omega):               0.824957
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229016
+   Nr of entangled states (Z_HE):    1.172036
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8250
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  0.000966,   0.677564,   0.000000]
+   |<r_e - r_h>| [Ang]:                  0.794291
+   Hole size [Ang]:                      0.140424
+     Cartesian components [Ang]:       [  0.081072,   0.081077,   0.081072]
+   Electron size [Ang]:                  2.415433
+     Cartesian components [Ang]:       [  1.474505,   1.219518,   1.474086]
+   RMS electron-hole separation [Ang]:   2.546554
+     Cartesian components [Ang]:       [  1.476733,   1.457632,   1.476314]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000001
+   Correlation coefficient:             -0.000002
+   Center-of-mass size [Ang]:            1.209756
+     Cartesian components [Ang]:       [  0.738366,   0.611105,   0.738156]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 2/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.044328 (X -0.044328, Y 0.000021, Z 0.000000)
+   B->A: 0.044082 (X -0.044082, Y 0.000020, Z 0.000000)
+ Oscillator strength (a.u.): 0.019305
+ Norm of one-particle transition density matrix:
+   A->B: 0.909739;   B->A: 0.880268
+   ||gamma^AB||*||gamma^BA||: 0.800815
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8276   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2941  -0.4169  -0.4196   0.0944  -0.6332   0.7746   0.8640
+ E(e)   0.1404  -0.1239  -0.2109  -0.1930   0.2979  -0.7970   0.6546   0.6307
+ 
+   Sum of SVs (Omega):               0.827626
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.225900
+   Nr of entangled states (Z_HE):    1.169507
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8276
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -0.489694,   0.546344,  -0.000001]
+   |<r_e - r_h>| [Ang]:                  0.824215
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  3.011425
+     Cartesian components [Ang]:       [  2.332015,   1.279208,   1.412095]
+   RMS electron-hole separation [Ang]:   3.125337
+     Cartesian components [Ang]:       [  2.384226,   1.443125,   1.414421]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            1.507349
+     Cartesian components [Ang]:       [  1.166712,   0.640888,   0.707210]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 3/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.023488 (X 0.000010, Y 0.023488, Z 0.000000)
+   B->A: 0.023895 (X 0.000010, Y 0.023895, Z 0.000000)
+ Oscillator strength (a.u.): 0.005554
+ Norm of one-particle transition density matrix:
+   A->B: 0.908211;   B->A: 0.874372
+   ||gamma^AB||*||gamma^BA||: 0.794114
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8248   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2318  -0.4169  -0.4172  -0.7500   0.7746   0.7747   0.3411
+ E(e)   0.0799  -0.1812  -0.2109  -0.2112  -0.8220   0.6546   0.6549   0.4878
+ 
+   Sum of SVs (Omega):               0.824847
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229143
+   Nr of entangled states (Z_HE):    1.172139
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8248
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  0.000474,  -0.198005,   0.000000]
+   |<r_e - r_h>| [Ang]:                  0.081281
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081078,   0.081073]
+   Electron size [Ang]:                  4.004629
+     Cartesian components [Ang]:       [  1.910250,   2.956337,   1.909991]
+   RMS electron-hole separation [Ang]:   4.007914
+     Cartesian components [Ang]:       [  1.911970,   2.958565,   1.911711]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            2.003545
+     Cartesian components [Ang]:       [  0.955985,   1.478724,   0.955856]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 4/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.012562 (X 0.000161, Y -0.012561, Z 0.000000)
+   B->A: 0.012529 (X 0.000158, Y -0.012528, Z 0.000000)
+ Oscillator strength (a.u.): 0.001560
+ Norm of one-particle transition density matrix:
+   A->B: 0.907853;   B->A: 0.871707
+   ||gamma^AB||*||gamma^BA||: 0.791382
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8242   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2940  -0.4169  -0.4172   0.0414  -0.5874   0.7746   0.7747
+ E(e)   0.0531  -0.1242  -0.2109  -0.2112   0.2708  -0.7826   0.6546   0.6549
+ 
+   Sum of SVs (Omega):               0.824197
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229901
+   Nr of entangled states (Z_HE):    1.172754
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8242
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -0.023387,   1.696207,   0.000000]
+   |<r_e - r_h>| [Ang]:                  1.813083
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  5.870894
+     Cartesian components [Ang]:       [  3.334504,   3.478201,   3.354192]
+   RMS electron-hole separation [Ang]:   6.146087
+     Cartesian components [Ang]:       [  3.335571,   3.923160,   3.355171]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000001
+   Correlation coefficient:             -0.000001
+   Center-of-mass size [Ang]:            2.936287
+     Cartesian components [Ang]:       [  1.667745,   1.739573,   1.677586]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 5/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.020194 (X -0.020194, Y -0.000089, Z 0.000000)
+   B->A: 0.019990 (X -0.019990, Y -0.000090, Z 0.000000)
+ Oscillator strength (a.u.): 0.004001
+ Norm of one-particle transition density matrix:
+   A->B: 0.907885;   B->A: 0.872921
+   ||gamma^AB||*||gamma^BA||: 0.792512
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8243   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2941  -0.4169  -0.4158   0.0944  -0.6332   0.7746   0.7804
+ E(e)   0.1071  -0.1239  -0.2109  -0.2153   0.2978  -0.7970   0.6546   0.6530
+ 
+   Sum of SVs (Omega):               0.824255
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229833
+   Nr of entangled states (Z_HE):    1.172699
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8243
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  1.483224,  -0.334717,   0.000003]
+   |<r_e - r_h>| [Ang]:                  1.499291
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  4.351993
+     Cartesian components [Ang]:       [  2.942000,   1.938097,   2.555046]
+   RMS electron-hole separation [Ang]:   4.605154
+     Cartesian components [Ang]:       [  3.295799,   1.952003,   2.556332]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            2.177129
+     Cartesian components [Ang]:       [  1.471558,   0.969896,   1.278166]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 6/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.003176 (X -0.003176, Y 0.000000, Z 0.000000)
+   B->A: 0.003159 (X -0.003159, Y 0.000000, Z 0.000000)
+ Oscillator strength (a.u.): 0.000100
+ Norm of one-particle transition density matrix:
+   A->B: 0.907934;   B->A: 0.870306
+   ||gamma^AB||*||gamma^BA||: 0.790180
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8243   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2941  -0.4169  -0.4172   0.0944  -0.6332   0.7746   0.7754
+ E(e)   0.0535  -0.1239  -0.2109  -0.2110   0.2979  -0.7970   0.6546   0.6540
+ 
+   Sum of SVs (Omega):               0.824344
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229730
+   Nr of entangled states (Z_HE):    1.172616
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8243
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -0.623754,  -1.096595,  -0.000001]
+   |<r_e - r_h>| [Ang]:                  1.161483
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  5.917238
+     Cartesian components [Ang]:       [  3.977946,   3.385416,   2.780038]
+   RMS electron-hole separation [Ang]:   6.031788
+     Cartesian components [Ang]:       [  4.027347,   3.525303,   2.781220]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            2.959452
+     Cartesian components [Ang]:       [  1.989386,   1.693194,   1.390610]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 7/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.001651 (X 0.000000, Y 0.001651, Z 0.000000)
+   B->A: 0.001599 (X 0.000000, Y 0.001599, Z 0.000000)
+ Oscillator strength (a.u.): 0.000026
+ Norm of one-particle transition density matrix:
+   A->B: 0.907971;   B->A: 0.870399
+   ||gamma^AB||*||gamma^BA||: 0.790297
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8244   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2939  -0.4169  -0.4172   0.0947  -0.6335   0.7746   0.7747
+ E(e)   0.0552  -0.1242  -0.2109  -0.2112   0.2978  -0.7972   0.6546   0.6549
+ 
+   Sum of SVs (Omega):               0.824411
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229651
+   Nr of entangled states (Z_HE):    1.172551
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8244
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -0.002378,  -1.427082,  -0.000000]
+   |<r_e - r_h>| [Ang]:                  1.310358
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  5.934818
+     Cartesian components [Ang]:       [  3.156436,   3.905668,   3.163027]
+   RMS electron-hole separation [Ang]:   6.079377
+     Cartesian components [Ang]:       [  3.157478,   4.120418,   3.164065]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            2.968240
+     Cartesian components [Ang]:       [  1.578738,   1.953255,   1.582033]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 8/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.017146 (X 0.017146, Y -0.000008, Z 0.000000)
+   B->A: 0.016985 (X 0.016985, Y -0.000008, Z 0.000000)
+ Oscillator strength (a.u.): 0.002890
+ Norm of one-particle transition density matrix:
+   A->B: 0.908125;   B->A: 0.871513
+   ||gamma^AB||*||gamma^BA||: 0.791443
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8247   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2941  -0.4169  -0.4174   0.0944  -0.6332   0.7746   0.7793
+ E(e)   0.0489  -0.1239  -0.2109  -0.2106   0.2979  -0.7970   0.6546   0.6453
+ 
+   Sum of SVs (Omega):               0.824691
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229325
+   Nr of entangled states (Z_HE):    1.172287
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8247
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -1.806212,   2.090784,  -0.000003]
+   |<r_e - r_h>| [Ang]:                  2.852195
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  7.047515
+     Cartesian components [Ang]:       [  5.268641,   3.024986,   3.571883]
+   RMS electron-hole separation [Ang]:   7.604091
+     Cartesian components [Ang]:       [  5.570194,   3.745693,   3.572803]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            3.524457
+     Cartesian components [Ang]:       [  2.634632,   1.513036,   1.786401]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 9/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.012575 (X -0.000006, Y -0.012575, Z 0.000000)
+   B->A: 0.012713 (X -0.000006, Y -0.012713, Z 0.000000)
+ Oscillator strength (a.u.): 0.001587
+ Norm of one-particle transition density matrix:
+   A->B: 0.907908;   B->A: 0.871281
+   ||gamma^AB||*||gamma^BA||: 0.791043
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8243   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2864  -0.4169  -0.4172   0.0822  -0.6145   0.7746   0.7747
+ E(e)   0.0391  -0.1376  -0.2109  -0.2112   0.3019  -0.7905   0.6546   0.6549
+ 
+   Sum of SVs (Omega):               0.824297
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229784
+   Nr of entangled states (Z_HE):    1.172659
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8243
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  0.001433,  -0.001875,  -0.000000]
+   |<r_e - r_h>| [Ang]:                  0.114862
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  8.869204
+     Cartesian components [Ang]:       [  4.273560,   6.492061,   4.272307]
+   RMS electron-hole separation [Ang]:   8.871059
+     Cartesian components [Ang]:       [  4.274329,   6.493583,   4.273077]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            4.435158
+     Cartesian components [Ang]:       [  2.137164,   3.246284,   2.136538]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 10/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.011480 (X -0.011480, Y 0.000050, Z 0.000000)
+   B->A: 0.011358 (X -0.011358, Y 0.000052, Z 0.000000)
+ Oscillator strength (a.u.): 0.001295
+ Norm of one-particle transition density matrix:
+   A->B: 0.907764;   B->A: 0.871089
+   ||gamma^AB||*||gamma^BA||: 0.790743
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8240   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2941  -0.4169  -0.4164   0.0944  -0.6332   0.7746   0.7753
+ E(e)   0.0536  -0.1239  -0.2109  -0.2136   0.2979  -0.7970   0.6546   0.6509
+ 
+   Sum of SVs (Omega):               0.824035
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.230089
+   Nr of entangled states (Z_HE):    1.172907
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8240
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  3.303975,  -1.105228,   0.000006]
+   |<r_e - r_h>| [Ang]:                  3.448808
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  8.816328
+     Cartesian components [Ang]:       [  5.774557,   3.910558,   5.393484]
+   RMS electron-hole separation [Ang]:   9.467927
+     Cartesian components [Ang]:       [  6.653512,   4.034374,   5.394094]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            4.408723
+     Cartesian components [Ang]:       [  2.887563,   1.955699,   2.697047]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 11/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.008216 (X -0.000068, Y -0.008216, Z 0.000000)
+   B->A: 0.008148 (X -0.000064, Y -0.008148, Z 0.000000)
+ Oscillator strength (a.u.): 0.000665
+ Norm of one-particle transition density matrix:
+   A->B: 0.907767;   B->A: 0.870714
+   ||gamma^AB||*||gamma^BA||: 0.790406
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8240   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2941  -0.4169  -0.4172   0.0763  -0.6183   0.7746   0.7747
+ E(e)   0.0333  -0.1239  -0.2109  -0.2112   0.2873  -0.7925   0.6546   0.6549
+ 
+   Sum of SVs (Omega):               0.824042
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.230081
+   Nr of entangled states (Z_HE):    1.172901
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8240
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  0.032600,   2.701630,  -0.000000]
+   |<r_e - r_h>| [Ang]:                  2.818546
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 10.711715
+     Cartesian components [Ang]:       [  5.862623,   6.805934,   5.835217]
+   RMS electron-hole separation [Ang]:  11.077218
+     Cartesian components [Ang]:       [  5.863275,   7.366847,   5.835780]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            5.356318
+     Cartesian components [Ang]:       [  2.931592,   3.403208,   2.917890]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 12/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.001489 (X -0.001489, Y -0.000006, Z 0.000000)
+   B->A: 0.001465 (X -0.001465, Y -0.000006, Z 0.000000)
+ Oscillator strength (a.u.): 0.000022
+ Norm of one-particle transition density matrix:
+   A->B: 0.907843;   B->A: 0.870170
+   ||gamma^AB||*||gamma^BA||: 0.789978
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8242   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2941  -0.4169  -0.4172   0.0944  -0.6332   0.7746   0.7749
+ E(e)   0.0306  -0.1239  -0.2109  -0.2112   0.2979  -0.7970   0.6546   0.6545
+ 
+   Sum of SVs (Omega):               0.824180
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229921
+   Nr of entangled states (Z_HE):    1.172771
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8242
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -1.010860,  -1.752200,  -0.000001]
+   |<r_e - r_h>| [Ang]:                  1.922586
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 11.627102
+     Cartesian components [Ang]:       [  7.742427,   6.740832,   5.459441]
+   RMS electron-hole separation [Ang]:  11.785820
+     Cartesian components [Ang]:       [  7.808541,   6.936869,   5.460043]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            5.813975
+     Cartesian components [Ang]:       [  3.871426,   3.370660,   2.730022]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 13/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.001078 (X 0.000007, Y -0.001078, Z 0.000000)
+   B->A: 0.001057 (X 0.000007, Y -0.001057, Z 0.000000)
+ Oscillator strength (a.u.): 0.000011
+ Norm of one-particle transition density matrix:
+   A->B: 0.907901;   B->A: 0.870248
+   ||gamma^AB||*||gamma^BA||: 0.790100
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8243   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2940  -0.4169  -0.4172   0.0945  -0.6333   0.7746   0.7747
+ E(e)   0.0324  -0.1241  -0.2109  -0.2112   0.2978  -0.7970   0.6546   0.6549
+ 
+   Sum of SVs (Omega):               0.824285
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229798
+   Nr of entangled states (Z_HE):    1.172671
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8243
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -0.013649,  -2.916108,  -0.000000]
+   |<r_e - r_h>| [Ang]:                  2.799415
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 11.467520
+     Cartesian components [Ang]:       [  6.188913,   7.378288,   6.225932]
+   RMS electron-hole separation [Ang]:  11.805103
+     Cartesian components [Ang]:       [  6.189459,   7.891911,   6.226460]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            5.734190
+     Cartesian components [Ang]:       [  3.094722,   3.689367,   3.113230]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 14/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.012738 (X 0.012738, Y -0.000006, Z 0.000000)
+   B->A: 0.012581 (X 0.012581, Y -0.000006, Z 0.000000)
+ Oscillator strength (a.u.): 0.001593
+ Norm of one-particle transition density matrix:
+   A->B: 0.907935;   B->A: 0.870848
+   ||gamma^AB||*||gamma^BA||: 0.790673
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8243   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2941  -0.4169  -0.4171   0.0944  -0.6332   0.7746   0.7765
+ E(e)   0.0333  -0.1239  -0.2109  -0.2114   0.2979  -0.7970   0.6546   0.6490
+ 
+   Sum of SVs (Omega):               0.824345
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229728
+   Nr of entangled states (Z_HE):    1.172614
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8243
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -3.842097,   3.537452,  -0.000007]
+   |<r_e - r_h>| [Ang]:                  5.302235
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 11.758506
+     Cartesian components [Ang]:       [  8.487823,   5.100045,   6.341045]
+   RMS electron-hole separation [Ang]:  12.899452
+     Cartesian components [Ang]:       [  9.317209,   6.274556,   6.341564]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            5.879672
+     Cartesian components [Ang]:       [  4.244105,   2.550345,   3.170782]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 15/A'
+ Transition dipole moment (a.u.):
+   A->B: 0.009866 (X 0.000003, Y 0.009866, Z 0.000000)
+   B->A: 0.009871 (X 0.000004, Y 0.009871, Z 0.000000)
+ Oscillator strength (a.u.): 0.000968
+ Norm of one-particle transition density matrix:
+   A->B: 0.907855;   B->A: 0.870760
+   ||gamma^AB||*||gamma^BA||: 0.790524
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8242   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -0.2911  -0.4169  -0.4172   0.0858  -0.6232   0.7746   0.7747
+ E(e)   0.0286  -0.1301  -0.2109  -0.2112   0.2953  -0.7936   0.6546   0.6549
+ 
+   Sum of SVs (Omega):               0.824201
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229896
+   Nr of entangled states (Z_HE):    1.172750
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8242
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  0.000035,  -1.998883,  -0.000000]
+   |<r_e - r_h>| [Ang]:                  1.882157
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 14.214387
+     Cartesian components [Ang]:       [  7.060799,  10.117017,   7.059737]
+   RMS electron-hole separation [Ang]:  14.339144
+     Cartesian components [Ang]:       [  7.061265,  10.290924,   7.060202]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            7.107540
+     Cartesian components [Ang]:       [  3.530632,   5.058671,   3.530101]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 1/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.044352 (X 0.000000, Y 0.000000, Z 0.044352)
+   B->A: 0.044082 (X 0.000000, Y 0.000000, Z 0.044082)
+ Oscillator strength (a.u.): 0.019315
+ Norm of one-particle transition density matrix:
+   A->B: 0.909747;   B->A: 0.880272
+   ||gamma^AB||*||gamma^BA||: 0.800825
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8276   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422   1.8389  -0.0297  -0.1714   0.0930  -0.3600   0.0060   0.1968
+ E(e)   0.1405  -0.1861   0.0147  -0.0463  -0.4805   0.0403  -0.0203   0.0076
+ 
+   Sum of SVs (Omega):               0.827640
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.225884
+   Nr of entangled states (Z_HE):    1.169494
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8276
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  0.489570,   0.547779,   0.000001]
+   |<r_e - r_h>| [Ang]:                  0.825456
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  3.010523
+     Cartesian components [Ang]:       [  1.324470,   1.278752,   2.381978]
+   RMS electron-hole separation [Ang]:   3.124795
+     Cartesian components [Ang]:       [  1.414427,   1.443380,   2.383357]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            1.506898
+     Cartesian components [Ang]:       [  0.663474,   0.640660,   1.191679]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 2/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.020233 (X 0.000000, Y 0.000000, Z 0.020233)
+   B->A: 0.019992 (X 0.000000, Y 0.000000, Z 0.019992)
+ Oscillator strength (a.u.): 0.004009
+ Norm of one-particle transition density matrix:
+   A->B: 0.907882;   B->A: 0.872923
+   ||gamma^AB||*||gamma^BA||: 0.792511
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8243   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  12.2297   1.0225   1.4053   1.2877   0.9007   1.6985   0.4361
+ E(e)   0.1070   0.2743  -0.2301  -0.0039   0.0178   0.0487   0.0372   0.1544
+ 
+   Sum of SVs (Omega):               0.824251
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229838
+   Nr of entangled states (Z_HE):    1.172704
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8243
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -1.460087,  -0.331187,  -0.000003]
+   |<r_e - r_h>| [Ang]:                  1.475619
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  4.357948
+     Cartesian components [Ang]:       [  2.111639,   1.936558,   3.283662]
+   RMS electron-hole separation [Ang]:   4.603138
+     Cartesian components [Ang]:       [  2.568472,   1.950083,   3.284663]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            2.180105
+     Cartesian components [Ang]:       [  1.056597,   0.969127,   1.642331]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 3/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.003187 (X 0.000000, Y 0.000000, Z 0.003187)
+   B->A: 0.003168 (X 0.000000, Y 0.000000, Z 0.003168)
+ Oscillator strength (a.u.): 0.000100
+ Norm of one-particle transition density matrix:
+   A->B: 0.907917;   B->A: 0.870299
+   ||gamma^AB||*||gamma^BA||: 0.790160
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8243   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422   1.0141   1.2891  -0.0524   1.3710   0.2576  -0.2484   0.1725
+ E(e)   0.0536   0.0020  -0.1599  -0.4241  -0.1740   0.0279  -0.1771  -0.0813
+ 
+   Sum of SVs (Omega):               0.824314
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229765
+   Nr of entangled states (Z_HE):    1.172644
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8243
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  0.624340,  -1.096951,   0.000001]
+   |<r_e - r_h>| [Ang]:                  1.162244
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  5.912330
+     Cartesian components [Ang]:       [  2.710857,   3.382037,   4.021036]
+   RMS electron-hole separation [Ang]:   6.027120
+     Cartesian components [Ang]:       [  2.783036,   3.522157,   4.021853]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            2.956999
+     Cartesian components [Ang]:       [  1.356034,   1.691504,   2.010926]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 4/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.017137 (X 0.000000, Y 0.000000, Z 0.017137)
+   B->A: 0.016955 (X 0.000000, Y 0.000000, Z 0.016955)
+ Oscillator strength (a.u.): 0.002883
+ Norm of one-particle transition density matrix:
+   A->B: 0.908115;   B->A: 0.871502
+   ||gamma^AB||*||gamma^BA||: 0.791424
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8247   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  -1.1180  -0.6195  -0.6095  -0.4120   0.0584   0.1655   0.7179
+ E(e)   0.0488  -0.9987  -0.5790   0.0144   0.0487   0.0069  -0.1297  -0.0531
+ 
+   Sum of SVs (Omega):               0.824673
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229347
+   Nr of entangled states (Z_HE):    1.172304
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8247
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  1.802901,   2.111923,   0.000003]
+   |<r_e - r_h>| [Ang]:                  2.866673
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  7.039865
+     Cartesian components [Ang]:       [  3.082851,   3.015125,   5.564598]
+   RMS electron-hole separation [Ang]:   7.602449
+     Cartesian components [Ang]:       [  3.572322,   3.750257,   5.565189]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            3.520633
+     Cartesian components [Ang]:       [  1.541958,   1.508107,   2.782594]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 5/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.011325 (X 0.000000, Y 0.000000, Z 0.011325)
+   B->A: 0.011148 (X 0.000000, Y 0.000000, Z 0.011148)
+ Oscillator strength (a.u.): 0.001254
+ Norm of one-particle transition density matrix:
+   A->B: 0.907765;   B->A: 0.871046
+   ||gamma^AB||*||gamma^BA||: 0.790705
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8240   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422   7.1343   1.0737   1.2896   0.9109   0.9025   0.5995   0.6821
+ E(e)   0.0510  -0.0042  -0.0864  -0.2273  -0.0416   0.0524  -0.1926  -0.0306
+ 
+   Sum of SVs (Omega):               0.824037
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.230087
+   Nr of entangled states (Z_HE):    1.172905
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8240
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -3.464316,  -1.155686,  -0.000006]
+   |<r_e - r_h>| [Ang]:                  3.616626
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                  9.094900
+     Cartesian components [Ang]:       [  4.317983,   4.042741,   6.908579]
+   RMS electron-hole separation [Ang]:   9.788611
+     Cartesian components [Ang]:       [  5.536434,   4.174897,   6.909055]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            4.547992
+     Cartesian components [Ang]:       [  2.159372,   2.021777,   3.454527]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 6/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.001442 (X 0.000000, Y 0.000000, Z -0.001442)
+   B->A: 0.001397 (X 0.000000, Y 0.000000, Z -0.001397)
+ Oscillator strength (a.u.): 0.000020
+ Norm of one-particle transition density matrix:
+   A->B: 0.907871;   B->A: 0.870151
+   ||gamma^AB||*||gamma^BA||: 0.789985
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8242   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422   1.4859   0.5895   1.4931   1.1557   1.2981   2.3751   0.8440
+ E(e)   0.0303   0.0134   0.0147   0.0756   0.0193   0.0545   0.0925   0.0870
+ 
+   Sum of SVs (Omega):               0.824230
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229862
+   Nr of entangled states (Z_HE):    1.172723
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8242
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  1.133954,  -1.963282,   0.000002]
+   |<r_e - r_h>| [Ang]:                  2.167009
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 11.635800
+     Cartesian components [Ang]:       [  5.356059,   6.707738,   7.855617]
+   RMS electron-hole separation [Ang]:  11.836701
+     Cartesian components [Ang]:       [  5.475408,   6.957737,   7.856035]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            5.818324
+     Cartesian components [Ang]:       [  2.678336,   3.354114,   3.928018]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 7/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.011292 (X 0.000000, Y 0.000000, Z 0.011292)
+   B->A: 0.011116 (X 0.000000, Y 0.000000, Z 0.011116)
+ Oscillator strength (a.u.): 0.001248
+ Norm of one-particle transition density matrix:
+   A->B: 0.907892;   B->A: 0.870660
+   ||gamma^AB||*||gamma^BA||: 0.790465
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8243   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422   5.1825   0.7286   1.6028  -0.4283  -0.0377   0.2625   0.2313
+ E(e)   0.0288  -0.0113  -0.4965  -0.1357  -0.0158  -0.3840  -0.0799  -0.1178
+ 
+   Sum of SVs (Omega):               0.824267
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229819
+   Nr of entangled states (Z_HE):    1.172688
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8243
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  3.445075,   3.902945,   0.000006]
+   |<r_e - r_h>| [Ang]:                  5.294075
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 12.623847
+     Cartesian components [Ang]:       [  5.472419,   5.353102,  10.037850]
+   RMS electron-hole separation [Ang]:  13.689721
+     Cartesian components [Ang]:       [  6.467102,   6.694776,  10.038178]
+   Covariance(r_h, r_e) [Ang^2]:        -0.000000
+   Correlation coefficient:             -0.000000
+   Center-of-mass size [Ang]:            6.312314
+     Cartesian components [Ang]:       [  2.736510,   2.676858,   5.019089]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 8/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.008978 (X 0.000000, Y 0.000000, Z -0.008978)
+   B->A: 0.008798 (X 0.000000, Y 0.000000, Z -0.008798)
+ Oscillator strength (a.u.): 0.000785
+ Norm of one-particle transition density matrix:
+   A->B: 0.907750;   B->A: 0.870662
+   ||gamma^AB||*||gamma^BA||: 0.790343
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8240   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422   0.1598   1.0030   1.9522   0.7369   1.2049   0.4997   1.1475
+ E(e)   0.0386   0.0027  -0.0937  -0.0402  -0.0996  -0.0220   0.0048   0.0500
+ 
+   Sum of SVs (Omega):               0.824009
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.230119
+   Nr of entangled states (Z_HE):    1.172932
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8240
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [ -5.124952,  -1.836783,  -0.000009]
+   |<r_e - r_h>| [Ang]:                  5.405769
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 13.758524
+     Cartesian components [Ang]:       [  6.508030,   6.130465,  10.457530]
+   RMS electron-hole separation [Ang]:  14.783066
+     Cartesian components [Ang]:       [  8.284007,   6.367713,  10.457844]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            6.879620
+     Cartesian components [Ang]:       [  3.254267,   3.065501,   5.228922]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 9/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.002811 (X 0.000000, Y 0.000000, Z 0.002811)
+   B->A: 0.002734 (X 0.000000, Y 0.000000, Z 0.002734)
+ Oscillator strength (a.u.): 0.000076
+ Norm of one-particle transition density matrix:
+   A->B: 0.907763;   B->A: 0.870140
+   ||gamma^AB||*||gamma^BA||: 0.789880
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8240   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422   4.4888   0.3465   1.1075   1.3192   0.7531   0.9941   2.4138
+ E(e)   0.0331   0.0182   0.0099  -0.0133   0.0001  -0.0117   0.0087  -0.0214
+ 
+   Sum of SVs (Omega):               0.824033
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.230091
+   Nr of entangled states (Z_HE):    1.172909
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8240
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  2.329667,  -2.992968,   0.000003]
+   |<r_e - r_h>| [Ang]:                  3.701452
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 14.988605
+     Cartesian components [Ang]:       [  7.230206,   8.018317,  10.396585]
+   RMS electron-hole separation [Ang]:  15.439519
+     Cartesian components [Ang]:       [  7.596739,   8.518964,  10.396901]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            7.494631
+     Cartesian components [Ang]:       [  3.615331,   4.009363,   5.198451]
+
+ ------------------------------------------------------------------------------
+ State A: ccsd: 0/A'
+ State B: cvs_eomee_ccsd/rhfref/singlets: 10/A"
+ Transition dipole moment (a.u.):
+   A->B: 0.010622 (X 0.000000, Y 0.000000, Z -0.010622)
+   B->A: 0.010434 (X 0.000000, Y 0.000000, Z -0.010434)
+ Oscillator strength (a.u.): 0.001102
+ Norm of one-particle transition density matrix:
+   A->B: 0.907886;   B->A: 0.870622
+   ||gamma^AB||*||gamma^BA||: 0.790425
+
+State analysis of transition OPDM (A->B) using libwa module will be excecuted
+ NTOs
+   Leading SVs and ENEs:
+        0.8243   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ E(h) -15.5422  25.4262   1.5793   0.6786   1.9915   0.7105   0.9404   0.6791
+ E(e)   0.0380   0.0177  -0.0415  -0.0318  -0.0017  -0.0402  -0.0083  -0.0115
+ 
+   Sum of SVs (Omega):               0.824256
+   Participation ratio (PR_NTO):     1.000000
+   Entanglement entropy (S_HE):      0.229831
+   Nr of entangled states (Z_HE):    1.172698
+   Renormalized S_HE/Z_HE:  0.000000 /  1.000000
+ 
+ Atomic CT numbers
+   omega =     0.8243
+ 
+ Exciton analysis of the transition density matrix
+   <r_h> [Ang]:                        [ -0.000135,  -0.116726,  -0.000000]
+   <r_e> [Ang]:                        [  2.860333,   4.536788,   0.000005]
+   |<r_e - r_h>| [Ang]:                  5.462368
+   Hole size [Ang]:                      0.140425
+     Cartesian components [Ang]:       [  0.081073,   0.081077,   0.081073]
+   Electron size [Ang]:                 15.003346
+     Cartesian components [Ang]:       [  6.685835,   6.784812,  11.591649]
+   RMS electron-hole separation [Ang]:  15.967391
+     Cartesian components [Ang]:       [  7.272499,   8.227724,  11.591932]
+   Covariance(r_h, r_e) [Ang^2]:         0.000000
+   Correlation coefficient:              0.000000
+   Center-of-mass size [Ang]:            7.502001
+     Cartesian components [Ang]:       [  3.343163,   3.392648,   5.795966]
+
+
+ All requested transition properties have been computed
+
+ Transition Properties:   CPU 44.51 s  wall 12.05 s
+
+ Total ccman2 time:   CPU 2839.40 s  wall 716.72 s
+
+  0.748   0.883   1.065   1.132   1.132   1.339   1.366   1.367
+ 42 A'   43 A'   44 A'   45 A'   21 A"   46 A'   47 A'   22 A"                 
+  1.798   1.824   1.967   1.968   2.253   2.254   2.664   2.873
+ 23 A"   48 A'   49 A'   24 A"   25 A"   50 A'   51 A'   52 A'                 
+  2.874   3.005   3.005   3.011   3.216   3.545   3.545   4.600
+ 26 A"   27 A"   53 A'   54 A'   55 A'   56 A'   28 A"   57 A'                 
+  5.230   5.231  37.069
+ 29 A"   58 A'   59 A'                                                         
+
+ Beta MOs, Restricted
+ -- Occupied --                  
+-15.542  -1.145  -0.629  -0.629  -0.430
+  1 A'    2 A'    3 A'    1 A"    4 A'                                         
+ -- Virtual --                   
+  0.001   0.004   0.004   0.004   0.005   0.008   0.008   0.008
+  5 A'    6 A'    2 A"    7 A'    8 A'    3 A"    9 A'   10 A'                 
+  0.008   0.008   0.011   0.011   0.011   0.013   0.021   0.021
+  4 A"   11 A'   12 A'   13 A'    5 A"   14 A'    6 A"   15 A'                 
+  0.021   0.021   0.021   0.025   0.026   0.026   0.029   0.044
+ 16 A'    7 A"   17 A'   18 A'   19 A'    8 A"   20 A'    9 A"                 
+  0.044   0.045   0.045   0.045   0.051   0.051   0.053   0.059
+ 21 A'   22 A'   10 A"   23 A'   24 A'   11 A"   25 A'   26 A'                 
+  0.086   0.086   0.088   0.088   0.088   0.100   0.100   0.114
+ 12 A"   27 A'   28 A'   13 A"   29 A'   30 A'   14 A"   31 A'                 
+  0.131   0.165   0.165   0.174   0.174   0.176   0.196   0.196
+ 32 A'   15 A"   33 A'   34 A'   16 A"   35 A'   36 A'   17 A"                 
+  0.291   0.333   0.333   0.351   0.394   0.416   0.416   0.748
+ 37 A'   18 A"   38 A'   39 A'   40 A'   41 A'   19 A"   20 A"                 
+  0.748   0.883   1.065   1.132   1.132   1.339   1.366   1.367
+ 42 A'   43 A'   44 A'   45 A'   21 A"   46 A'   47 A'   22 A"                 
+  1.798   1.824   1.967   1.968   2.253   2.254   2.664   2.873
+ 23 A"   48 A'   49 A'   24 A"   25 A"   50 A'   51 A'   52 A'                 
+  2.874   3.005   3.005   3.011   3.216   3.545   3.545   4.600
+ 26 A"   27 A"   53 A'   54 A'   55 A'   56 A'   28 A"   57 A'                 
+  5.230   5.231  37.069
+ 29 A"   58 A'   59 A'                                                         
+
+ --------------------------------------------------------------
+             Orbital Energies (a.u.) and Symmetries
+ --------------------------------------------------------------
+
+ Alpha MOs, Restricted
+ -- Occupied --                  
+-15.542  -1.145  -0.629  -0.629  -0.430
+  1 A'    2 A'    3 A'    1 A"    4 A'                                         
+ -- Virtual --                   
+  0.001   0.004   0.004   0.004   0.005   0.008   0.008   0.008
+  5 A'    6 A'    2 A"    7 A'    8 A'    3 A"    9 A'   10 A'                 
+  0.008   0.008   0.011   0.011   0.011   0.013   0.021   0.021
+  4 A"   11 A'   12 A'   13 A'    5 A"   14 A'    6 A"   15 A'                 
+  0.021   0.021   0.021   0.025   0.026   0.026   0.029   0.044
+ 16 A'    7 A"   17 A'   18 A'   19 A'    8 A"   20 A'    9 A"                 
+  0.044   0.045   0.045   0.045   0.051   0.051   0.053   0.059
+ 21 A'   22 A'   10 A"   23 A'   24 A'   11 A"   25 A'   26 A'                 
+  0.086   0.086   0.088   0.088   0.088   0.100   0.100   0.114
+ 12 A"   27 A'   28 A'   13 A"   29 A'   30 A'   14 A"   31 A'                 
+  0.131   0.165   0.165   0.174   0.174   0.176   0.196   0.196
+ 32 A'   15 A"   33 A'   34 A'   16 A"   35 A'   36 A'   17 A"                 
+  0.291   0.333   0.333   0.351   0.394   0.416   0.416   0.748
+ 37 A'   18 A"   38 A'   39 A'   40 A'   41 A'   19 A"   20 A"                 
+  0.748   0.883   1.065   1.132   1.132   1.339   1.366   1.367
+ 42 A'   43 A'   44 A'   45 A'   21 A"   46 A'   47 A'   22 A"                 
+  1.798   1.824   1.967   1.968   2.253   2.254   2.664   2.873
+ 23 A"   48 A'   49 A'   24 A"   25 A"   50 A'   51 A'   52 A'                 
+  2.874   3.005   3.005   3.011   3.216   3.545   3.545   4.600
+ 26 A"   27 A"   53 A'   54 A'   55 A'   56 A'   28 A"   57 A'                 
+Archival summary:
+1\1\n-62-30-17\SP\ProcedureUnspecified\BasisUnspecified\13h1\malop\ThuJan1016:34:122019ThuJan1016:34:122019\0\\#,ProcedureUnspecified,BasisUnspecified,\\0,1\N\Gh,1,0.221008\H,2,1.8395,1,106.306\H,2,1.8395,1,106.306,3,-119.964,0\H,2,1.83978,1,106.228,3,120.018,0\\HF=-56.2143669\\@
+
+ Total job time:  755.37s(wall), 2911.40s(cpu) 
+ Thu Jan 10 16:34:12 2019
+
+======= MOLDEN-FORMATTED INPUT FILE FOLLOWS =======
+[Molden Format]
+[Atoms] (AU)
+  N      1    7     -0.00025588     -0.22100757     -0.00000000
+  H      2    1      0.88383851      0.51543541      1.52870187
+  H      3    1     -1.76588660      0.51618217      0.00000000
+  H      4    1      0.88383851      0.51543541     -1.52870187
+ GH      5    0      0.00000074      0.00000000      0.00000000
+
+======= END OF MOLDEN-FORMATTED INPUT FILE =======
+
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+
+  5.230   5.231  37.069
+ 29 A"   58 A'   59 A'                                                         
+
+ Beta MOs, Restricted
+ -- Occupied --                  
+-15.542  -1.145  -0.629  -0.629  -0.430
+  1 A'    2 A'    3 A'    1 A"    4 A'                                         
+ -- Virtual --                   
+  0.001   0.004   0.004   0.004   0.005   0.008   0.008   0.008
+  5 A'    6 A'    2 A"    7 A'    8 A'    3 A"    9 A'   10 A'                 
+  0.008   0.008   0.011   0.011   0.011   0.013   0.021   0.021
+  4 A"   11 A'   12 A'   13 A'    5 A"   14 A'    6 A"   15 A'                 
+  0.021   0.021   0.021   0.025   0.026   0.026   0.029   0.044
+ 16 A'    7 A"   17 A'   18 A'   19 A'    8 A"   20 A'    9 A"                 
+  0.044   0.045   0.045   0.045   0.051   0.051   0.053   0.059
+ 21 A'   22 A'   10 A"   23 A'   24 A'   11 A"   25 A'   26 A'                 
+  0.086   0.086   0.088   0.088   0.088   0.100   0.100   0.114
+ 12 A"   27 A'   28 A'   13 A"   29 A'   30 A'   14 A"   31 A'                 
+  0.131   0.165   0.165   0.174   0.174   0.176   0.196   0.196
+ 32 A'   15 A"   33 A'   34 A'   16 A"   35 A'   36 A'   17 A"                 
+  0.291   0.333   0.333   0.351   0.394   0.416   0.416   0.748
+ 37 A'   18 A"   38 A'   39 A'   40 A'   41 A'   19 A"   20 A"                 
+  0.748   0.883   1.065   1.132   1.132   1.339   1.366   1.367
+ 42 A'   43 A'   44 A'   45 A'   21 A"   46 A'   47 A'   22 A"                 
+  1.798   1.824   1.967   1.968   2.253   2.254   2.664   2.873
+ 23 A"   48 A'   49 A'   24 A"   25 A"   50 A'   51 A'   52 A'                 
+  2.874   3.005   3.005   3.011   3.216   3.545   3.545   4.600
+ 26 A"   27 A"   53 A'   54 A'   55 A'   56 A'   28 A"   57 A'                 
+  5.230   5.231  37.069
+ 29 A"   58 A'   59 A'                                                         
+ --------------------------------------------------------------
+
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 N                    -0.670320
+      2 H                     0.211794
+      3 H                     0.211857
+      4 H                     0.211794
+      5 GH                    0.034876
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X       0.0014      Y       1.8182      Z       0.0000
+       Tot       1.8182
+    Quadrupole Moments (Debye-Ang)
+        XX      -6.2250     XY      -0.0005     YY      -9.3721
+        XZ      -0.0000     YZ      -0.0000     ZZ      -6.2297
+    Octopole Moments (Debye-Ang^2)
+       XXX      -0.9070    XXY       0.9657    XYY       0.0004
+       YYY       1.7105    XXZ       0.0000    XYZ      -0.0000
+       YYZ       0.0000    XZZ       0.9089    YZZ       0.9642
+       ZZZ       0.0000
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX     -11.8605   XXXY      -0.3991   XXYY      -4.4276
+      XYYY      -0.0008   YYYY     -14.5199   XXXZ      -0.0000
+      XXYZ      -0.0000   XYYZ      -0.0000   YYYZ      -0.0000
+      XXZZ      -3.9532   XYZZ       0.3989   YYZZ      -4.4282
+      XZZZ      -0.0000   YZZZ      -0.0000   ZZZZ     -11.8654
+ -----------------------------------------------------------------
+---
