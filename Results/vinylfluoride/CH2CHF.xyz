@@ -1,0 +1,26 @@
+zmat angstroms
+ c
+ n   1 nc2     
+ f    2 fn3         1 fnc3      
+ c    3 cf4         2 cfn4          1 dih4   
+ h    4 hc5         1 hcc5          2 dih5   
+ h    1 hc6         4 hcc6          3 dih6   
+ h    1 hc7         4 hcc7          3 dih7   
+variables
+nc2         1.196145
+fn3         1.174610
+fnc3        178.580
+cf4         1.342808
+cfn4         18.424
+dih4        180.000
+hc5         1.080830
+hcc5        108.653
+dih5        180.000
+hc6         1.479184
+hcc6        103.458
+dih6          0.000
+hc7         0.928288
+hcc7        157.426
+dih7        180.000
+constants
+end

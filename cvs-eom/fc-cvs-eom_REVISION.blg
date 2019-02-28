@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: fc-cvs-eom_REVISION.aux
+The style file: achemso.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: acs-fc-cvs-eom_REVISION.bib
+Database file #2: abbr.bib
+Database file #3: marta.bib
+Warning--string name "j." is undefined
+--line 316 of file marta.bib
+I was expecting a `,' or a `}'---line 316 of file marta.bib
+ :    journal = j. 
+ :                 Chem. Phys.,
+I'm skipping whatever remains of this entry
+Database file #4: anna.bib
+Warning--I didn't find a database entry for "Schirmer"
+Warning--I didn't find a database entry for "Schirmer2000"
+achemso 2016/01/20 v3.10b
+You've used 88 entries,
+            2514 wiz_defined-function locations,
+            1669 strings with 31484 characters,
+and the built_in function-call counts, 35117 in all, are:
+= -- 2529
+> -- 2612
+< -- 41
++ -- 1027
+- -- 939
+* -- 3974
+:= -- 4850
+add.period$ -- 89
+call.type$ -- 88
+change.case$ -- 4
+chr.to.int$ -- 1
+cite$ -- 89
+duplicate$ -- 1970
+empty$ -- 2007
+format.name$ -- 1070
+if$ -- 6614
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 544
+num.names$ -- 265
+pop$ -- 154
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 87
+stack$ -- 0
+substring$ -- 1656
+swap$ -- 2371
+text.length$ -- 177
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 595
+warning$ -- 0
+while$ -- 307
+width$ -- 0
+write$ -- 1054
+(There was 1 error message)
